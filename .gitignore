@@ -1,0 +1,33 @@
+# Configuration and credentials
+.env
+.env.*
+!.env.example
+credentials/
+secrets/
+*service-account*.json
+application_default_credentials.json
+# Local data and execution outputs
+data/raw/
+data/interim/
+data/processed/
+data/cache/
+outputs/
+*.parquet
+*.duckdb
+*.duckdb.wal
+*.log
+# Runtime and editor files
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+# Power BI local state and unreviewed binary reports
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.pbix
+# Local-only working material
+private/
+career-notes/
