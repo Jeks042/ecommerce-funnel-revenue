@@ -1,0 +1,70 @@
+{
+  "run_date": "2026-10-19",
+  "source": "bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*",
+  "location": "US",
+  "capture_method": "Aggregate Console JSON display, normalized to remove display wrapping; compared with committed JSON through a local preview. Job details retained privately.",
+  "cost_control": {
+    "sandbox_observed": true,
+    "billing_enabled_by_this_work": false,
+    "enforced_boundary": "Sandbox free processing quota",
+    "per_job_maximum_bytes_confirmed": false,
+    "full_profile_review_ceiling_gib": 3
+  },
+  "canonical_query_hash_rule": "UTF-8 SQL with trailing whitespace removed and one LF appended; full-profile upper literal bound replaced as declared",
+  "runs": [
+    {
+      "name": "inventory",
+      "query_path": "sql/01_source_inventory.sql",
+      "query_sha256": "53ec048623d02818b347c16881b491adc31a597d1045e09e2eea26472526018a",
+      "validator_estimate_display": "30 MB",
+      "processed_display": "30 MB",
+      "billed_display": "30 MB",
+      "started_uk": "2026-10-19T10:10:57+01:00",
+      "duration_ms": 563,
+      "job_reference_sha256": "9da2827956c0210b098926db56d5e703617f0ee482b8b1b993bb1afea0efcb91",
+      "status": "completed"
+    },
+    {
+      "name": "pilot",
+      "query_path": "sql/02_source_profile.sql",
+      "query_sha256": "43472a61ff7784f2eb66628bee54e83932f9035616aaf02c2763180a67d721bd",
+      "start_suffix": "20201101",
+      "end_suffix": "20201101",
+      "validator_estimate_display": "16.75 MB",
+      "processed_display": "16.75 MB",
+      "billed_display": "17 MB",
+      "started_uk": "2026-10-19T10:15:25+01:00",
+      "duration_ms": 1653,
+      "job_reference_sha256": "64d3c5b6929fe293fce7074875ef3b3eba23a3317cdfa1d38eabf41715f28c8a",
+      "status": "completed"
+    },
+    {
+      "name": "full_profile",
+      "query_path": "sql/02_source_profile.sql",
+      "query_sha256": "ae35b12521f86e9bf2ff959466a7bae8e65d783f55596b12724c3b3051429352",
+      "start_suffix": "20201101",
+      "end_suffix": "20210131",
+      "validator_estimate_display": "2.57 GB",
+      "processed_display": "2.57 GB",
+      "billed_display": "2.57 GB",
+      "started_uk": "2026-10-19T10:17:20+01:00",
+      "duration_ms": 7413,
+      "job_reference_sha256": "84912230a16cc47a89a21495708b338ca2758e61cfc93f2acc57fea8820f1d6f",
+      "status": "completed"
+    }
+  ],
+  "output": {
+    "path": "reports/evidence/source-profile-20201101-20210131.json",
+    "sha256": "19e3cf830e90c453c3c3633052f30ea66440e83e3f05a3423f842d7f6d64cc3b"
+  },
+  "reconciliation_checks": {
+    "event_type_total_matches": true,
+    "device_total_matches": true,
+    "currency_purchase_total_matches": true,
+    "transaction_id_buckets_match": true,
+    "all_expected_source_dates_observed": true,
+    "purchase_event_breakdown_matches": true
+  },
+  "milestone_1_status": "in_progress",
+  "metric_contract_frozen": false
+}

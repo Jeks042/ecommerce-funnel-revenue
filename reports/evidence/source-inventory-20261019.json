@@ -1,0 +1,109 @@
+{
+  "daily_tables": 92,
+  "first_date": "2020-11-01",
+  "last_date": "2021-01-31",
+  "expected_dates": 92,
+  "missing_dates": [],
+  "schema_coverage": [
+    {
+      "field_path": "device.category",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.purchase_revenue",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.purchase_revenue_in_usd",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.refund_value",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.shipping_value",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.tax_value",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.transaction_id",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "event_date",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "event_name",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "event_params.key",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "event_params.value.int_value",
+      "data_type": "INT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "event_params.value.string_value",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "event_timestamp",
+      "data_type": "INT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_id",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_revenue",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_revenue_in_usd",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.quantity",
+      "data_type": "INT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "traffic_source.medium",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "traffic_source.source",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "user_pseudo_id",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    }
+  ]
+}

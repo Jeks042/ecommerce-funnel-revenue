@@ -1,21 +1,25 @@
 # Project progress
 
-Updated: 24 September 2026.
+Updated: 19 October 2026.
 
-## Completed setup
+The project has started. All six [GitHub milestones](https://github.com/Jeks042/ecommerce-funnel-revenue/milestones) are linked to their existing issues. Milestone 1 is in progress; milestones 2–6 depend on its measurement decisions.
 
-- Public repository and six dependency-ordered milestone issues created.
-- Business brief, source access plan, draft metric contract and workflow documented.
-- Data-handling boundaries recorded.
+## What has been done
 
-## Current state
+- Confirmed access through an existing BigQuery Sandbox project, without enabling paid billing.
+- Verified all 92 daily tables and 20 selected field/type entries.
+- Ran a one-day pilot and then the complete 1 November 2020–31 January 2021 source profile.
+- Reconciled event/device totals to 4,295,584 events and purchase/currency totals to 5,692 purchase events.
+- Published the [source audit](source_audit.md), [aggregate evidence](evidence/source-profile-20201101-20210131.json), [SQL](../sql/02_source_profile.sql) and [execution instructions](../docs/source_audit_workflow.md).
 
-All six analytical milestones are open. BigQuery access, source profiling, SQL marts and dashboard development have not begun. No results are claimed.
+## What the checks mean
+
+The source is available for further investigation, but counting decisions remain. Purchase events include missing and repeated order identifiers; native and item money fields do not consistently agree. Some sessions cross dates and many funnel steps share timestamps. Those issues affect a credible funnel and revenue comparison.
+
+The [metric contract](../docs/metric_contract.md) remains a draft. No funnel results, validated order counts or accepted revenue measures have been published. Milestone 1 stays open.
 
 ## Resume here
 
-Start [milestone 1](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/1). Confirm a BigQuery project and source access, inspect metadata, then dry-run a date-bounded profiling query with a scan cap. Review session identity and purchase consistency before freezing the [metric contract](../docs/metric_contract.md).
+Continue [issue #1](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/1): inspect daily event coverage, repeated/conflicting purchases, monetary-field reconciliation and available ordering fields. Quantify exclusion, tie and boundary sensitivities. Agree the supported measures and freeze the contract before beginning the SQL marts in issue #2.
 
-First-session target: an access decision, small-slice source audit and documented go/no-go for the SQL foundation. Record any missing prerequisite and continue independent documentation work.
-
-See the [workflow](../docs/workflow.md) for the complete sequence.
+At every milestone, give the project briefing: work completed, findings, decisions and reasons, limits and next step. See the [workflow](../docs/workflow.md) for the full sequence.

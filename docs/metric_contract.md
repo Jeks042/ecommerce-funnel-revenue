@@ -27,3 +27,16 @@
 - Which comparisons survive exclusions and date-mix checks?
 
 Record approved answers, aggregate impacts and SQL check references before labelling this contract frozen.
+
+## 19 October source checks: decisions still to resolve
+
+The [full-period audit](../reports/source_audit.md) has run; the contract is still **not frozen**.
+
+- **Sessions:** retain the composite key. There are 360,129 observed groups, with 845 crossing dates and 5,272 lacking a start event. Quantify boundary exclusions and a defensible start-date assignment; a one-day pilot cannot test those boundaries.
+- **Ordering:** 25,101 session/timestamp groups contain different funnel steps. Use strict greater-than ordering as a candidate primary rule and a separately labelled tie sensitivity. Verify whether another source field genuinely establishes order; do not manufacture it from event names.
+- **Orders:** 906 purchase events have unusable IDs and 326 nonplaceholder IDs repeat. Fifteen IDs have identity conflicts and fifteen have monetary conflicts; overlap is not yet established. Investigate the full purchase payload before selecting deduplication or quarantine rules. Purchase events remain separate from validated orders.
+- **Money:** native revenue is absent on 450 purchases and 1,001 event/item comparisons differ by more than $0.01. Reconcile populations, tax, partial items and conflicting transactions before naming an accepted revenue measure. Do not replace missing native revenue with the populated USD field without validation. No average order value is approved.
+- **Acquisition:** the current audit checks `traffic_source` first-user source/medium. These fields are not session acquisition or a basis for channel return claims. Decide the supported segment label before implementation.
+- **Daily consistency:** the pilot's four add-to-cart events and 127 checkout starts require a daily event-coverage review. Event totals alone do not measure ordered progression.
+
+These are working decisions and tests to perform, not approved headline definitions. Record their aggregate impact before accepting milestone 1.

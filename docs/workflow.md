@@ -2,6 +2,10 @@
 
 ## Milestones and acceptance
 
+The six stages are also tracked as [GitHub milestones](https://github.com/Jeks042/ecommerce-funnel-revenue/milestones), each linked to its existing issue. They have no fixed due dates. Delivery follows the evidence and dependencies.
+
+At each stage, the project briefing will explain in plain language what was done, what was learned, which decisions were made and why, what remains uncertain, and what the next stage requires. Record substantive decisions in the issue and decision log. Keep an issue open when its acceptance criteria are unmet; a successful query alone does not complete an analytical stage.
+
 ### 1. Validate GA4 access, source quality and metric definitions
 
 [Issue #1](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/1) · Dependency: None
@@ -49,6 +53,8 @@ Deliverables: docs/experiment_proposal.md, reports/opportunity_assessment.md and
 Make the analytical decision, supporting evidence and measurement limitations clear to stakeholders.
 
 Acceptance: A stakeholder can trace each recommendation to reconciled evidence. Selected filters and totals agree with SQL, report interactions work, and only approved aggregates are embedded in public artifacts.
+
+Review Power BI formatting with the report owner before publishing screenshots. Use owner-approved captures as supplied, preserving the complete report canvas. A single executive overview can introduce the report, with the full report linked for exploration.
 
 Deliverables: dashboard/, reports/decision_memo.md and reports/milestone_5_findings.md.
 

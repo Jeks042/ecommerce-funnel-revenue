@@ -1,0 +1,29 @@
+{
+  "coverage": {"events":4295584,"source_days":92,"event_dates":92,"date_suffix_mismatch":0,"missing_timestamps":0,"utc_date_differs_from_event_date":0,"unusable_user_events":0,"unusable_session_id_events":0,"ineligible_key_events":0,"repeated_session_parameter_events":0,"wrong_session_parameter_type_events":0,"repeated_currency_parameter_events":0},
+  "event_coverage": [
+    {"event_name":"add_payment_info","events":13899,"ineligible_key_events":0},
+    {"event_name":"add_shipping_info","events":19722,"ineligible_key_events":0},
+    {"event_name":"add_to_cart","events":58543,"ineligible_key_events":0},
+    {"event_name":"begin_checkout","events":38757,"ineligible_key_events":0},
+    {"event_name":"click","events":1446,"ineligible_key_events":0},
+    {"event_name":"first_visit","events":257462,"ineligible_key_events":0},
+    {"event_name":"page_view","events":1350428,"ineligible_key_events":0},
+    {"event_name":"purchase","events":5692,"ineligible_key_events":0},
+    {"event_name":"scroll","events":493072,"ineligible_key_events":0},
+    {"event_name":"select_item","events":31007,"ineligible_key_events":0},
+    {"event_name":"select_promotion","events":9450,"ineligible_key_events":0},
+    {"event_name":"session_start","events":354970,"ineligible_key_events":0},
+    {"event_name":"user_engagement","events":1058721,"ineligible_key_events":0},
+    {"event_name":"view_item","events":386068,"ineligible_key_events":0},
+    {"event_name":"view_item_list","events":71,"ineligible_key_events":0},
+    {"event_name":"view_promotion","events":190104,"ineligible_key_events":0},
+    {"event_name":"view_search_results","events":26172,"ineligible_key_events":0}
+  ],
+  "session_checks": {"eligible_composite_sessions":360129,"cross_event_date_sessions":845,"sessions_without_start":5272,"sessions_with_repeated_start":105,"sessions_with_multiple_devices":0,"sessions_with_multiple_first_user_contexts":0},
+  "ordering_checks": {"tied_step_timestamp_groups":25101,"tied_different_step_groups":25101},
+  "session_ids_shared_by_users":9906,
+  "purchase_checks": {"purchase_events":5692,"unusable_transaction_events":906,"missing_or_invalid_currency_events":0,"missing_purchase_revenue_events":450,"missing_usd_revenue_events":0,"purchase_events_without_items":2,"purchase_events_with_missing_item_revenue":448,"purchase_events_with_missing_item_quantity":448,"event_item_revenue_mismatches":1001,"purchase_events_with_tax":5242,"purchase_events_with_shipping":0,"refund_events":0},
+  "transaction_checks": {"distinct_nonplaceholder_transaction_ids":4451,"repeated_transaction_ids":326,"transaction_ids_with_identity_conflicts":15,"transaction_ids_with_monetary_conflicts":15,"events_with_nonplaceholder_transaction_id":4786},
+  "currency_checks": [{"currency":"USD","purchase_events":5692,"events_with_revenue":5242,"candidate_event_revenue":362165,"candidate_item_revenue":362110}],
+  "device_coverage": [{"device_category":"desktop","events":2498330},{"device_category":"mobile","events":1704069},{"device_category":"tablet","events":93185}]
+}
