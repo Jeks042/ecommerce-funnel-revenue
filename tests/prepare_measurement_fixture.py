@@ -7,6 +7,7 @@ SOURCE='`bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*`'
 
 
 def prepare():
+    (ROOT/'private').mkdir(parents=True,exist_ok=True)
     # One ordinary journey; a replay straddling checkout; two orders in one visit;
     # missing ID; item disagreement; no purchase; timestamp ties; cross-midnight;
     # a >24h journey; and a conflicting ID whose other observation is in January.

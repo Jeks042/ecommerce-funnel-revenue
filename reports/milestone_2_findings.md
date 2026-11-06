@@ -34,7 +34,7 @@ The unresolved purchases remain visible. The selected value does not become tota
 
 Twenty native warehouse assertions pass. They check the separate grains, joins, event and exclusion ledgers, item multiplicity, selected values and ordered-step populations. Each model was then recomputed with a read-only query: all eight row counts and content checksums match the stored tables, including source ingestion. This verifies repeatability without writing a second warehouse copy.
 
-The materialized synthetic test uses 94 events across eighteen journeys. It covers multi-item and duplicate-row baskets, repeated purchases, missing/repeated visit keys, conflicting currencies, metadata changes, tied timestamps, out-of-order steps and cross-date visits. Its 66 aggregate checks pass; the source result passes 995 checks against the accepted measurement evidence. All 31 local regression tests pass.
+The materialized synthetic test uses 94 events across eighteen journeys. It covers multi-item and duplicate-row baskets, repeated purchases, missing/repeated visit keys, conflicting currencies, metadata changes, tied timestamps, out-of-order steps and cross-date visits. Its 66 aggregate checks pass; the source result passes 995 checks against the accepted measurement evidence. All 32 local regression tests pass.
 
 The GitHub workflow validates saved evidence and checks rendering without warehouse credentials. It retains a small validation artifact and has no commit step. Current SQL/renderer hashes and the regenerated fixture must match the native execution receipt, so changing the code cannot silently reuse stale evidence. Workflow execution evidence is recorded in [issue #2](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/2) and [Actions](https://github.com/Jeks042/ecommerce-funnel-revenue/actions/workflows/validate.yml).
 
@@ -42,7 +42,7 @@ The GitHub workflow validates saved evidence and checks rendering without wareho
 
 The build uses a dedicated private dataset and fails if a target table already exists. Each source-backed statement and read-only recomputation has its scan estimate reviewed individually against the existing 3 GiB ceiling. The initial source scan displayed 2.57 GB; paid billing was not enabled. The free Sandbox quota remains the cost boundary, with no claimed per-job byte cap.
 
-The eight physical tables are unpartitioned. Their observed expiry dates are **5 January 2027**, reflecting Sandbox's 60-day retention. Historical date partitions could expire immediately under that policy, so they are unsuitable for retaining this 2020–21 sample. SQL and reviewed aggregate evidence remain in the repository for reproduction; raw identifiers stay in the warehouse.
+The eight physical tables are unpartitioned. Their observed expiry dates are **5 January 2027**, reflecting Sandbox's 60-day retention. Historical date partitions could expire immediately under that policy, so they are unsuitable for retaining this 2020â€“21 sample. SQL and reviewed aggregate evidence remain in the repository for reproduction; raw identifiers stay in the warehouse.
 
 This stage establishes the analytical foundation. It does not yet identify a device problem, a product intervention or a revenue opportunity. The source remains historical and obfuscated, with the tracking and purchase limits recorded in the [measurement definitions](../docs/metric_contract.md).
 

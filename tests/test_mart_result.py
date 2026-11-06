@@ -2,7 +2,10 @@ from copy import deepcopy
 import json
 from pathlib import Path
 import sys
+import tempfile
 import unittest
+from unittest.mock import patch
+import prepare_measurement_fixture
 from check_mart_result import check
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -16,6 +19,18 @@ class MartEvidenceTests(unittest.TestCase):
 
     def test_native_fixture_evidence(self):
         check(self.r)
+
+    def test_fixture_runs_in_a_fresh_checkout(self):
+        private=(ROOT/'private').resolve();private.mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(prefix='fixture-clean-',dir=private) as folder:
+            fresh=Path(folder).resolve()
+            self.assertTrue(fresh.is_relative_to(private))
+            (fresh/'sql').mkdir()
+            (fresh/'sql/07_measurement_gate.sql').write_bytes((ROOT/'sql/07_measurement_gate.sql').read_bytes())
+            self.assertFalse((fresh/'private').exists())
+            with patch.object(prepare_measurement_fixture,'ROOT',fresh):
+                prepare_measurement_fixture.prepare()
+            self.assertTrue((fresh/'private/measurement_fixture.sql').is_file())
 
     def test_dropped_item_occurrence_is_rejected(self):
         next(x for x in self.r['fingerprints'] if x['model']=='fact_transaction_items')['row_count']-=1

@@ -307,7 +307,7 @@
     "fixture_checks": 66,
     "source_checks_against_accepted_gate": 995,
     "reproduction_and_inventory_checks": 21,
-    "local_regression_tests": 31,
+    "local_regression_tests": 32,
     "model_row_counts_and_checksums_match": 8,
     "source_aggregates_match_downloads": true
   },
