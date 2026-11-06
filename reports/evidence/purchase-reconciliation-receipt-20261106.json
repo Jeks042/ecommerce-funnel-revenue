@@ -1,0 +1,63 @@
+{
+  "source": "bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*",
+  "start_suffix": "20201101",
+  "end_suffix": "20210131",
+  "capture_method": "Aggregate Console JSON display, parsed without display wrapping and matched to saved JSON. No event rows exported.",
+  "runs": [
+    {
+      "kind": "synthetic_fixture",
+      "started_utc": "2026-11-05T23:59:04Z",
+      "duration_ms": 380,
+      "bytes_display": "0 B",
+      "query_sha256": "13f0fabe8f32d23f8a8baf6c8cee1c73543f8bd2c34e0afa6d194120e8fc1df8",
+      "job_reference_sha256": "e61364783fa769f2d762c89abc5ec5ba2af7167c9ab574a652e62afb79d7da6b",
+      "status": "completed",
+      "location": "US"
+    },
+    {
+      "kind": "source_reconciliation",
+      "started_utc": "2026-11-06T00:00:47Z",
+      "duration_ms": 4574,
+      "bytes_display": "2.42 GB",
+      "query_sha256": "d167920b248df701d5e8ef6c12e5fbf566295ad831f2c2941f0cd7a3ea1845a6",
+      "job_reference_sha256": "35015b630dcca14ae7e6b11fafec562c97cd566c17c5d5fd580aebbb9e68c17c",
+      "status": "completed",
+      "location": "US"
+    }
+  ],
+  "cost_control": {
+    "sandbox_observed": true,
+    "paid_billing_enabled": false,
+    "per_job_cap_confirmed": false,
+    "review_ceiling_gib": 3,
+    "source_validator_estimate_display": "2.42 GB"
+  },
+  "fixture_checks": {
+    "scalar_expectations": 13,
+    "bucket_expectations": 4,
+    "all_passed": true
+  },
+  "aggregate_checks": {
+    "identifier_partition": true,
+    "event_partition": true,
+    "group_partition": true,
+    "bucket_event_partition": true,
+    "conflict_overlap": true,
+    "difference_partition": true,
+    "monetary_population": true,
+    "tax_match_population": true,
+    "unique_buckets": true,
+    "nonnegative_counts": true
+  },
+  "baseline_comparisons": {
+    "purchase_events": true,
+    "unusable_ids": true,
+    "usable_id_groups": true,
+    "missing_native_revenue": true,
+    "native_item_mismatches": true
+  },
+  "saved_result_matches_console": true,
+  "output_sha256": "09cf0acf87238a5ca74b464b6cc15311dcbd0e8c73227af2219f28aad8539116",
+  "metric_contract_frozen": false,
+  "milestone_1_complete": false
+}

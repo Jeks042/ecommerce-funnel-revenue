@@ -4,13 +4,15 @@
 
 Which parts of the shopping journey should a product team investigate first, and what evidence would justify an experiment?
 
-I am examining how shoppers move from viewing a product to making a purchase, which differences deserve closer investigation, and what a product team should test next. BigQuery SQL will provide the analytical tables and Power BI will present the findings.
+I am examining how shoppers move from viewing a product to making a purchase, which differences deserve closer investigation, and what a product team should test next. BigQuery SQL will provide the analytical tables. Python analysis and charts will present the findings in an illustrated commercial report.
 
 The first checks found missing and repeated purchase identifiers, incomplete money fields and events that share a timestamp. Those details affect how visits, orders and progression can be counted. [Read the source audit](reports/source_audit.md) for the observations and the decisions still to make. There are no accepted funnel or revenue findings yet.
 
+The [purchase follow-up](reports/purchase_reconciliation.md) separates conflicting records from consistent repeats and examines the dates with missing order identifiers. The counting rules remain under review before building funnel results.
+
 ## Planned workflow
 
-Source audit and metric contract → event/session/purchase SQL marts → ordered funnel analysis → opportunity scenarios and experiment proposal → Power BI and decision memo → independent reproduction.
+Source audit and metric contract → event/session/purchase SQL marts → ordered funnel analysis → opportunity scenarios and experiment proposal → Python charts and decision memo → independent reproduction.
 
 The source is Google's historical, obfuscated e-commerce sample for November 2020–January 2021. It supports an investigation of recorded shopping activity; it does not represent current trading performance. Milestone 1 must establish which measures are reliable enough to use.
 
@@ -20,7 +22,7 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 2. [Build reproducible event, session and purchase SQL marts](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/2) — planned
 3. [Diagnose conversion funnels and segment differences](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/3) — planned
 4. [Prioritise revenue opportunities and propose an experiment](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/4) — planned
-5. [Build a reconciled Power BI report and decision memo](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/5) — planned
+5. [Build Python charts and a commercial decision memo](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/5) — planned
 6. [Reproduce, review and publish the completed case study](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/6) — planned
 
 [View the six GitHub milestones](https://github.com/Jeks042/ecommerce-funnel-revenue/milestones). Each has an issue recording its work, acceptance checks and dependencies.
@@ -33,6 +35,8 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 - [Delivery workflow and acceptance gates](docs/workflow.md)
 - [Current progress and next session](reports/progress.md)
 - [Source audit and current decisions](reports/source_audit.md)
+- [Purchase-reconciliation findings](reports/purchase_reconciliation.md)
+- [Python chart and report plan](docs/chart_specification.md)
 - [Decision log](docs/decision_log.md)
 
 ## Planned outputs
@@ -43,9 +47,10 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 | sql/ | BigQuery profiling, staging, marts and analytical queries |
 | tests/ | Synthetic edge cases and reconciliation checks |
 | reports/ | Validated aggregate findings and decision records |
-| dashboard/ | Power BI model, measures and presentation evidence |
+| src/ | Python analysis and chart-generation code |
+| reports/figures/ | Reviewed PNG and SVG charts generated from approved aggregates |
 
-Source profiling SQL and its reviewed aggregate evidence are available. Analytical tables, funnel results and the dashboard will follow their milestone checks.
+Source profiling SQL and its reviewed aggregate evidence are available. Analytical tables, funnel results and the Python report will follow their milestone checks.
 
 ## Evidence boundaries
 

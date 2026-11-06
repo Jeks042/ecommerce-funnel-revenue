@@ -1,0 +1,12 @@
+{
+  "purchase_checks":{"purchase_events":5692,"unusable_id_events":906,"null_id_events":23,"blank_id_events":0,"placeholder_id_events":883,"non_usd_or_unknown_currency_events":0,"missing_native_revenue_events":450,"missing_usd_revenue_events":0,"empty_item_events":2,"partial_or_missing_item_value_events":448,"comparable_native_item_events":5242,"native_item_mismatch_events":1001,"native_above_item_events":519,"native_below_item_events":482,"mismatches_matching_observed_tax":7,"missing_tax_events":450,"missing_shipping_events":5692},
+  "transaction_checks":{"nonplaceholder_id_groups":4451,"repeated_id_groups":326,"events_with_nonplaceholder_id":4786,"identity_conflict_groups":15,"summary_conflict_groups":15,"overlapping_conflict_groups":15,"union_conflict_groups":15,"different_financial_payload_groups":300,"repeated_id_groups_across_dates":15,"repeated_id_groups_across_timestamps":326},
+  "diagnostic_buckets":[
+    {"diagnostic_bucket":"additional_financial_payload_difference","id_groups":285,"purchase_events":575},
+    {"diagnostic_bucket":"identity_or_summary_conflict","id_groups":15,"purchase_events":33},
+    {"diagnostic_bucket":"repeated_consistent_financial_payload","id_groups":26,"purchase_events":53},
+    {"diagnostic_bucket":"single_observation","id_groups":4125,"purchase_events":4125}
+  ],
+  "daily_purchase_checks":{"days_with_purchases":92,"days_without_usable_ids":11,"days_with_missing_native_revenue":68,"first_purchase_date":"20201101","last_purchase_date":"20210131"},
+  "dates_without_usable_ids":["20201101","20201102","20201103","20201104","20201105","20201106","20201107","20201108","20201109","20201110","20210131"]
+}

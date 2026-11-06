@@ -46,17 +46,17 @@ Acceptance: A reviewer can recompute all scenarios and see which inputs are obse
 
 Deliverables: docs/experiment_proposal.md, reports/opportunity_assessment.md and reports/milestone_4_findings.md.
 
-### 5. Build a reconciled Power BI report and decision memo
+### 5. Build Python charts and a commercial decision memo
 
 [Issue #5](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/5) · Dependency: #4
 
 Make the analytical decision, supporting evidence and measurement limitations clear to stakeholders.
 
-Acceptance: A stakeholder can trace each recommendation to reconciled evidence. Selected filters and totals agree with SQL, report interactions work, and only approved aggregates are embedded in public artifacts.
+Acceptance: A stakeholder can trace each recommendation and chart to reconciled evidence. Python transformations and chart values agree with SQL, figures can be regenerated from documented inputs, and only approved aggregates appear in public artifacts.
 
-Review Power BI formatting with the report owner before publishing screenshots. Use owner-approved captures as supplied, preserving the complete report canvas. A single executive overview can introduce the report, with the full report linked for exploration.
+Use Matplotlib for layout and annotations and Seaborn for statistical comparisons. Deliver an illustrated commercial report with a small set of purposeful charts, legible labels, explicit populations and uncertainty where applicable. Review the figure layout before portfolio publication. Generate chart assets directly from code; no dashboard screenshot step is required.
 
-Deliverables: dashboard/, reports/decision_memo.md and reports/milestone_5_findings.md.
+Deliverables: src/plotting/, reports/figures/, reports/commercial_report.md, reports/decision_memo.md, docs/chart_specification.md and reports/milestone_5_findings.md.
 
 ### 6. Reproduce, review and publish the completed case study
 

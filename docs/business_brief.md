@@ -13,7 +13,7 @@ A product manager and e-commerce lead need to decide which shopping-journey issu
 
 ## Scope
 
-Use the historical GA4 sample, BigQuery for the analytical foundation, and Power BI for reporting. Preserve event, session, transaction and item grains separately. Support an executive decision memo with source audits, SQL assertions and reproducible aggregate outputs.
+Use the historical GA4 sample, BigQuery SQL for the analytical foundation, and Python with Matplotlib and Seaborn for analysis and reporting. Preserve event, session, transaction and item grains separately. Support an illustrated commercial report and executive decision memo with source audits, SQL assertions, reproducible aggregate outputs and charts that can be regenerated from those outputs.
 
 Do not infer customer lifetime value from a short anonymous observation window, advertising return without spend data, or profit without costs. Observational differences are not causal effects. Production tracking changes and running an actual experiment are outside this study.
 

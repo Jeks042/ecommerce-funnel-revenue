@@ -40,3 +40,9 @@ The [full-period audit](../reports/source_audit.md) has run; the contract is sti
 - **Daily consistency:** the pilot's four add-to-cart events and 127 checkout starts require a daily event-coverage review. Event totals alone do not measure ordered progression.
 
 These are working decisions and tests to perform, not approved headline definitions. Record their aggregate impact before accepting milestone 1.
+
+## 6 November purchase follow-up
+
+The [purchase reconciliation](../reports/purchase_reconciliation.md) establishes that the fifteen identity and fifteen summary conflict groups overlap completely. Another 285 repeated-ID groups differ in stored e-commerce/item details while matching the compared identity and monetary summaries; this comparison is sensitive to item metadata and array order. Twenty-six repeated groups have consistent compared payloads, but still need review before being treated as duplicates.
+
+All recorded purchases on 1–10 November 2020 and 31 January 2021 lack usable identifiers. A valid-ID-only population therefore has systematic date exclusions. Quantify those exclusions and their effect on comparisons before freezing order or revenue definitions. Only seven of the 1,001 observed native/item differences numerically match the tax field; this does not establish tax as the explanation. Milestone 1 remains open.

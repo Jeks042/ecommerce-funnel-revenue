@@ -20,7 +20,7 @@ If access or source quality is insufficient, document the blocker and revise sco
 
 ## Publication
 
-Raw events and row-level extracts stay outside Git. Publish reviewed aggregates and small synthetic fixtures only. Check dataset use terms before redistribution; documentation licensing is not a blanket licence for every dataset artifact. Review embedded Power BI data before publication.
+Raw events and row-level extracts stay outside Git. Publish reviewed aggregates and small synthetic fixtures only. Check dataset use terms before redistribution; documentation licensing is not a blanket licence for every dataset artifact. Review notebook outputs, chart labels, embedded report data and metadata before publication.
 
 ## Source audit output
 

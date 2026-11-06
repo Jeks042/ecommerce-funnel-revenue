@@ -27,3 +27,9 @@ The full profile covers 4,295,584 events and identifies missing/repeated purchas
 ## 19 October 2026 — Report presentation
 
 Preserve the report owner's preference to review Power BI formatting and provide or approve captures before public use. Use an approved executive overview as the case-study preview, with the complete report linked; do not publish automated desktop captures during report development.
+
+## 5 November 2026 — Python analysis and visual reporting
+
+Replace the planned Power BI reporting stage with Python analysis and charts using Matplotlib and Seaborn. Retain BigQuery SQL, all measurement gates and the six-stage dependency order. Deliver reproducible figures, an illustrated commercial report and a decision memo. This broadens the portfolio's analytical presentation while preserving consistent quality checks. Earlier Power BI entries describe the original plan and are superseded by this decision.
+
+Continue the unfinished source-validation stage: purchase reconciliation is the next evidence task. Do not skip to building analytical tables or drawing conversion charts while counting rules remain unresolved.

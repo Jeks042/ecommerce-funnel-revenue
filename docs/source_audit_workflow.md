@@ -28,3 +28,9 @@ Item comparison counts use a $0.01 tolerance on events with both native purchase
 The query measures mixed funnel-step timestamp groups rather than assuming their order. Cross-date sessions and absent start events are diagnostics, not automatic exclusion rules. Acquisition fields checked here describe first-user context, not session acquisition or causal marketing attribution.
 
 Successful execution of the profile is not acceptance of the metric contract. See the [source audit](../reports/source_audit.md) for the outstanding work.
+
+## Focused purchase follow-up
+
+After the broad profile, run [03_purchase_reconciliation.sql](../sql/03_purchase_reconciliation.sql) using the same fixed window and Sandbox/scan-review controls. First generate and run its native synthetic [fixture](../tests/README.md). The source query returns only aggregate partitions, conflict overlap and monetary-field diagnostics. Reconcile it to the previous purchase-event, missing-ID, native-revenue and difference counts; investigate any drift.
+
+The complete e-commerce/item payload comparison is order-sensitive and includes item metadata. It is an investigation flag, not a decision that a sale is duplicated or financially different. Do not use its diagnostic buckets as approved orders or revenue.
