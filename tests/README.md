@@ -19,3 +19,11 @@ Run `python tests/prepare_purchase_detail_fixture.py`. Execute the generated ign
 Export the result as local JSON, parse the outer row's `audit_json`, and save that inner object privately. Run `python tests/check_purchase_detail_result.py private/purchase_detail_fixture_result.json --expected private/purchase_detail_fixture_expected.json`. Run the same checker without `--expected` against `reports/evidence/purchase-detail-diagnostics-20261106.json` for the source result. It checks event/group partitions, nested candidate populations, daily device coverage and overlapping field/bucket reconciliation. See the [method](../docs/purchase_counting_review.md) and [receipt](../reports/evidence/purchase-detail-receipt-20261106.json).
 
 The credential-free regression suite also rejects dropped date/device coverage, inflated candidate populations, inconsistent field/bucket attribution and nonfinite diagnostic amounts. These checks validate evidence integrity; they do not certify real orders or sales.
+
+## Tracking, ordering and population sensitivity
+
+Run `python tests/prepare_tracking_fixture.py` and execute the generated `private/tracking_fixture.sql` after confirming its zero-byte estimate. It uses 78 synthetic events and checks expected chain levels and flags for 15 keyed journeys, plus an unkeyed journey. See the [method](../docs/tracking_timing_review.md) for the edge cases.
+
+Parse the downloaded result's inner `audit_json`, then run `python tests/check_tracking_result.py private/tracking_fixture_result.json --expected private/tracking_fixture_expected.json`. The native fixture passed 81 checks. Check the published source result with `python tests/check_tracking_result.py reports/evidence/tracking-timing-20261106.json`; it passes 58 checks, including nested chains, scope exclusions and daily/device coverage. The [receipt](../reports/evidence/tracking-timing-receipt-20261106.json) records execution and hashes.
+
+Regenerate the coverage summary using the command in the method document. The local regression suite also rejects dropped daily rows, broken start/edge partitions, strict chains larger than the tied sensitivity and unsupported ordering-field counts. No authenticated warehouse execution runs automatically on GitHub.

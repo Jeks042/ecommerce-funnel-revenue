@@ -39,3 +39,11 @@ Continue the unfinished source-validation stage: purchase reconciliation is the 
 Compare full item contents without treating array order as a change in the basket; preserve duplicate rows. The 285 further stored-detail differences comprise 264 metadata-changing groups and 21 order-only groups. Keep metadata-changing and customer/amount-conflicting groups outside a cautious candidate population rather than selecting a convenient first or last record.
 
 The candidate rule retains 4,172 identifier groups; 779 fail native/item amount agreement. Retained purchase events have markedly uneven monthly coverage. Publish this effect and keep raw-event counts separate from candidate groups. No headline orders, revenue, average order value or conversion results are approved. Continue daily tracking, ordering and session-boundary checks before freezing the contract. The SQL, aggregate evidence, native fixture and run receipt accompany the findings.
+
+## 6 November 2026 — Coverage before funnel interpretation
+
+The daily review identifies eighteen dates without cart events despite checkout/purchase activity. Use the full period for coverage diagnostics; justify a comparable date scope before interpreting cart-stage or device differences. Do not fill gaps with invented events or equate missing records with shopper abandonment.
+
+Use strict timestamp progression for the primary candidate and retain a separately labelled tie sensitivity. All mixed-step ties share one bundle and have no populated previous-event timestamp or server offset; those fields cannot resolve the observed ties. Preserve repeated steps and allow a later occurrence to complete the sequence. Session IDs remain identifiers, with analytical dates derived from observed timestamps under an explicit UTC policy.
+
+Publish the nested start/edge population sensitivities and avoid double-counting overlapping exclusions. Crossing midnight is an additional sensitivity, not an automatic data error. Three groups spanning over 24 hours and the linkage of candidate transactions to eligible visits remain to be reviewed. Milestone 1 stays open until scope and monetary definitions are accepted.

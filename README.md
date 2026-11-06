@@ -10,6 +10,8 @@ The first checks found missing and repeated purchase identifiers, incomplete mon
 
 The [purchase review](reports/purchase_detail_findings.md) now distinguishes changed promotion details, reordered baskets and conflicting purchase records. It also shows why excluding uncertain records affects some months much more than others. The counting rules remain under review before building funnel results.
 
+The [tracking review](reports/tracking_timing_findings.md) found eighteen dates with no recorded cart events while checkout and purchase activity continued. That limits what a full-period funnel can say about customer behaviour. The review also checks shared timestamps and visits at the edges of the sample.
+
 ## Planned workflow
 
 Source audit and metric contract → event/session/purchase SQL marts → ordered funnel analysis → opportunity scenarios and experiment proposal → Python charts and decision memo → independent reproduction.
@@ -37,6 +39,7 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 - [Source audit and current decisions](reports/source_audit.md)
 - [Purchase-reconciliation findings](reports/purchase_reconciliation.md)
 - [Purchase-detail findings and counting sensitivity](reports/purchase_detail_findings.md)
+- [Tracking coverage, timing and population findings](reports/tracking_timing_findings.md)
 - [Python chart and report plan](docs/chart_specification.md)
 - [Decision log](docs/decision_log.md)
 

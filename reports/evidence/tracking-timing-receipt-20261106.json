@@ -1,0 +1,82 @@
+{
+  "source": "bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*",
+  "start_suffix": "20201101",
+  "end_suffix": "20210131",
+  "capture_method": "Console local JSON download; parsed outer row and inner audit_json without changing values or filling nulls. No source event rows exported.",
+  "runs": [
+    {
+      "kind": "synthetic_fixture",
+      "canonical_sql_file": "private/tracking_fixture.sql",
+      "canonical_sql_sha256": "6e9a7d05fe08c42a3460cdd7b22d3b9b8a402804dc0a7ccbd5535e36126e15d2",
+      "started_utc": "2026-11-06T03:02:02Z",
+      "ended_utc": "2026-11-06T03:02:04Z",
+      "duration_ms": 1484,
+      "validator_estimate_display": "0 B",
+      "processed_display": "0 B",
+      "billed_display": "0 B",
+      "job_reference_sha256": "b62ddd9962cbb282ffa802497f5ccfe1698c677606ceaf7d9d9a9206accb3780",
+      "output_sha256": "60eb85ae38fc6cbf1f78eabfbb7d9d574801a7627d265d1ff2b626a35c053a4b",
+      "location": "US",
+      "status": "completed"
+    },
+    {
+      "kind": "source_tracking",
+      "canonical_sql_file": "sql/06_tracking_timing_sensitivity.sql",
+      "canonical_sql_sha256": "1b6a274cc84c40ca717355ab0a55c4b3425b28f18056043fc73ea376d3b4cc9f",
+      "started_utc": "2026-11-06T03:10:16Z",
+      "ended_utc": "2026-11-06T03:10:26Z",
+      "duration_ms": 9836,
+      "validator_estimate_display": "1.16 GB",
+      "processed_display": "1.16 GB",
+      "billed_display": "1.16 GB",
+      "job_reference_sha256": "52fe4b221ff6d098b5b1a4f7e913c5efbedd5560758a470f4bdcf162d2a7ab28",
+      "output_sha256": "ab8885923be6dbc5fdf794ea3e01a120024a595b4b8eb19ee4ec28c7dd7178c9",
+      "location": "US",
+      "status": "completed"
+    }
+  ],
+  "sql_provenance": "Canonical file hashes identify reproducible SQL. The source text was checked against the canonical SQL after whitespace normalization before clipboard paste; Console formatting can differ.",
+  "cost_control": {
+    "sandbox_observed": true,
+    "paid_billing_enabled": false,
+    "per_job_cap_confirmed": false,
+    "review_ceiling_gib": 3,
+    "display_sizes_are_rounded": true
+  },
+  "validation": {
+    "fixture_events": 78,
+    "keyed_fixture_journeys": 15,
+    "per_journey_failures": 0,
+    "fixture_checks_passed": 81,
+    "source_checks_passed": 58,
+    "local_regression_tests_passed": 17,
+    "baseline_comparisons": {
+      "total_events": true,
+      "source_days": true,
+      "key_exclusions": true,
+      "keyed_sessions": true,
+      "cross_date_sessions": true,
+      "missing_starts": true,
+      "repeated_starts": true,
+      "multiple_devices": true,
+      "multiple_first_user_contexts": true,
+      "mixed_timestamp_groups": true,
+      "add_to_cart_events": true,
+      "begin_checkout_events": true,
+      "purchase_events": true,
+      "view_item_events": true,
+      "session_start_events": true,
+      "page_view_events": true,
+      "usable_id_purchase_events": true,
+      "device_event_coverage": true,
+      "missing_id_dates": true,
+      "date_device_purchase_events": true
+    },
+    "saved_aggregates_match_console_exports": true
+  },
+  "python_version": "3.12.14",
+  "summary_script_sha256": "fa8e3619c134bbce99f7c31f4421b4211e4e78b9266fdb09ef64a4dd710b1e8d",
+  "summary_output_sha256": "e845f5e1e371d1769ff5f68e7ca9ea4e3ba7b07e5e155ab5a6ecfe2e8742372e",
+  "metric_contract_frozen": false,
+  "milestone_1_complete": false
+}

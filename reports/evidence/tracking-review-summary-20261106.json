@@ -1,0 +1,163 @@
+{
+  "grain": "Coverage counts are source events; scope counts are composite user/session groups. Purchase events are not orders.",
+  "days_without_cart_events": [
+    "20201102",
+    "20201103",
+    "20201104",
+    "20201105",
+    "20201106",
+    "20201107",
+    "20201108",
+    "20201109",
+    "20201110",
+    "20201111",
+    "20201112",
+    "20201113",
+    "20201114",
+    "20201115",
+    "20201121",
+    "20201122",
+    "20201123",
+    "20201124"
+  ],
+  "days_without_cart_events_count": 18,
+  "without_cart_days_with_checkout_and_purchase": 18,
+  "without_cart_day_totals": {
+    "events": 834219,
+    "page_view_events": 258771,
+    "start_events": 60800,
+    "view_events": 85077,
+    "cart_events": 0,
+    "checkout_events": 4728,
+    "purchase_events": 1071,
+    "usable_id_purchase_events": 618
+  },
+  "days_checkout_events_exceed_cart_events": [
+    "20201101",
+    "20201102",
+    "20201103",
+    "20201104",
+    "20201105",
+    "20201106",
+    "20201107",
+    "20201108",
+    "20201109",
+    "20201110",
+    "20201111",
+    "20201112",
+    "20201113",
+    "20201114",
+    "20201115",
+    "20201116",
+    "20201117",
+    "20201119",
+    "20201120",
+    "20201121",
+    "20201122",
+    "20201123",
+    "20201124",
+    "20201125",
+    "20210122",
+    "20210123"
+  ],
+  "days_without_usable_purchase_ids": [
+    "20201101",
+    "20201102",
+    "20201103",
+    "20201104",
+    "20201105",
+    "20201106",
+    "20201107",
+    "20201108",
+    "20201109",
+    "20201110",
+    "20210131"
+  ],
+  "monthly_event_coverage": [
+    {
+      "source_month": "202011",
+      "events": 1472712,
+      "page_view_events": 453904,
+      "start_events": 106585,
+      "view_events": 148639,
+      "cart_events": 7674,
+      "checkout_events": 9546,
+      "purchase_events": 2054,
+      "usable_id_purchase_events": 1542
+    },
+    {
+      "source_month": "202012",
+      "events": 1612725,
+      "page_view_events": 477520,
+      "start_events": 131836,
+      "view_events": 150458,
+      "cart_events": 35347,
+      "checkout_events": 18177,
+      "purchase_events": 2434,
+      "usable_id_purchase_events": 2340
+    },
+    {
+      "source_month": "202101",
+      "events": 1210147,
+      "page_view_events": 419004,
+      "start_events": 116549,
+      "view_events": 86971,
+      "cart_events": 15522,
+      "checkout_events": 11034,
+      "purchase_events": 1204,
+      "usable_id_purchase_events": 904
+    }
+  ],
+  "device_event_coverage": [
+    {
+      "device": "desktop",
+      "events": 2498330
+    },
+    {
+      "device": "mobile",
+      "events": 1704069
+    },
+    {
+      "device": "tablet",
+      "events": 93185
+    }
+  ],
+  "scope_waterfall": [
+    {
+      "scope": "all_keyed",
+      "sessions": 360129,
+      "excluded_since_previous": 0
+    },
+    {
+      "scope": "one_start",
+      "sessions": 354752,
+      "excluded_since_previous": 5377
+    },
+    {
+      "scope": "anchored_candidate",
+      "sessions": 354580,
+      "excluded_since_previous": 172
+    },
+    {
+      "scope": "anchored_candidate_interior",
+      "sessions": 349223,
+      "excluded_since_previous": 5357
+    }
+  ],
+  "additional_single_date_exclusion": 806,
+  "all_keyed_raw_purchase_chain_sensitivity": {
+    "view_session_denominator": 77020,
+    "strict_completion_sessions": 2778,
+    "ties_allowed_completion_sessions": 2834,
+    "additional_completion_sessions": 56
+  },
+  "interpretation": {
+    "zero_cart_days_establish_cause": false,
+    "checkout_above_cart_proves_tracking_failure": false,
+    "bundle_id_resolves_within_bundle_order": false,
+    "session_id_used_as_start_timestamp": false,
+    "raw_purchase_events_are_orders": false,
+    "metric_contract_frozen": false
+  },
+  "input_sha256": "ab8885923be6dbc5fdf794ea3e01a120024a595b4b8eb19ee4ec28c7dd7178c9"
+}
