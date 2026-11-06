@@ -27,3 +27,9 @@ Run `python tests/prepare_tracking_fixture.py` and execute the generated `privat
 Parse the downloaded result's inner `audit_json`, then run `python tests/check_tracking_result.py private/tracking_fixture_result.json --expected private/tracking_fixture_expected.json`. The native fixture passed 81 checks. Check the published source result with `python tests/check_tracking_result.py reports/evidence/tracking-timing-20261106.json`; it passes 58 checks, including nested chains, scope exclusions and daily/device coverage. The [receipt](../reports/evidence/tracking-timing-receipt-20261106.json) records execution and hashes.
 
 Regenerate the coverage summary using the command in the method document. The local regression suite also rejects dropped daily rows, broken start/edge partitions, strict chains larger than the tied sensitivity and unsupported ordering-field counts. No authenticated warehouse execution runs automatically on GitHub.
+
+## Final purchase/visit linkage and accepted scope
+
+See the [measurement-gate method](../docs/measurement_gate.md) for commands. `prepare_measurement_fixture.py` replaces SQL 07's source with 56 typed synthetic events across eleven journeys. Independent expected scope counts distinguish two orders from one buying visit, earliest from replay timing, and cross-month ID conflict from an eligible December transaction. The final native fixture passes 93 checks; the real aggregate passes 525; 268 comparisons to earlier audit evidence also pass. The full local regression suite contains 22 passing tests.
+
+Regenerate `reports/evidence/measurement-scope-20261106.json` using `src/build_measurement_summary.py` and compare it byte-for-byte. No source identifiers, credentials or full native job references are needed for these local checks.

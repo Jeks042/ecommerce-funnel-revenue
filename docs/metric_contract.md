@@ -1,64 +1,65 @@
-# Metric contract — draft
+# Measurement definitions — version 1
 
-**Not frozen.** Validate these definitions during milestone 1. Record changes and reasons before accepting milestone 2.
+Accepted on 6 November 2026 for analysis of recorded shopping journeys. The [acceptance report](../reports/milestone_1_findings.md) documents the evidence and the restricted go decision. This contract does not certify the sample as real sales or complete tracking.
 
-| Measure / object | Proposed definition and review requirement |
+## Period and eligible visits
+
+Use all 92 source days, 1 November 2020–31 January 2021, when qualifying transaction identifiers. Apply the analysis cohort **after** that qualification. A conflicting identifier must not become acceptable because its other observation falls outside the reporting month.
+
+The primary comparison period is **December 2020**, chosen because it is a complete calendar month without the zero-cart dates observed in November. It is a bounded historical comparison, not evidence that December tracking is complete or representative of other months. November and January remain coverage diagnostics. Do not combine them into a headline cart funnel or infer a trading trend from their differences.
+
+One visit is a composite `user_pseudo_id` / `ga_session_id` group. A usable user key is nonblank and not `<Other>` or `(not set)`. Extract the session parameter only if it occurs exactly once, contains an integer and is positive. Do not convert the ID into a start timestamp.
+
+Primary eligibility requires:
+
+- Exactly one `session_start`, at the first usable observed timestamp.
+- Usable positive event timestamps and agreement between UTC timestamp date, event date and source table suffix.
+- One device value and one first-user source/medium combination, retaining null as an explicit unknown value.
+- No event on either outer source date, 1 November or 31 January.
+- All observed events within one UTC date, with the first timestamp in December.
+
+UTC is an analytical convention verified against these records; no unverified shop timezone is asserted. Excluding cross-date groups is a conservative scope choice, not a claim that crossing midnight invalidates a GA4 session. Retain `anchored_interior` (allow cross-date groups) and `all_keyed` as separate sensitivity populations. Keep their counts and exclusions visible; do not pool their denominators.
+
+## Event and purchase treatment
+
+Retain source events at their original grain. Equal event names/timestamps do not establish duplicate events. Extract nested parameters and item summaries with correlated subqueries; never join every event to every item for event/session counting.
+
+One **qualified recorded transaction** is one nonplaceholder transaction-ID group passing the [complete purchase rule](purchase_counting_review.md) over all 92 days: one customer/session identity, currency/monetary summary, complete e-commerce payload, sorted complete-item multiset, observed purchase date and device; usable customer/session keys; and an unambiguous `USD` currency parameter. Sorting retains duplicate item rows. Reject conflicting groups in full. Do not choose a convenient first/last payload to resolve disagreement.
+
+For a qualified ID with repeated observations, count it once and use its **earliest** recorded purchase timestamp for the primary chain. A replay after checkout cannot manufacture a new conversion. Keep latest-observation timing as a diagnostic sensitivity. Count several qualified IDs in one visit as several transactions but only one buying visit. Missing-ID and rejected-ID events remain separate unresolved outcomes, including visits that contain both qualified and unresolved purchases. Do not silently recode those visits as known nonbuyers.
+
+## Measures and denominators
+
+| Measure | Definition |
 |---|---|
-| Session key | Composite user_pseudo_id and extracted ga_session_id; the latter alone is not assumed unique. Quantify missing keys separately. |
-| Event grain | One retained source event under a documented duplicate policy. Matching timestamps and event names alone do not establish duplicates. |
-| Session date | Approved session-start and timezone policy; distinguish source event date from UTC timestamp and audit cross-date sessions. |
-| Primary funnel | Ordered view_item → add_to_cart → begin_checkout → purchase in the same eligible session. Select each step after the preceding selected step. Resolve ties only using fields actually available; otherwise report ambiguity and sensitivity. |
-| Entry population | Eligible sessions with view_item. This differs from all sessions. Item identity need not persist across steps unless a separately validated item-level funnel is adopted. |
-| Step conversion | Sessions reaching the next ordered step divided by sessions reaching its preceding ordered step. Publish counts and exclusions. |
-| Overall session conversion | Eligible sessions with a valid purchase divided by all eligible sessions, independently of the ordered funnel. |
-| Orders | Valid distinct transactions after deduplication/conflict rules; never item row counts. Quarantine missing or conflicting IDs for sensitivity review. |
-| Revenue | Select a supported purchase-level field and currency policy after reconciliation. State refund, tax and shipping coverage before naming gross/net metrics. |
-| Average order value | Approved purchase revenue divided by valid orders from the same scope. |
-| Revenue per session | Approved revenue attributable to eligible sessions divided by those sessions; reconcile unmatched purchases separately. |
-| Segments | Device and observed acquisition context with explicit session-grain assignment, coverage and unknowns. Observed source fields do not imply causal attribution. |
+| Eligible visits | Count of primary eligible composite groups, including visits with no product-view event. |
+| Product-view entries | Eligible visits with at least one usable `view_item` timestamp. This is the funnel denominator. |
+| Ordered cart / checkout | From the earliest view, choose the earliest cart strictly later, then the earliest checkout strictly later than that cart. Repeated steps can complete the chain. |
+| Ordered recorded purchase | At least one qualified transaction's earliest purchase timestamp strictly after the selected checkout, in the same eligible visit. Count each visit once. |
+| Step progression | Next selected-step visit count / preceding selected-step visit count. A zero denominator produces unavailable, not zero. |
+| Entry-to-purchase progression | Ordered recorded-purchase visits / product-view entry visits. |
+| Recorded buying-visit share | Eligible visits with at least one qualified transaction / all eligible visits, independent of whether the full funnel is observed. This is not total true conversion. |
+| Qualified transaction count | Distinct qualified IDs belonging to eligible visits, independent of funnel completion. Label as recorded transactions, not verified sales. |
+| Unresolved purchase coverage | Missing-ID and rejected-ID event counts, affected visits and visits containing both qualified and unresolved records. Publish alongside the above measures. |
 
-## Acceptance questions
+The chain is a visit-level progression measure. It does not require the same product at every step and does not establish that a product was abandoned. Do not infer within-timestamp order from event names, array position or bundle ID. Run the equivalent `>=` chain as a labelled sensitivity; available source fields cannot resolve the observed ties. Raw-purchase-event completion remains a separate recording diagnostic and does not inherit the qualified-ID definition.
 
-- Can repeated parameters and item arrays be extracted without multiplying events or revenue?
-- How are repeated steps, multiple purchases and partially observed sessions handled?
-- Are window-edge sessions censored, and what does boundary sensitivity change?
-- Which monetary fields reconcile, and which conflicts remain because of obfuscation?
-- What minimum segment sizes and uncertainty methods will be used?
-- Which comparisons survive exclusions and date-mix checks?
+## Money
 
-Record approved answers, aggregate impacts and SQL check references before labelling this contract frozen.
+The only supported monetary summary is **recorded purchase value (USD), item-agreeing selected subset**: sum each qualified ID once when native purchase revenue is finite and nonnegative, the item array is nonempty, every item revenue is finite/present and the native/item sum differs by at most $0.01. Show both the selected transaction count and total qualified count in the same scope. Do not replace missing native amounts with the USD field.
 
-## 19 October source checks: decisions still to resolve
+This selected sum is not total shop revenue. Total sales revenue, gross/net revenue, average order value, revenue per visit, profit and advertising return are **unavailable**. No refunds were observed and shipping coverage is absent; these observations do not establish zero refunds or costs. No missing/excluded monetary outcome is filled with zero. Scenarios using assumed values must identify them as assumptions and must not reuse this selected sum as complete sales or a recoverable-revenue estimate.
 
-The [full-period audit](../reports/source_audit.md) has run; the contract is still **not frozen**.
+## Comparisons and uncertainty
 
-- **Sessions:** retain the composite key. There are 360,129 observed groups, with 845 crossing dates and 5,272 lacking a start event. Quantify boundary exclusions and a defensible start-date assignment; a one-day pilot cannot test those boundaries.
-- **Ordering:** 25,101 session/timestamp groups contain different funnel steps. Use strict greater-than ordering as a candidate primary rule and a separately labelled tie sensitivity. Verify whether another source field genuinely establishes order; do not manufacture it from event names.
-- **Orders:** 906 purchase events have unusable IDs and 326 nonplaceholder IDs repeat. Fifteen IDs have identity conflicts and fifteen have monetary conflicts; overlap is not yet established. Investigate the full purchase payload before selecting deduplication or quarantine rules. Purchase events remain separate from validated orders.
-- **Money:** native revenue is absent on 450 purchases and 1,001 event/item comparisons differ by more than $0.01. Reconcile populations, tax, partial items and conflicting transactions before naming an accepted revenue measure. Do not replace missing native revenue with the populated USD field without validation. No average order value is approved.
-- **Acquisition:** the current audit checks `traffic_source` first-user source/medium. These fields are not session acquisition or a basis for channel return claims. Decide the supported segment label before implementation.
-- **Daily consistency:** the pilot's four add-to-cart events and 127 checkout starts require a daily event-coverage review. Event totals alone do not measure ordered progression.
+Device is assigned at visit grain; unknown values remain visible. `traffic_source.source` / `medium` describes **first-user acquisition context**, not session acquisition, spend efficiency or causal attribution. Stable unknown context can remain eligible; report its coverage before considering context comparisons.
 
-These are working decisions and tests to perform, not approved headline definitions. Record their aggregate impact before accepting milestone 1.
+Use a common December scope and check daily composition before ranking device/context differences. For a displayed comparative rate, require at least 500 visits in that rate's denominator and at least 30 observed successes and 30 other visits in each compared group. Smaller groups retain counts and a small-base label, without a ranked rate. These reporting thresholds are chosen for stability and readability; they are not a power calculation or proof of representativeness.
 
-## 6 November purchase follow-up
+Version 1 uses counts, unresolved-outcome coverage and strict/tied, start and cross-date sensitivity ranges to express uncertainty. No population significance or formal confidence interval is claimed. Any later inferential method needs an explicit amendment, must account for repeat users and must keep identifiers inside the warehouse. Sensitivity cannot repair missing tracking or obfuscation. An observed difference is an investigation question, not a measured intervention effect.
 
-The [purchase reconciliation](../reports/purchase_reconciliation.md) establishes that the fifteen identity and fifteen summary conflict groups overlap completely. Another 285 repeated-ID groups differ in stored e-commerce/item details while matching the compared identity and monetary summaries; this comparison is sensitive to item metadata and array order. Twenty-six repeated groups have consistent compared payloads, but still need review before being treated as duplicates.
+## Acceptance and change control
 
-All recorded purchases on 1–10 November 2020 and 31 January 2021 lack usable identifiers. A valid-ID-only population therefore has systematic date exclusions. Quantify those exclusions and their effect on comparisons before freezing order or revenue definitions. Only seven of the 1,001 observed native/item differences numerically match the tax field; this does not establish tax as the explanation. Milestone 1 remains open.
+The [measurement gate SQL](../sql/07_measurement_gate.sql) links the purchase rule to the audited visit populations without row multiplication. The [saved ledger](../reports/evidence/measurement-scope-20261106.json), native fixture and [receipt](../reports/evidence/measurement-gate-receipt-20261106.json) record impacts and validation. [Reproduction instructions](measurement_gate.md) accompany the implementation.
 
-## Candidate counting sensitivity — 6 November
-
-The [detail review](../reports/purchase_detail_findings.md) resolves the 285 additional stored-detail differences into 264 metadata-changing groups and 21 item-order-only groups. All 15 cross-date repeated identifiers fall within the customer/summary conflict group. Item comparison now permits array reordering while preserving duplicate item rows.
-
-The [candidate rule](purchase_counting_review.md) retains one identifier group only after customer/session, currency, full e-commerce and order-insensitive complete-item agreement, with one observed date/device and usable keys. It retains 4,172 groups, including 47 repeated groups represented by 98 events. This is a sensitivity policy, not an approved order definition. Do not select an arbitrary first/last record to resolve conflicts.
-
-All retained groups have complete native purchase amounts, but 779 fail native/item agreement; 3,393 pass both tests. Amount sums remain diagnostics. The retained events cover 1,003/2,054 November purchases, 2,323/2,434 December purchases and 897/1,204 January purchases. These event-coverage differences require date-mix checks before comparisons. Session ordering, boundary and tracking-coverage decisions remain unresolved; the contract is not frozen.
-
-## Tracking and timing decisions — 6 November
-
-The [tracking review](../reports/tracking_timing_findings.md) finds eighteen dates with no cart events, alongside 4,728 checkout events and 1,071 raw purchase events. The full-period cart funnel is unsuitable as a direct measure of customer friction. A common, justified date scope is required before device or month comparisons; dates are not automatically admitted just because a cart event is present.
-
-Keep strict `>` progression as the primary candidate. Select the earliest next step after the previously selected step, allowing later repeated events to complete a chain. Preserve a `>=` tie sensitivity without asserting within-timestamp order. The observed 25,101 mixed-step ties all share one bundle; the other available timing fields are unpopulated. The all-keyed timing diagnostic gives 2,778 versus 2,834 raw-purchase completion groups from 77,020 product-view entry groups. These are measurement sensitivities, not an accepted commercial conversion rate or order count.
-
-Treat the numeric session ID as a key, not a start timestamp. The nested observed-start/edge sensitivity retains 349,223 groups; a single-date sensitivity further removes 806. Preserve the original all-keyed population alongside exclusions. Crossing dates alone does not establish an error. Review the three groups spanning over 24 hours, candidate-purchase/session linkage, comparison-scope admission and monetary policy before final acceptance. The contract remains a draft.
+Milestone 2 may now build the analytical tables under these definitions. Its acceptance still requires reconciled event, visit, transaction and exclusion tables; no tables or analytical findings are implied by this contract. Any change to period, eligibility, purchase rule, money or ordering requires a versioned decision and regenerated evidence before reporting.

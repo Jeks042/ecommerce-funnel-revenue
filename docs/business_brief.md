@@ -15,6 +15,8 @@ A product manager and e-commerce lead need to decide which shopping-journey issu
 
 Use the historical GA4 sample, BigQuery SQL for the analytical foundation, and Python with Matplotlib and Seaborn for analysis and reporting. Preserve event, session, transaction and item grains separately. Support an illustrated commercial report and executive decision memo with source audits, SQL assertions, reproducible aggregate outputs and charts that can be regenerated from those outputs.
 
+The accepted measurement scope is December 2020 under [version 1 definitions](metric_contract.md), with all 92 days retained for source checks and transaction qualification. Total revenue, average order value and revenue per visit are unavailable. Commercial scenarios must label any assumed monetary input and identify the additional sales evidence needed.
+
 Do not infer customer lifetime value from a short anonymous observation window, advertising return without spend data, or profit without costs. Observational differences are not causal effects. Production tracking changes and running an actual experiment are outside this study.
 
 ## Success criteria

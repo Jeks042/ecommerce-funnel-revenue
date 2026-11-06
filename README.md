@@ -1,26 +1,26 @@
 # E-commerce Funnel & Revenue Analytics
 
-**In progress: source checks.** The first audit covers 4.30 million events across all 92 days. Purchase-counting and measurement rules are still being resolved before funnel analysis begins.
+**Measurement checks complete; analytical tables next.** The study now has agreed rules for examining recorded shopping journeys in December 2020.
 
 Which parts of the shopping journey should a product team investigate first, and what evidence would justify an experiment?
 
 I am examining how shoppers move from viewing a product to making a purchase, which differences deserve closer investigation, and what a product team should test next. BigQuery SQL will provide the analytical tables. Python analysis and charts will present the findings in an illustrated commercial report.
 
-The first checks found missing and repeated purchase identifiers, incomplete money fields and events that share a timestamp. Those details affect how visits, orders and progression can be counted. [Read the source audit](reports/source_audit.md) for the observations and the decisions still to make. There are no accepted funnel or revenue findings yet.
+The first finding is about what the records can tell us. Eighteen dates in November have no cart records even though checkout and purchase activity continued. Treating that gap as shoppers abandoning their baskets would give a misleading picture. I have chosen December as a narrower comparison period and will show how the results change under alternative counting rules.
 
-The [purchase review](reports/purchase_detail_findings.md) now distinguishes changed promotion details, reordered baskets and conflicting purchase records. It also shows why excluding uncertain records affects some months much more than others. The counting rules remain under review before building funnel results.
+Within that scope, 131,418 visits meet the agreed recording rules, including 27,289 with a product view. Repeated purchase records count once, and uncertain purchases remain visible. Some purchase and item values still disagree, so total revenue and average order value are unavailable. [Read the measurement findings](reports/milestone_1_findings.md) for the decisions and their limits.
 
-The [tracking review](reports/tracking_timing_findings.md) found eighteen dates with no recorded cart events while checkout and purchase activity continued. That limits what a full-period funnel can say about customer behaviour. The review also checks shared timestamps and visits at the edges of the sample.
+The next stage turns these rules into repeatable analytical tables. The analysis will then examine which recorded steps deserve investigation and what a product team would need to test before acting. No commercial recommendation or measured sales improvement has been established yet.
 
 ## Planned workflow
 
 Source audit and metric contract → event/session/purchase SQL marts → ordered funnel analysis → opportunity scenarios and experiment proposal → Python charts and decision memo → independent reproduction.
 
-The source is Google's historical, obfuscated e-commerce sample for November 2020–January 2021. It supports an investigation of recorded shopping activity; it does not represent current trading performance. Milestone 1 must establish which measures are reliable enough to use.
+The source is Google's historical, obfuscated e-commerce sample for November 2020–January 2021. The full period supports source checks; December is the agreed scope for the primary journey analysis. It does not represent current trading performance.
 
 ## Milestones
 
-1. [Validate GA4 access, source quality and metric definitions](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/1) — in progress
+1. [Validate GA4 access, source quality and metric definitions](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/1) — complete
 2. [Build reproducible event, session and purchase SQL marts](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/2) — planned
 3. [Diagnose conversion funnels and segment differences](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/3) — planned
 4. [Prioritise revenue opportunities and propose an experiment](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/4) — planned
@@ -33,7 +33,8 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 
 - [Business brief](docs/business_brief.md)
 - [Source access and handling](docs/data_access.md)
-- [Draft metric contract](docs/metric_contract.md)
+- [Agreed measurement definitions](docs/metric_contract.md)
+- [Measurement findings and scope decision](reports/milestone_1_findings.md)
 - [Delivery workflow and acceptance gates](docs/workflow.md)
 - [Current progress and next session](reports/progress.md)
 - [Source audit and current decisions](reports/source_audit.md)
@@ -54,7 +55,7 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 | src/ | Python analysis and chart-generation code |
 | reports/figures/ | Reviewed PNG and SVG charts generated from approved aggregates |
 
-Source profiling SQL and its reviewed aggregate evidence are available. Analytical tables, funnel results and the Python report will follow their milestone checks.
+Source profiling, purchase linkage and the reviewed measurement evidence are available. Analytical tables, funnel diagnosis and the Python report will follow their milestone checks.
 
 ## Evidence boundaries
 

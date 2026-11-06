@@ -2,32 +2,18 @@
 
 Updated: 6 November 2026.
 
-The project has started. All six [GitHub milestones](https://github.com/Jeks042/ecommerce-funnel-revenue/milestones) are linked to their existing issues. Milestone 1 is in progress; milestones 2–6 depend on its measurement decisions.
+**Milestone 1 is complete.** [Measurement definitions version 1](../docs/metric_contract.md) are accepted for a bounded analysis of recorded shopping journeys in December 2020. Milestones 2–6 remain open.
+
+The source review covers 4,295,584 events across all 92 days. It checks missing and repeated purchase records, money-field disagreement, gaps in cart recording, timestamp ties and visit boundaries. The final check links all 4,172 qualified transaction groups to observed visits. Native synthetic fixtures, source reconciliations and saved aggregate receipts support the decisions.
+
+[Read the milestone 1 findings](milestone_1_findings.md) for the outcome in plain language. The primary scope contains 131,418 visits and 27,289 product-view entries. Missing/rejected-ID purchases remain visible. Only an item-agreeing selected recorded-value summary is supported; total revenue, average order value and revenue per visit are unavailable.
+
+## Next: build the analytical foundation
+
+[Issue #2](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/2) can now build event, visit, qualified-transaction and item tables, plus exclusion and purchase-coverage ledgers. Keep full-period ID qualification separate from December reporting. Reconcile every join to the accepted gate and retain alternative timing/population scopes. Use bounded Sandbox execution and local fixtures; credential-free workflows should validate and retain evidence without bot commits.
+
+The gate query provides measurement evidence; it is not a delivered set of analytical tables. No device ranking, product recommendation, forecast or measured intervention effect has been published.
 
 ## Reporting direction
 
-The agreed workflow is BigQuery SQL followed by Python analysis and Matplotlib/Seaborn charts, an illustrated commercial report and a decision memo. Milestone 5 replaces the original Power BI deliverable; measurement acceptance gates remain unchanged.
-
-## What has been done
-
-- Confirmed access through an existing BigQuery Sandbox project, without enabling paid billing.
-- Verified all 92 daily tables and 20 selected field/type entries.
-- Ran a one-day pilot and then the complete 1 November 2020–31 January 2021 source profile.
-- Reconciled event/device totals to 4,295,584 events and purchase/currency totals to 5,692 purchase events.
-- Published the [source audit](source_audit.md), [aggregate evidence](evidence/source-profile-20201101-20210131.json), [SQL](../sql/02_source_profile.sql) and [execution instructions](../docs/source_audit_workflow.md).
-
-## What the checks mean
-
-The source is available for further investigation, but counting decisions remain. Purchase events include missing and repeated order identifiers; native and item money fields do not consistently agree. Some sessions cross dates and many funnel steps share timestamps. Those issues affect a credible funnel and revenue comparison.
-
-The [metric contract](../docs/metric_contract.md) remains a draft. No funnel results, validated order counts or accepted revenue measures have been published. Milestone 1 stays open.
-
-## Resume here
-
-The [purchase-detail review](purchase_detail_findings.md) now separates item-order changes, metadata changes and customer/amount conflicts. A cautious counting sensitivity retains 4,172 candidate identifier groups; 779 still fail purchase/item amount agreement. These are diagnostic populations, not approved orders or revenue. The earlier [purchase reconciliation](purchase_reconciliation.md) remains the baseline.
-
-The [tracking/timing review](tracking_timing_findings.md) has now run. It identifies eighteen dates with no cart events despite recorded checkout/purchase activity, confirms that available fields cannot resolve the mixed-step ties, and quantifies start/edge/cross-date population sensitivities. All 81 native fixture checks and 58 source reconciliation checks pass. A Python script reproduces the coverage summary from the saved aggregate.
-
-Continue [issue #1](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/1): link candidate purchases to eligible visits, review three unusually long groups, choose a justified comparison scope and settle the monetary policy. Keep uneven date/device exclusions visible. Freeze the supported definitions before beginning the SQL marts in issue #2. Milestone 1 remains open.
-
-At every milestone, give the project briefing: work completed, findings, decisions and reasons, limits and next step. See the [workflow](../docs/workflow.md) for the full sequence.
+The agreed output is Python analysis with Matplotlib/Seaborn charts, an illustrated commercial report and a decision memo. The six existing [GitHub milestones](https://github.com/Jeks042/ecommerce-funnel-revenue/milestones) retain their dependency order. At each stage, explain what was done, what the evidence supports, decisions and limits, and the next deliverable. See the [workflow](../docs/workflow.md).

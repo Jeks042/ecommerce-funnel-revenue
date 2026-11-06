@@ -1,0 +1,66 @@
+{
+  "source": "bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*",
+  "start_suffix": "20201101",
+  "end_suffix": "20210131",
+  "analysis_month": "2020-12",
+  "capture_method": "Console local JSON download; outer row parsed and inner audit_json saved unchanged in value. Aggregate evidence only.",
+  "runs": [
+    {
+      "kind": "synthetic_fixture",
+      "canonical_sql_file": "private/measurement_fixture.sql",
+      "canonical_sql_sha256": "6eee7efa4cc7946ec49d5c79d2420e295f9e39006614403cb6f5585a7a22923e",
+      "started_utc": "2026-11-06T03:42:47Z",
+      "ended_utc": "2026-11-06T03:42:50Z",
+      "duration_ms": 3208,
+      "validator_estimate_display": "0 B",
+      "processed_display": "0 B",
+      "billed_display": "0 B",
+      "job_reference_sha256": "bead2b1edf074b37231ad68d3d4a3fec14802940fef41cdc30c296627035d578",
+      "output_file": "reports/evidence/measurement-fixture-20261106.json",
+      "output_sha256": "2c2cf3a592aaa8e2c77de816ed5c3d7bd113bad03a250f5e756b9e3977b2b7ae",
+      "location": "US",
+      "status": "completed"
+    },
+    {
+      "kind": "source_measurement",
+      "canonical_sql_file": "sql/07_measurement_gate.sql",
+      "canonical_sql_sha256": "9e5c1843f1c875a4547f243846bded479b485699d3af856a6ceef047023fea63",
+      "started_utc": "2026-11-06T03:43:47Z",
+      "ended_utc": "2026-11-06T03:43:59Z",
+      "duration_ms": 11525,
+      "validator_estimate_display": "2.57 GB",
+      "processed_display": "2.57 GB",
+      "billed_display": "2.58 GB",
+      "job_reference_sha256": "998bf000d16c19f0f0b3364f9712aaa4037284dcb7a7769646222b6f3a60eb53",
+      "output_file": "reports/evidence/measurement-gate-20261106.json",
+      "output_sha256": "01094d239cb1b1531e0fb3ec3a000fdcc59f616fe9d49e68cfd83e56e3cb4dc3",
+      "location": "US",
+      "status": "completed"
+    }
+  ],
+  "sql_provenance": "Canonical SQL hashes identify reproducible queries. Browser query text matched the canonical files after whitespace normalization before execution; Console formatting may differ.",
+  "cost_control": {
+    "sandbox_observed": true,
+    "paid_billing_enabled": false,
+    "per_job_cap_confirmed": false,
+    "review_ceiling_gib": 3,
+    "display_sizes_are_rounded": true
+  },
+  "validation": {
+    "fixture_events": 56,
+    "fixture_journeys": 11,
+    "fixture_checks_passed": 93,
+    "source_checks_passed": 525,
+    "prior_evidence_comparisons_passed": 268,
+    "local_regression_tests_passed": 22,
+    "saved_aggregates_match_console_exports": true,
+    "summary_reproduces_exactly": true
+  },
+  "python_version": "3.12.14",
+  "summary_script_sha256": "3833c2cbc8b86a1d416ba3cc0eeeffb363b6464be7869de8c132e5dd712e2c33",
+  "summary_output_sha256": "b4158cd1d33a65769e615e0c5b6f4a7977099ac5d164835b788966d262181b51",
+  "metric_contract_version": 1,
+  "metric_contract_frozen": true,
+  "milestone_1_complete": true,
+  "decision": "Proceed to analytical tables for recorded December journeys. Total sales revenue, AOV and revenue per visit remain unavailable."
+}
