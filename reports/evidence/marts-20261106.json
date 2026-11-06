@@ -1,0 +1,5343 @@
+{
+  "source": {
+    "events": 4295584,
+    "purchase_events": 5692,
+    "unkeyed_events": 0
+  },
+  "transaction_policy": {
+    "id_groups": 4451,
+    "qualified_ids": 4172,
+    "agreeing_ids": 3393
+  },
+  "transactions": {
+    "transactions": 4172,
+    "recorded_events": 4223,
+    "item_rows": 12383,
+    "selected_recorded_value": 212582
+  },
+  "scopes": [
+    {
+      "scope": "all_keyed",
+      "cohort_month": "202011",
+      "session_device": "desktop",
+      "sessions": 62820,
+      "entry_sessions": 15019,
+      "strict_cart_sessions": 1231,
+      "strict_checkout_sessions": 492,
+      "raw_purchase_sessions": 910,
+      "candidate_purchase_sessions": 524,
+      "strict_candidate_sessions": 222,
+      "last_time_candidate_sessions": 222,
+      "tied_candidate_sessions": 224,
+      "raw_purchase_events": 1145,
+      "missing_id_events": 288,
+      "rejected_id_events": 283,
+      "candidate_events": 574,
+      "candidate_transactions": 566,
+      "native_complete_transactions": 566,
+      "agreeing_transactions": 443,
+      "agreeing_recorded_value": 27831,
+      "unresolved_purchase_sessions": 388,
+      "mixed_outcome_sessions": 2,
+      "long_sessions": 1
+    },
+    {
+      "scope": "all_keyed",
+      "cohort_month": "202011",
+      "session_device": "mobile",
+      "sessions": 43201,
+      "entry_sessions": 10353,
+      "strict_cart_sessions": 826,
+      "strict_checkout_sessions": 338,
+      "raw_purchase_sessions": 676,
+      "candidate_purchase_sessions": 374,
+      "strict_candidate_sessions": 165,
+      "last_time_candidate_sessions": 165,
+      "tied_candidate_sessions": 167,
+      "raw_purchase_events": 872,
+      "missing_id_events": 213,
+      "rejected_id_events": 246,
+      "candidate_events": 413,
+      "candidate_transactions": 404,
+      "native_complete_transactions": 404,
+      "agreeing_transactions": 312,
+      "agreeing_recorded_value": 23459,
+      "unresolved_purchase_sessions": 303,
+      "mixed_outcome_sessions": 1,
+      "long_sessions": 0
+    },
+    {
+      "scope": "all_keyed",
+      "cohort_month": "202011",
+      "session_device": "tablet",
+      "sessions": 2380,
+      "entry_sessions": 574,
+      "strict_cart_sessions": 43,
+      "strict_checkout_sessions": 11,
+      "raw_purchase_sessions": 32,
+      "candidate_purchase_sessions": 16,
+      "strict_candidate_sessions": 8,
+      "last_time_candidate_sessions": 8,
+      "tied_candidate_sessions": 8,
+      "raw_purchase_events": 38,
+      "missing_id_events": 11,
+      "rejected_id_events": 10,
+      "candidate_events": 17,
+      "candidate_transactions": 17,
+      "native_complete_transactions": 17,
+      "agreeing_transactions": 14,
+      "agreeing_recorded_value": 947,
+      "unresolved_purchase_sessions": 16,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    },
+    {
+      "scope": "all_keyed",
+      "cohort_month": "202012",
+      "session_device": "desktop",
+      "sessions": 77476,
+      "entry_sessions": 16364,
+      "strict_cart_sessions": 4634,
+      "strict_checkout_sessions": 1649,
+      "raw_purchase_sessions": 1222,
+      "candidate_purchase_sessions": 1171,
+      "strict_candidate_sessions": 848,
+      "last_time_candidate_sessions": 848,
+      "tied_candidate_sessions": 867,
+      "raw_purchase_events": 1414,
+      "missing_id_events": 47,
+      "rejected_id_events": 8,
+      "candidate_events": 1359,
+      "candidate_transactions": 1342,
+      "native_complete_transactions": 1342,
+      "agreeing_transactions": 1097,
+      "agreeing_recorded_value": 69645,
+      "unresolved_purchase_sessions": 53,
+      "mixed_outcome_sessions": 2,
+      "long_sessions": 0
+    },
+    {
+      "scope": "all_keyed",
+      "cohort_month": "202012",
+      "session_device": "mobile",
+      "sessions": 52896,
+      "entry_sessions": 11037,
+      "strict_cart_sessions": 3255,
+      "strict_checkout_sessions": 1179,
+      "raw_purchase_sessions": 850,
+      "candidate_purchase_sessions": 813,
+      "strict_candidate_sessions": 597,
+      "last_time_candidate_sessions": 597,
+      "tied_candidate_sessions": 611,
+      "raw_purchase_events": 975,
+      "missing_id_events": 45,
+      "rejected_id_events": 9,
+      "candidate_events": 921,
+      "candidate_transactions": 914,
+      "native_complete_transactions": 914,
+      "agreeing_transactions": 763,
+      "agreeing_recorded_value": 46603,
+      "unresolved_purchase_sessions": 41,
+      "mixed_outcome_sessions": 4,
+      "long_sessions": 0
+    },
+    {
+      "scope": "all_keyed",
+      "cohort_month": "202012",
+      "session_device": "tablet",
+      "sessions": 2979,
+      "entry_sessions": 570,
+      "strict_cart_sessions": 168,
+      "strict_checkout_sessions": 63,
+      "raw_purchase_sessions": 43,
+      "candidate_purchase_sessions": 41,
+      "strict_candidate_sessions": 30,
+      "last_time_candidate_sessions": 30,
+      "tied_candidate_sessions": 30,
+      "raw_purchase_events": 44,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 42,
+      "candidate_transactions": 41,
+      "native_complete_transactions": 41,
+      "agreeing_transactions": 36,
+      "agreeing_recorded_value": 1935,
+      "unresolved_purchase_sessions": 2,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    },
+    {
+      "scope": "all_keyed",
+      "cohort_month": "202101",
+      "session_device": "desktop",
+      "sessions": 68646,
+      "entry_sessions": 13436,
+      "strict_cart_sessions": 2438,
+      "strict_checkout_sessions": 834,
+      "raw_purchase_sessions": 617,
+      "candidate_purchase_sessions": 465,
+      "strict_candidate_sessions": 336,
+      "last_time_candidate_sessions": 336,
+      "tied_candidate_sessions": 349,
+      "raw_purchase_events": 667,
+      "missing_id_events": 157,
+      "rejected_id_events": 6,
+      "candidate_events": 504,
+      "candidate_transactions": 500,
+      "native_complete_transactions": 500,
+      "agreeing_transactions": 407,
+      "agreeing_recorded_value": 22810,
+      "unresolved_purchase_sessions": 156,
+      "mixed_outcome_sessions": 4,
+      "long_sessions": 0
+    },
+    {
+      "scope": "all_keyed",
+      "cohort_month": "202101",
+      "session_device": "mobile",
+      "sessions": 47088,
+      "entry_sessions": 9111,
+      "strict_cart_sessions": 1692,
+      "strict_checkout_sessions": 584,
+      "raw_purchase_sessions": 469,
+      "candidate_purchase_sessions": 355,
+      "strict_candidate_sessions": 261,
+      "last_time_candidate_sessions": 261,
+      "tied_candidate_sessions": 266,
+      "raw_purchase_events": 508,
+      "missing_id_events": 134,
+      "rejected_id_events": 1,
+      "candidate_events": 373,
+      "candidate_transactions": 368,
+      "native_complete_transactions": 368,
+      "agreeing_transactions": 305,
+      "agreeing_recorded_value": 18312,
+      "unresolved_purchase_sessions": 117,
+      "mixed_outcome_sessions": 3,
+      "long_sessions": 2
+    },
+    {
+      "scope": "all_keyed",
+      "cohort_month": "202101",
+      "session_device": "tablet",
+      "sessions": 2643,
+      "entry_sessions": 556,
+      "strict_cart_sessions": 93,
+      "strict_checkout_sessions": 37,
+      "raw_purchase_sessions": 29,
+      "candidate_purchase_sessions": 20,
+      "strict_candidate_sessions": 17,
+      "last_time_candidate_sessions": 17,
+      "tied_candidate_sessions": 17,
+      "raw_purchase_events": 29,
+      "missing_id_events": 9,
+      "rejected_id_events": 0,
+      "candidate_events": 20,
+      "candidate_transactions": 20,
+      "native_complete_transactions": 20,
+      "agreeing_transactions": 16,
+      "agreeing_recorded_value": 1040,
+      "unresolved_purchase_sessions": 9,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior",
+      "cohort_month": "202011",
+      "session_device": "desktop",
+      "sessions": 60208,
+      "entry_sessions": 14339,
+      "strict_cart_sessions": 1212,
+      "strict_checkout_sessions": 480,
+      "raw_purchase_sessions": 864,
+      "candidate_purchase_sessions": 489,
+      "strict_candidate_sessions": 217,
+      "last_time_candidate_sessions": 217,
+      "tied_candidate_sessions": 219,
+      "raw_purchase_events": 1096,
+      "missing_id_events": 277,
+      "rejected_id_events": 281,
+      "candidate_events": 538,
+      "candidate_transactions": 530,
+      "native_complete_transactions": 530,
+      "agreeing_transactions": 418,
+      "agreeing_recorded_value": 25762,
+      "unresolved_purchase_sessions": 376,
+      "mixed_outcome_sessions": 1,
+      "long_sessions": 1
+    },
+    {
+      "scope": "anchored_interior",
+      "cohort_month": "202011",
+      "session_device": "mobile",
+      "sessions": 41385,
+      "entry_sessions": 9864,
+      "strict_cart_sessions": 805,
+      "strict_checkout_sessions": 331,
+      "raw_purchase_sessions": 650,
+      "candidate_purchase_sessions": 356,
+      "strict_candidate_sessions": 164,
+      "last_time_candidate_sessions": 164,
+      "tied_candidate_sessions": 166,
+      "raw_purchase_events": 840,
+      "missing_id_events": 205,
+      "rejected_id_events": 244,
+      "candidate_events": 391,
+      "candidate_transactions": 384,
+      "native_complete_transactions": 384,
+      "agreeing_transactions": 298,
+      "agreeing_recorded_value": 21642,
+      "unresolved_purchase_sessions": 295,
+      "mixed_outcome_sessions": 1,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior",
+      "cohort_month": "202011",
+      "session_device": "tablet",
+      "sessions": 2291,
+      "entry_sessions": 547,
+      "strict_cart_sessions": 42,
+      "strict_checkout_sessions": 11,
+      "raw_purchase_sessions": 30,
+      "candidate_purchase_sessions": 14,
+      "strict_candidate_sessions": 8,
+      "last_time_candidate_sessions": 8,
+      "tied_candidate_sessions": 8,
+      "raw_purchase_events": 36,
+      "missing_id_events": 11,
+      "rejected_id_events": 10,
+      "candidate_events": 15,
+      "candidate_transactions": 15,
+      "native_complete_transactions": 15,
+      "agreeing_transactions": 13,
+      "agreeing_recorded_value": 892,
+      "unresolved_purchase_sessions": 16,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior",
+      "cohort_month": "202012",
+      "session_device": "desktop",
+      "sessions": 76498,
+      "entry_sessions": 16077,
+      "strict_cart_sessions": 4564,
+      "strict_checkout_sessions": 1631,
+      "raw_purchase_sessions": 1214,
+      "candidate_purchase_sessions": 1164,
+      "strict_candidate_sessions": 844,
+      "last_time_candidate_sessions": 844,
+      "tied_candidate_sessions": 863,
+      "raw_purchase_events": 1406,
+      "missing_id_events": 46,
+      "rejected_id_events": 8,
+      "candidate_events": 1352,
+      "candidate_transactions": 1335,
+      "native_complete_transactions": 1335,
+      "agreeing_transactions": 1090,
+      "agreeing_recorded_value": 69247,
+      "unresolved_purchase_sessions": 52,
+      "mixed_outcome_sessions": 2,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior",
+      "cohort_month": "202012",
+      "session_device": "mobile",
+      "sessions": 52274,
+      "entry_sessions": 10831,
+      "strict_cart_sessions": 3221,
+      "strict_checkout_sessions": 1165,
+      "raw_purchase_sessions": 838,
+      "candidate_purchase_sessions": 801,
+      "strict_candidate_sessions": 587,
+      "last_time_candidate_sessions": 587,
+      "tied_candidate_sessions": 601,
+      "raw_purchase_events": 962,
+      "missing_id_events": 45,
+      "rejected_id_events": 9,
+      "candidate_events": 908,
+      "candidate_transactions": 901,
+      "native_complete_transactions": 901,
+      "agreeing_transactions": 752,
+      "agreeing_recorded_value": 45622,
+      "unresolved_purchase_sessions": 41,
+      "mixed_outcome_sessions": 4,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior",
+      "cohort_month": "202012",
+      "session_device": "tablet",
+      "sessions": 2941,
+      "entry_sessions": 558,
+      "strict_cart_sessions": 166,
+      "strict_checkout_sessions": 62,
+      "raw_purchase_sessions": 43,
+      "candidate_purchase_sessions": 41,
+      "strict_candidate_sessions": 30,
+      "last_time_candidate_sessions": 30,
+      "tied_candidate_sessions": 30,
+      "raw_purchase_events": 44,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 42,
+      "candidate_transactions": 41,
+      "native_complete_transactions": 41,
+      "agreeing_transactions": 36,
+      "agreeing_recorded_value": 1935,
+      "unresolved_purchase_sessions": 2,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior",
+      "cohort_month": "202101",
+      "session_device": "desktop",
+      "sessions": 65942,
+      "entry_sessions": 12755,
+      "strict_cart_sessions": 2327,
+      "strict_checkout_sessions": 794,
+      "raw_purchase_sessions": 596,
+      "candidate_purchase_sessions": 460,
+      "strict_candidate_sessions": 335,
+      "last_time_candidate_sessions": 335,
+      "tied_candidate_sessions": 348,
+      "raw_purchase_events": 645,
+      "missing_id_events": 140,
+      "rejected_id_events": 6,
+      "candidate_events": 499,
+      "candidate_transactions": 495,
+      "native_complete_transactions": 495,
+      "agreeing_transactions": 403,
+      "agreeing_recorded_value": 22273,
+      "unresolved_purchase_sessions": 140,
+      "mixed_outcome_sessions": 4,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior",
+      "cohort_month": "202101",
+      "session_device": "mobile",
+      "sessions": 45165,
+      "entry_sessions": 8649,
+      "strict_cart_sessions": 1603,
+      "strict_checkout_sessions": 550,
+      "raw_purchase_sessions": 450,
+      "candidate_purchase_sessions": 348,
+      "strict_candidate_sessions": 258,
+      "last_time_candidate_sessions": 258,
+      "tied_candidate_sessions": 263,
+      "raw_purchase_events": 487,
+      "missing_id_events": 120,
+      "rejected_id_events": 1,
+      "candidate_events": 366,
+      "candidate_transactions": 361,
+      "native_complete_transactions": 361,
+      "agreeing_transactions": 300,
+      "agreeing_recorded_value": 17050,
+      "unresolved_purchase_sessions": 104,
+      "mixed_outcome_sessions": 2,
+      "long_sessions": 2
+    },
+    {
+      "scope": "anchored_interior",
+      "cohort_month": "202101",
+      "session_device": "tablet",
+      "sessions": 2519,
+      "entry_sessions": 530,
+      "strict_cart_sessions": 88,
+      "strict_checkout_sessions": 35,
+      "raw_purchase_sessions": 27,
+      "candidate_purchase_sessions": 20,
+      "strict_candidate_sessions": 17,
+      "last_time_candidate_sessions": 17,
+      "tied_candidate_sessions": 17,
+      "raw_purchase_events": 27,
+      "missing_id_events": 7,
+      "rejected_id_events": 0,
+      "candidate_events": 20,
+      "candidate_transactions": 20,
+      "native_complete_transactions": 20,
+      "agreeing_transactions": 16,
+      "agreeing_recorded_value": 1040,
+      "unresolved_purchase_sessions": 7,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior_single_date",
+      "cohort_month": "202011",
+      "session_device": "desktop",
+      "sessions": 60028,
+      "entry_sessions": 14230,
+      "strict_cart_sessions": 1200,
+      "strict_checkout_sessions": 474,
+      "raw_purchase_sessions": 849,
+      "candidate_purchase_sessions": 482,
+      "strict_candidate_sessions": 212,
+      "last_time_candidate_sessions": 212,
+      "tied_candidate_sessions": 214,
+      "raw_purchase_events": 1076,
+      "missing_id_events": 273,
+      "rejected_id_events": 273,
+      "candidate_events": 530,
+      "candidate_transactions": 522,
+      "native_complete_transactions": 522,
+      "agreeing_transactions": 414,
+      "agreeing_recorded_value": 25476,
+      "unresolved_purchase_sessions": 368,
+      "mixed_outcome_sessions": 1,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior_single_date",
+      "cohort_month": "202011",
+      "session_device": "mobile",
+      "sessions": 41286,
+      "entry_sessions": 9814,
+      "strict_cart_sessions": 798,
+      "strict_checkout_sessions": 328,
+      "raw_purchase_sessions": 642,
+      "candidate_purchase_sessions": 352,
+      "strict_candidate_sessions": 162,
+      "last_time_candidate_sessions": 162,
+      "tied_candidate_sessions": 164,
+      "raw_purchase_events": 828,
+      "missing_id_events": 203,
+      "rejected_id_events": 240,
+      "candidate_events": 385,
+      "candidate_transactions": 378,
+      "native_complete_transactions": 378,
+      "agreeing_transactions": 295,
+      "agreeing_recorded_value": 21498,
+      "unresolved_purchase_sessions": 291,
+      "mixed_outcome_sessions": 1,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior_single_date",
+      "cohort_month": "202011",
+      "session_device": "tablet",
+      "sessions": 2284,
+      "entry_sessions": 541,
+      "strict_cart_sessions": 42,
+      "strict_checkout_sessions": 11,
+      "raw_purchase_sessions": 28,
+      "candidate_purchase_sessions": 13,
+      "strict_candidate_sessions": 8,
+      "last_time_candidate_sessions": 8,
+      "tied_candidate_sessions": 8,
+      "raw_purchase_events": 34,
+      "missing_id_events": 10,
+      "rejected_id_events": 10,
+      "candidate_events": 14,
+      "candidate_transactions": 14,
+      "native_complete_transactions": 14,
+      "agreeing_transactions": 13,
+      "agreeing_recorded_value": 892,
+      "unresolved_purchase_sessions": 15,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior_single_date",
+      "cohort_month": "202012",
+      "session_device": "desktop",
+      "sessions": 76304,
+      "entry_sessions": 15960,
+      "strict_cart_sessions": 4508,
+      "strict_checkout_sessions": 1599,
+      "raw_purchase_sessions": 1187,
+      "candidate_purchase_sessions": 1140,
+      "strict_candidate_sessions": 824,
+      "last_time_candidate_sessions": 824,
+      "tied_candidate_sessions": 843,
+      "raw_purchase_events": 1375,
+      "missing_id_events": 43,
+      "rejected_id_events": 8,
+      "candidate_events": 1324,
+      "candidate_transactions": 1308,
+      "native_complete_transactions": 1308,
+      "agreeing_transactions": 1070,
+      "agreeing_recorded_value": 67494,
+      "unresolved_purchase_sessions": 49,
+      "mixed_outcome_sessions": 2,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior_single_date",
+      "cohort_month": "202012",
+      "session_device": "mobile",
+      "sessions": 52176,
+      "entry_sessions": 10773,
+      "strict_cart_sessions": 3202,
+      "strict_checkout_sessions": 1158,
+      "raw_purchase_sessions": 832,
+      "candidate_purchase_sessions": 795,
+      "strict_candidate_sessions": 583,
+      "last_time_candidate_sessions": 583,
+      "tied_candidate_sessions": 597,
+      "raw_purchase_events": 952,
+      "missing_id_events": 45,
+      "rejected_id_events": 9,
+      "candidate_events": 898,
+      "candidate_transactions": 891,
+      "native_complete_transactions": 891,
+      "agreeing_transactions": 745,
+      "agreeing_recorded_value": 45419,
+      "unresolved_purchase_sessions": 41,
+      "mixed_outcome_sessions": 4,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior_single_date",
+      "cohort_month": "202012",
+      "session_device": "tablet",
+      "sessions": 2938,
+      "entry_sessions": 556,
+      "strict_cart_sessions": 164,
+      "strict_checkout_sessions": 62,
+      "raw_purchase_sessions": 43,
+      "candidate_purchase_sessions": 41,
+      "strict_candidate_sessions": 30,
+      "last_time_candidate_sessions": 30,
+      "tied_candidate_sessions": 30,
+      "raw_purchase_events": 44,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 42,
+      "candidate_transactions": 41,
+      "native_complete_transactions": 41,
+      "agreeing_transactions": 36,
+      "agreeing_recorded_value": 1935,
+      "unresolved_purchase_sessions": 2,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior_single_date",
+      "cohort_month": "202101",
+      "session_device": "desktop",
+      "sessions": 65818,
+      "entry_sessions": 12685,
+      "strict_cart_sessions": 2299,
+      "strict_checkout_sessions": 774,
+      "raw_purchase_sessions": 582,
+      "candidate_purchase_sessions": 448,
+      "strict_candidate_sessions": 325,
+      "last_time_candidate_sessions": 325,
+      "tied_candidate_sessions": 338,
+      "raw_purchase_events": 624,
+      "missing_id_events": 137,
+      "rejected_id_events": 5,
+      "candidate_events": 482,
+      "candidate_transactions": 478,
+      "native_complete_transactions": 478,
+      "agreeing_transactions": 390,
+      "agreeing_recorded_value": 21424,
+      "unresolved_purchase_sessions": 136,
+      "mixed_outcome_sessions": 2,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior_single_date",
+      "cohort_month": "202101",
+      "session_device": "mobile",
+      "sessions": 45067,
+      "entry_sessions": 8605,
+      "strict_cart_sessions": 1590,
+      "strict_checkout_sessions": 544,
+      "raw_purchase_sessions": 445,
+      "candidate_purchase_sessions": 345,
+      "strict_candidate_sessions": 257,
+      "last_time_candidate_sessions": 257,
+      "tied_candidate_sessions": 262,
+      "raw_purchase_events": 482,
+      "missing_id_events": 118,
+      "rejected_id_events": 1,
+      "candidate_events": 363,
+      "candidate_transactions": 358,
+      "native_complete_transactions": 358,
+      "agreeing_transactions": 297,
+      "agreeing_recorded_value": 16865,
+      "unresolved_purchase_sessions": 102,
+      "mixed_outcome_sessions": 2,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior_single_date",
+      "cohort_month": "202101",
+      "session_device": "tablet",
+      "sessions": 2516,
+      "entry_sessions": 527,
+      "strict_cart_sessions": 87,
+      "strict_checkout_sessions": 35,
+      "raw_purchase_sessions": 27,
+      "candidate_purchase_sessions": 20,
+      "strict_candidate_sessions": 17,
+      "last_time_candidate_sessions": 17,
+      "tied_candidate_sessions": 17,
+      "raw_purchase_events": 27,
+      "missing_id_events": 7,
+      "rejected_id_events": 0,
+      "candidate_events": 20,
+      "candidate_transactions": 20,
+      "native_complete_transactions": 20,
+      "agreeing_transactions": 16,
+      "agreeing_recorded_value": 1040,
+      "unresolved_purchase_sessions": 7,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    }
+  ],
+  "event_key_coverage": [
+    {
+      "source_date": "2020-11-01",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 18223,
+      "purchase_events": 9
+    },
+    {
+      "source_date": "2020-11-01",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 12553,
+      "purchase_events": 5
+    },
+    {
+      "source_date": "2020-11-01",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 496,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-02",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 29341,
+      "purchase_events": 31
+    },
+    {
+      "source_date": "2020-11-02",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 18316,
+      "purchase_events": 17
+    },
+    {
+      "source_date": "2020-11-02",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 731,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-11-03",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 36151,
+      "purchase_events": 30
+    },
+    {
+      "source_date": "2020-11-03",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 24391,
+      "purchase_events": 19
+    },
+    {
+      "source_date": "2020-11-03",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1130,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-04",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 30462,
+      "purchase_events": 33
+    },
+    {
+      "source_date": "2020-11-04",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 19992,
+      "purchase_events": 12
+    },
+    {
+      "source_date": "2020-11-04",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1412,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-11-05",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 27229,
+      "purchase_events": 16
+    },
+    {
+      "source_date": "2020-11-05",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 23459,
+      "purchase_events": 9
+    },
+    {
+      "source_date": "2020-11-05",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1264,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-11-06",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 26856,
+      "purchase_events": 28
+    },
+    {
+      "source_date": "2020-11-06",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 21288,
+      "purchase_events": 27
+    },
+    {
+      "source_date": "2020-11-06",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 860,
+      "purchase_events": 3
+    },
+    {
+      "source_date": "2020-11-07",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 19745,
+      "purchase_events": 17
+    },
+    {
+      "source_date": "2020-11-07",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 14085,
+      "purchase_events": 14
+    },
+    {
+      "source_date": "2020-11-07",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 479,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-08",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 17857,
+      "purchase_events": 15
+    },
+    {
+      "source_date": "2020-11-08",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 11851,
+      "purchase_events": 15
+    },
+    {
+      "source_date": "2020-11-08",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 429,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2020-11-09",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 25333,
+      "purchase_events": 29
+    },
+    {
+      "source_date": "2020-11-09",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 18813,
+      "purchase_events": 23
+    },
+    {
+      "source_date": "2020-11-09",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 610,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-10",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 29728,
+      "purchase_events": 35
+    },
+    {
+      "source_date": "2020-11-10",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 20817,
+      "purchase_events": 29
+    },
+    {
+      "source_date": "2020-11-10",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 650,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-11",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 29874,
+      "purchase_events": 37
+    },
+    {
+      "source_date": "2020-11-11",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 20817,
+      "purchase_events": 26
+    },
+    {
+      "source_date": "2020-11-11",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1250,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-11-12",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 29227,
+      "purchase_events": 30
+    },
+    {
+      "source_date": "2020-11-12",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 19380,
+      "purchase_events": 24
+    },
+    {
+      "source_date": "2020-11-12",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 559,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-13",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 30015,
+      "purchase_events": 54
+    },
+    {
+      "source_date": "2020-11-13",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 18465,
+      "purchase_events": 25
+    },
+    {
+      "source_date": "2020-11-13",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1878,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-14",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 20553,
+      "purchase_events": 18
+    },
+    {
+      "source_date": "2020-11-14",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 12786,
+      "purchase_events": 12
+    },
+    {
+      "source_date": "2020-11-14",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 700,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-15",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 17317,
+      "purchase_events": 13
+    },
+    {
+      "source_date": "2020-11-15",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 13119,
+      "purchase_events": 7
+    },
+    {
+      "source_date": "2020-11-15",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 759,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-11-16",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 28013,
+      "purchase_events": 37
+    },
+    {
+      "source_date": "2020-11-16",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 20339,
+      "purchase_events": 29
+    },
+    {
+      "source_date": "2020-11-16",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 968,
+      "purchase_events": 3
+    },
+    {
+      "source_date": "2020-11-17",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 33105,
+      "purchase_events": 56
+    },
+    {
+      "source_date": "2020-11-17",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 25282,
+      "purchase_events": 42
+    },
+    {
+      "source_date": "2020-11-17",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1402,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-18",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 31035,
+      "purchase_events": 36
+    },
+    {
+      "source_date": "2020-11-18",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 23003,
+      "purchase_events": 32
+    },
+    {
+      "source_date": "2020-11-18",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1418,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-19",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 32471,
+      "purchase_events": 45
+    },
+    {
+      "source_date": "2020-11-19",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 19780,
+      "purchase_events": 39
+    },
+    {
+      "source_date": "2020-11-19",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1681,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-20",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 30697,
+      "purchase_events": 57
+    },
+    {
+      "source_date": "2020-11-20",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 26420,
+      "purchase_events": 61
+    },
+    {
+      "source_date": "2020-11-20",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 777,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-21",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 23865,
+      "purchase_events": 37
+    },
+    {
+      "source_date": "2020-11-21",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 16708,
+      "purchase_events": 27
+    },
+    {
+      "source_date": "2020-11-21",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1407,
+      "purchase_events": 4
+    },
+    {
+      "source_date": "2020-11-22",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 21785,
+      "purchase_events": 31
+    },
+    {
+      "source_date": "2020-11-22",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 14125,
+      "purchase_events": 29
+    },
+    {
+      "source_date": "2020-11-22",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 536,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-11-23",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 31312,
+      "purchase_events": 73
+    },
+    {
+      "source_date": "2020-11-23",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 20063,
+      "purchase_events": 61
+    },
+    {
+      "source_date": "2020-11-23",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1469,
+      "purchase_events": 7
+    },
+    {
+      "source_date": "2020-11-24",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 35717,
+      "purchase_events": 85
+    },
+    {
+      "source_date": "2020-11-24",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 25706,
+      "purchase_events": 61
+    },
+    {
+      "source_date": "2020-11-24",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1548,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-11-25",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 37162,
+      "purchase_events": 65
+    },
+    {
+      "source_date": "2020-11-25",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 25870,
+      "purchase_events": 42
+    },
+    {
+      "source_date": "2020-11-25",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1437,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-11-26",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 32120,
+      "purchase_events": 30
+    },
+    {
+      "source_date": "2020-11-26",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 21196,
+      "purchase_events": 26
+    },
+    {
+      "source_date": "2020-11-26",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1365,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-11-27",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 32426,
+      "purchase_events": 56
+    },
+    {
+      "source_date": "2020-11-27",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 19897,
+      "purchase_events": 35
+    },
+    {
+      "source_date": "2020-11-27",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1931,
+      "purchase_events": 6
+    },
+    {
+      "source_date": "2020-11-28",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 25309,
+      "purchase_events": 38
+    },
+    {
+      "source_date": "2020-11-28",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 18099,
+      "purchase_events": 38
+    },
+    {
+      "source_date": "2020-11-28",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1235,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2020-11-29",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 24461,
+      "purchase_events": 29
+    },
+    {
+      "source_date": "2020-11-29",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 16324,
+      "purchase_events": 20
+    },
+    {
+      "source_date": "2020-11-29",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1384,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2020-11-30",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 41945,
+      "purchase_events": 74
+    },
+    {
+      "source_date": "2020-11-30",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 27550,
+      "purchase_events": 66
+    },
+    {
+      "source_date": "2020-11-30",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1119,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-01",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 42156,
+      "purchase_events": 63
+    },
+    {
+      "source_date": "2020-12-01",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 28010,
+      "purchase_events": 43
+    },
+    {
+      "source_date": "2020-12-01",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1638,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-02",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 38985,
+      "purchase_events": 46
+    },
+    {
+      "source_date": "2020-12-02",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 26245,
+      "purchase_events": 32
+    },
+    {
+      "source_date": "2020-12-02",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1602,
+      "purchase_events": 4
+    },
+    {
+      "source_date": "2020-12-03",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 42090,
+      "purchase_events": 58
+    },
+    {
+      "source_date": "2020-12-03",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 27493,
+      "purchase_events": 29
+    },
+    {
+      "source_date": "2020-12-03",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 2106,
+      "purchase_events": 3
+    },
+    {
+      "source_date": "2020-12-04",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 41335,
+      "purchase_events": 53
+    },
+    {
+      "source_date": "2020-12-04",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 27022,
+      "purchase_events": 41
+    },
+    {
+      "source_date": "2020-12-04",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1036,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2020-12-05",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 29758,
+      "purchase_events": 49
+    },
+    {
+      "source_date": "2020-12-05",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 19019,
+      "purchase_events": 36
+    },
+    {
+      "source_date": "2020-12-05",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 751,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2020-12-06",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 24229,
+      "purchase_events": 24
+    },
+    {
+      "source_date": "2020-12-06",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 17723,
+      "purchase_events": 16
+    },
+    {
+      "source_date": "2020-12-06",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 876,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2020-12-07",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 43299,
+      "purchase_events": 66
+    },
+    {
+      "source_date": "2020-12-07",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 27498,
+      "purchase_events": 43
+    },
+    {
+      "source_date": "2020-12-07",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 835,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-08",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 55010,
+      "purchase_events": 78
+    },
+    {
+      "source_date": "2020-12-08",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 35086,
+      "purchase_events": 41
+    },
+    {
+      "source_date": "2020-12-08",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 2103,
+      "purchase_events": 3
+    },
+    {
+      "source_date": "2020-12-09",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 48141,
+      "purchase_events": 99
+    },
+    {
+      "source_date": "2020-12-09",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 32096,
+      "purchase_events": 47
+    },
+    {
+      "source_date": "2020-12-09",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 2078,
+      "purchase_events": 4
+    },
+    {
+      "source_date": "2020-12-10",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 49006,
+      "purchase_events": 83
+    },
+    {
+      "source_date": "2020-12-10",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 30587,
+      "purchase_events": 58
+    },
+    {
+      "source_date": "2020-12-10",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1262,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2020-12-11",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 44831,
+      "purchase_events": 92
+    },
+    {
+      "source_date": "2020-12-11",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 29604,
+      "purchase_events": 67
+    },
+    {
+      "source_date": "2020-12-11",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1345,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-12",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 33788,
+      "purchase_events": 71
+    },
+    {
+      "source_date": "2020-12-12",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 21702,
+      "purchase_events": 34
+    },
+    {
+      "source_date": "2020-12-12",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 656,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-13",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 27761,
+      "purchase_events": 43
+    },
+    {
+      "source_date": "2020-12-13",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 18567,
+      "purchase_events": 31
+    },
+    {
+      "source_date": "2020-12-13",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 558,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-12-14",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 36465,
+      "purchase_events": 38
+    },
+    {
+      "source_date": "2020-12-14",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 27777,
+      "purchase_events": 60
+    },
+    {
+      "source_date": "2020-12-14",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1840,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-15",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 42842,
+      "purchase_events": 86
+    },
+    {
+      "source_date": "2020-12-15",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 27953,
+      "purchase_events": 52
+    },
+    {
+      "source_date": "2020-12-15",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1979,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-16",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 40022,
+      "purchase_events": 87
+    },
+    {
+      "source_date": "2020-12-16",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 26133,
+      "purchase_events": 54
+    },
+    {
+      "source_date": "2020-12-16",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1342,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2020-12-17",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 37075,
+      "purchase_events": 72
+    },
+    {
+      "source_date": "2020-12-17",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 25775,
+      "purchase_events": 53
+    },
+    {
+      "source_date": "2020-12-17",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1037,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-18",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 32809,
+      "purchase_events": 67
+    },
+    {
+      "source_date": "2020-12-18",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 22821,
+      "purchase_events": 39
+    },
+    {
+      "source_date": "2020-12-18",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1112,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-19",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 20949,
+      "purchase_events": 30
+    },
+    {
+      "source_date": "2020-12-19",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 15848,
+      "purchase_events": 22
+    },
+    {
+      "source_date": "2020-12-19",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 545,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-12-20",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 17433,
+      "purchase_events": 12
+    },
+    {
+      "source_date": "2020-12-20",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 12260,
+      "purchase_events": 8
+    },
+    {
+      "source_date": "2020-12-20",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 378,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-12-21",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 24580,
+      "purchase_events": 29
+    },
+    {
+      "source_date": "2020-12-21",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 16559,
+      "purchase_events": 20
+    },
+    {
+      "source_date": "2020-12-21",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1484,
+      "purchase_events": 4
+    },
+    {
+      "source_date": "2020-12-22",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 25012,
+      "purchase_events": 36
+    },
+    {
+      "source_date": "2020-12-22",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 18431,
+      "purchase_events": 23
+    },
+    {
+      "source_date": "2020-12-22",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1076,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-23",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 22167,
+      "purchase_events": 33
+    },
+    {
+      "source_date": "2020-12-23",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 17155,
+      "purchase_events": 34
+    },
+    {
+      "source_date": "2020-12-23",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 718,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-12-24",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 14751,
+      "purchase_events": 11
+    },
+    {
+      "source_date": "2020-12-24",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 10459,
+      "purchase_events": 10
+    },
+    {
+      "source_date": "2020-12-24",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 929,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2020-12-25",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 11436,
+      "purchase_events": 7
+    },
+    {
+      "source_date": "2020-12-25",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 9483,
+      "purchase_events": 10
+    },
+    {
+      "source_date": "2020-12-25",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 436,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-12-26",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 12601,
+      "purchase_events": 5
+    },
+    {
+      "source_date": "2020-12-26",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 9179,
+      "purchase_events": 12
+    },
+    {
+      "source_date": "2020-12-26",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 341,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2020-12-27",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 12926,
+      "purchase_events": 11
+    },
+    {
+      "source_date": "2020-12-27",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 8984,
+      "purchase_events": 8
+    },
+    {
+      "source_date": "2020-12-27",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 586,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-28",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 19791,
+      "purchase_events": 23
+    },
+    {
+      "source_date": "2020-12-28",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 12159,
+      "purchase_events": 12
+    },
+    {
+      "source_date": "2020-12-28",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 626,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-29",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 20019,
+      "purchase_events": 15
+    },
+    {
+      "source_date": "2020-12-29",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 13152,
+      "purchase_events": 8
+    },
+    {
+      "source_date": "2020-12-29",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 804,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-30",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 16739,
+      "purchase_events": 11
+    },
+    {
+      "source_date": "2020-12-30",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 12641,
+      "purchase_events": 25
+    },
+    {
+      "source_date": "2020-12-30",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 682,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2020-12-31",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 14951,
+      "purchase_events": 17
+    },
+    {
+      "source_date": "2020-12-31",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 8888,
+      "purchase_events": 7
+    },
+    {
+      "source_date": "2020-12-31",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 698,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2021-01-01",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 13477,
+      "purchase_events": 6
+    },
+    {
+      "source_date": "2021-01-01",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 8152,
+      "purchase_events": 7
+    },
+    {
+      "source_date": "2021-01-01",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 467,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2021-01-02",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 14771,
+      "purchase_events": 6
+    },
+    {
+      "source_date": "2021-01-02",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 8227,
+      "purchase_events": 7
+    },
+    {
+      "source_date": "2021-01-02",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 601,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2021-01-03",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 14404,
+      "purchase_events": 7
+    },
+    {
+      "source_date": "2021-01-03",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 10044,
+      "purchase_events": 7
+    },
+    {
+      "source_date": "2021-01-03",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 295,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2021-01-04",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 18235,
+      "purchase_events": 9
+    },
+    {
+      "source_date": "2021-01-04",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 12290,
+      "purchase_events": 6
+    },
+    {
+      "source_date": "2021-01-04",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 870,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2021-01-05",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 24866,
+      "purchase_events": 18
+    },
+    {
+      "source_date": "2021-01-05",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 17126,
+      "purchase_events": 11
+    },
+    {
+      "source_date": "2021-01-05",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 835,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2021-01-06",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 34338,
+      "purchase_events": 19
+    },
+    {
+      "source_date": "2021-01-06",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 20559,
+      "purchase_events": 11
+    },
+    {
+      "source_date": "2021-01-06",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1179,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2021-01-07",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 25736,
+      "purchase_events": 18
+    },
+    {
+      "source_date": "2021-01-07",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 17335,
+      "purchase_events": 8
+    },
+    {
+      "source_date": "2021-01-07",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1402,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2021-01-08",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 24052,
+      "purchase_events": 22
+    },
+    {
+      "source_date": "2021-01-08",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 16174,
+      "purchase_events": 11
+    },
+    {
+      "source_date": "2021-01-08",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 975,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2021-01-09",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 18200,
+      "purchase_events": 11
+    },
+    {
+      "source_date": "2021-01-09",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 12883,
+      "purchase_events": 9
+    },
+    {
+      "source_date": "2021-01-09",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 547,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2021-01-10",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 15252,
+      "purchase_events": 9
+    },
+    {
+      "source_date": "2021-01-10",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 11491,
+      "purchase_events": 5
+    },
+    {
+      "source_date": "2021-01-10",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 686,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2021-01-11",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 21509,
+      "purchase_events": 18
+    },
+    {
+      "source_date": "2021-01-11",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 15790,
+      "purchase_events": 9
+    },
+    {
+      "source_date": "2021-01-11",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 845,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2021-01-12",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 28225,
+      "purchase_events": 27
+    },
+    {
+      "source_date": "2021-01-12",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 19008,
+      "purchase_events": 19
+    },
+    {
+      "source_date": "2021-01-12",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1265,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2021-01-13",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 26474,
+      "purchase_events": 21
+    },
+    {
+      "source_date": "2021-01-13",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 18319,
+      "purchase_events": 15
+    },
+    {
+      "source_date": "2021-01-13",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 748,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2021-01-14",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 27076,
+      "purchase_events": 29
+    },
+    {
+      "source_date": "2021-01-14",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 17818,
+      "purchase_events": 25
+    },
+    {
+      "source_date": "2021-01-14",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 791,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2021-01-15",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 22919,
+      "purchase_events": 26
+    },
+    {
+      "source_date": "2021-01-15",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 16626,
+      "purchase_events": 19
+    },
+    {
+      "source_date": "2021-01-15",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 860,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2021-01-16",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 16566,
+      "purchase_events": 12
+    },
+    {
+      "source_date": "2021-01-16",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 12968,
+      "purchase_events": 15
+    },
+    {
+      "source_date": "2021-01-16",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 727,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2021-01-17",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 16266,
+      "purchase_events": 10
+    },
+    {
+      "source_date": "2021-01-17",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 10071,
+      "purchase_events": 4
+    },
+    {
+      "source_date": "2021-01-17",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 727,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2021-01-18",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 18292,
+      "purchase_events": 8
+    },
+    {
+      "source_date": "2021-01-18",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 13438,
+      "purchase_events": 11
+    },
+    {
+      "source_date": "2021-01-18",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 628,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2021-01-19",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 28982,
+      "purchase_events": 25
+    },
+    {
+      "source_date": "2021-01-19",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 20039,
+      "purchase_events": 20
+    },
+    {
+      "source_date": "2021-01-19",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1453,
+      "purchase_events": 4
+    },
+    {
+      "source_date": "2021-01-20",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 38122,
+      "purchase_events": 56
+    },
+    {
+      "source_date": "2021-01-20",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 24934,
+      "purchase_events": 39
+    },
+    {
+      "source_date": "2021-01-20",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1053,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2021-01-21",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 31559,
+      "purchase_events": 35
+    },
+    {
+      "source_date": "2021-01-21",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 20027,
+      "purchase_events": 16
+    },
+    {
+      "source_date": "2021-01-21",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1100,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2021-01-22",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 29630,
+      "purchase_events": 60
+    },
+    {
+      "source_date": "2021-01-22",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 19274,
+      "purchase_events": 39
+    },
+    {
+      "source_date": "2021-01-22",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1018,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2021-01-23",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 20002,
+      "purchase_events": 26
+    },
+    {
+      "source_date": "2021-01-23",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 13155,
+      "purchase_events": 15
+    },
+    {
+      "source_date": "2021-01-23",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 1165,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2021-01-24",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 19006,
+      "purchase_events": 19
+    },
+    {
+      "source_date": "2021-01-24",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 11959,
+      "purchase_events": 17
+    },
+    {
+      "source_date": "2021-01-24",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 737,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2021-01-25",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 24178,
+      "purchase_events": 36
+    },
+    {
+      "source_date": "2021-01-25",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 16637,
+      "purchase_events": 23
+    },
+    {
+      "source_date": "2021-01-25",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 903,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2021-01-26",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 24344,
+      "purchase_events": 28
+    },
+    {
+      "source_date": "2021-01-26",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 16949,
+      "purchase_events": 26
+    },
+    {
+      "source_date": "2021-01-26",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 939,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2021-01-27",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 27142,
+      "purchase_events": 19
+    },
+    {
+      "source_date": "2021-01-27",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 20573,
+      "purchase_events": 34
+    },
+    {
+      "source_date": "2021-01-27",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 950,
+      "purchase_events": 1
+    },
+    {
+      "source_date": "2021-01-28",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 24864,
+      "purchase_events": 28
+    },
+    {
+      "source_date": "2021-01-28",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 17367,
+      "purchase_events": 39
+    },
+    {
+      "source_date": "2021-01-28",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 900,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2021-01-29",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 23713,
+      "purchase_events": 29
+    },
+    {
+      "source_date": "2021-01-29",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 16223,
+      "purchase_events": 22
+    },
+    {
+      "source_date": "2021-01-29",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 941,
+      "purchase_events": 3
+    },
+    {
+      "source_date": "2021-01-30",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 18600,
+      "purchase_events": 19
+    },
+    {
+      "source_date": "2021-01-30",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 11186,
+      "purchase_events": 12
+    },
+    {
+      "source_date": "2021-01-30",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 609,
+      "purchase_events": 0
+    },
+    {
+      "source_date": "2021-01-31",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 15239,
+      "purchase_events": 11
+    },
+    {
+      "source_date": "2021-01-31",
+      "device": "mobile",
+      "key_status": "keyed_event",
+      "events": 10624,
+      "purchase_events": 7
+    },
+    {
+      "source_date": "2021-01-31",
+      "device": "tablet",
+      "key_status": "keyed_event",
+      "events": 626,
+      "purchase_events": 1
+    }
+  ],
+  "visit_exclusions": [
+    {
+      "cohort_month": "202011",
+      "exclusion_reason": "cross_date",
+      "visits": 286,
+      "events": 15327,
+      "raw_purchase_events": 34,
+      "candidate_transactions": 15
+    },
+    {
+      "cohort_month": "202011",
+      "exclusion_reason": "outside_primary_month",
+      "visits": 103598,
+      "events": 1396315,
+      "raw_purchase_events": 1938,
+      "candidate_transactions": 914
+    },
+    {
+      "cohort_month": "202011",
+      "exclusion_reason": "repeated_start",
+      "visits": 34,
+      "events": 496,
+      "raw_purchase_events": 2,
+      "candidate_transactions": 0
+    },
+    {
+      "cohort_month": "202011",
+      "exclusion_reason": "source_edge",
+      "visits": 2594,
+      "events": 31044,
+      "raw_purchase_events": 14,
+      "candidate_transactions": 0
+    },
+    {
+      "cohort_month": "202011",
+      "exclusion_reason": "start_not_first",
+      "visits": 38,
+      "events": 481,
+      "raw_purchase_events": 0,
+      "candidate_transactions": 0
+    },
+    {
+      "cohort_month": "202011",
+      "exclusion_reason": "without_start",
+      "visits": 1851,
+      "events": 29317,
+      "raw_purchase_events": 67,
+      "candidate_transactions": 58
+    },
+    {
+      "cohort_month": "202012",
+      "exclusion_reason": "cross_date",
+      "visits": 295,
+      "events": 14566,
+      "raw_purchase_events": 41,
+      "candidate_transactions": 37
+    },
+    {
+      "cohort_month": "202012",
+      "exclusion_reason": "eligible_primary",
+      "visits": 131418,
+      "events": 1577681,
+      "raw_purchase_events": 2371,
+      "candidate_transactions": 2240
+    },
+    {
+      "cohort_month": "202012",
+      "exclusion_reason": "repeated_start",
+      "visits": 38,
+      "events": 364,
+      "raw_purchase_events": 0,
+      "candidate_transactions": 0
+    },
+    {
+      "cohort_month": "202012",
+      "exclusion_reason": "start_not_first",
+      "visits": 42,
+      "events": 264,
+      "raw_purchase_events": 0,
+      "candidate_transactions": 0
+    },
+    {
+      "cohort_month": "202012",
+      "exclusion_reason": "without_start",
+      "visits": 1558,
+      "events": 19685,
+      "raw_purchase_events": 21,
+      "candidate_transactions": 20
+    },
+    {
+      "cohort_month": "202101",
+      "exclusion_reason": "cross_date",
+      "visits": 225,
+      "events": 9797,
+      "raw_purchase_events": 26,
+      "candidate_transactions": 20
+    },
+    {
+      "cohort_month": "202101",
+      "exclusion_reason": "outside_primary_month",
+      "visits": 113401,
+      "events": 1153159,
+      "raw_purchase_events": 1133,
+      "candidate_transactions": 856
+    },
+    {
+      "cohort_month": "202101",
+      "exclusion_reason": "repeated_start",
+      "visits": 33,
+      "events": 333,
+      "raw_purchase_events": 0,
+      "candidate_transactions": 0
+    },
+    {
+      "cohort_month": "202101",
+      "exclusion_reason": "source_edge",
+      "visits": 2763,
+      "events": 25925,
+      "raw_purchase_events": 19,
+      "candidate_transactions": 0
+    },
+    {
+      "cohort_month": "202101",
+      "exclusion_reason": "start_not_first",
+      "visits": 92,
+      "events": 850,
+      "raw_purchase_events": 1,
+      "candidate_transactions": 1
+    },
+    {
+      "cohort_month": "202101",
+      "exclusion_reason": "without_start",
+      "visits": 1863,
+      "events": 19980,
+      "raw_purchase_events": 25,
+      "candidate_transactions": 11
+    }
+  ],
+  "purchase_coverage": [
+    {
+      "source_date": "2020-11-01",
+      "device": "desktop",
+      "raw_purchase_events": 9,
+      "missing_id_events": 9,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-01",
+      "device": "mobile",
+      "raw_purchase_events": 5,
+      "missing_id_events": 5,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-02",
+      "device": "desktop",
+      "raw_purchase_events": 31,
+      "missing_id_events": 31,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-02",
+      "device": "mobile",
+      "raw_purchase_events": 17,
+      "missing_id_events": 17,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-02",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-03",
+      "device": "desktop",
+      "raw_purchase_events": 30,
+      "missing_id_events": 30,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-03",
+      "device": "mobile",
+      "raw_purchase_events": 19,
+      "missing_id_events": 19,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-04",
+      "device": "desktop",
+      "raw_purchase_events": 33,
+      "missing_id_events": 33,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-04",
+      "device": "mobile",
+      "raw_purchase_events": 12,
+      "missing_id_events": 12,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-04",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-05",
+      "device": "desktop",
+      "raw_purchase_events": 16,
+      "missing_id_events": 16,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-05",
+      "device": "mobile",
+      "raw_purchase_events": 9,
+      "missing_id_events": 9,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-05",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-06",
+      "device": "desktop",
+      "raw_purchase_events": 28,
+      "missing_id_events": 28,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-06",
+      "device": "mobile",
+      "raw_purchase_events": 27,
+      "missing_id_events": 27,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-06",
+      "device": "tablet",
+      "raw_purchase_events": 3,
+      "missing_id_events": 3,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-07",
+      "device": "desktop",
+      "raw_purchase_events": 17,
+      "missing_id_events": 17,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-07",
+      "device": "mobile",
+      "raw_purchase_events": 14,
+      "missing_id_events": 14,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-08",
+      "device": "desktop",
+      "raw_purchase_events": 15,
+      "missing_id_events": 15,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-08",
+      "device": "mobile",
+      "raw_purchase_events": 15,
+      "missing_id_events": 15,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-08",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-09",
+      "device": "desktop",
+      "raw_purchase_events": 29,
+      "missing_id_events": 29,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-09",
+      "device": "mobile",
+      "raw_purchase_events": 23,
+      "missing_id_events": 23,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-10",
+      "device": "desktop",
+      "raw_purchase_events": 35,
+      "missing_id_events": 35,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-10",
+      "device": "mobile",
+      "raw_purchase_events": 29,
+      "missing_id_events": 29,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-11",
+      "device": "desktop",
+      "raw_purchase_events": 37,
+      "missing_id_events": 20,
+      "rejected_id_events": 0,
+      "candidate_events": 17,
+      "candidate_transactions": 17,
+      "agreeing_transactions": 13
+    },
+    {
+      "source_date": "2020-11-11",
+      "device": "mobile",
+      "raw_purchase_events": 26,
+      "missing_id_events": 15,
+      "rejected_id_events": 0,
+      "candidate_events": 11,
+      "candidate_transactions": 11,
+      "agreeing_transactions": 9
+    },
+    {
+      "source_date": "2020-11-11",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-12",
+      "device": "desktop",
+      "raw_purchase_events": 30,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 29,
+      "candidate_transactions": 29,
+      "agreeing_transactions": 22
+    },
+    {
+      "source_date": "2020-11-12",
+      "device": "mobile",
+      "raw_purchase_events": 24,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 24,
+      "candidate_transactions": 24,
+      "agreeing_transactions": 19
+    },
+    {
+      "source_date": "2020-11-13",
+      "device": "desktop",
+      "raw_purchase_events": 54,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 54,
+      "candidate_transactions": 54,
+      "agreeing_transactions": 47
+    },
+    {
+      "source_date": "2020-11-13",
+      "device": "mobile",
+      "raw_purchase_events": 25,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 25,
+      "candidate_transactions": 24,
+      "agreeing_transactions": 21
+    },
+    {
+      "source_date": "2020-11-14",
+      "device": "desktop",
+      "raw_purchase_events": 18,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 18,
+      "candidate_transactions": 18,
+      "agreeing_transactions": 13
+    },
+    {
+      "source_date": "2020-11-14",
+      "device": "mobile",
+      "raw_purchase_events": 12,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 12,
+      "candidate_transactions": 12,
+      "agreeing_transactions": 8
+    },
+    {
+      "source_date": "2020-11-15",
+      "device": "desktop",
+      "raw_purchase_events": 13,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 13,
+      "candidate_transactions": 13,
+      "agreeing_transactions": 12
+    },
+    {
+      "source_date": "2020-11-15",
+      "device": "mobile",
+      "raw_purchase_events": 7,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 7,
+      "candidate_transactions": 7,
+      "agreeing_transactions": 7
+    },
+    {
+      "source_date": "2020-11-15",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-11-16",
+      "device": "desktop",
+      "raw_purchase_events": 37,
+      "missing_id_events": 0,
+      "rejected_id_events": 1,
+      "candidate_events": 36,
+      "candidate_transactions": 36,
+      "agreeing_transactions": 28
+    },
+    {
+      "source_date": "2020-11-16",
+      "device": "mobile",
+      "raw_purchase_events": 29,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 29,
+      "candidate_transactions": 29,
+      "agreeing_transactions": 24
+    },
+    {
+      "source_date": "2020-11-16",
+      "device": "tablet",
+      "raw_purchase_events": 3,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 3,
+      "candidate_transactions": 3,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2020-11-17",
+      "device": "desktop",
+      "raw_purchase_events": 56,
+      "missing_id_events": 0,
+      "rejected_id_events": 2,
+      "candidate_events": 54,
+      "candidate_transactions": 54,
+      "agreeing_transactions": 41
+    },
+    {
+      "source_date": "2020-11-17",
+      "device": "mobile",
+      "raw_purchase_events": 42,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 42,
+      "candidate_transactions": 42,
+      "agreeing_transactions": 27
+    },
+    {
+      "source_date": "2020-11-18",
+      "device": "desktop",
+      "raw_purchase_events": 36,
+      "missing_id_events": 0,
+      "rejected_id_events": 6,
+      "candidate_events": 30,
+      "candidate_transactions": 30,
+      "agreeing_transactions": 21
+    },
+    {
+      "source_date": "2020-11-18",
+      "device": "mobile",
+      "raw_purchase_events": 32,
+      "missing_id_events": 1,
+      "rejected_id_events": 13,
+      "candidate_events": 18,
+      "candidate_transactions": 18,
+      "agreeing_transactions": 16
+    },
+    {
+      "source_date": "2020-11-19",
+      "device": "desktop",
+      "raw_purchase_events": 45,
+      "missing_id_events": 4,
+      "rejected_id_events": 36,
+      "candidate_events": 5,
+      "candidate_transactions": 4,
+      "agreeing_transactions": 4
+    },
+    {
+      "source_date": "2020-11-19",
+      "device": "mobile",
+      "raw_purchase_events": 39,
+      "missing_id_events": 1,
+      "rejected_id_events": 36,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2020-11-20",
+      "device": "desktop",
+      "raw_purchase_events": 57,
+      "missing_id_events": 5,
+      "rejected_id_events": 52,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-20",
+      "device": "mobile",
+      "raw_purchase_events": 61,
+      "missing_id_events": 7,
+      "rejected_id_events": 52,
+      "candidate_events": 2,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-11-21",
+      "device": "desktop",
+      "raw_purchase_events": 37,
+      "missing_id_events": 1,
+      "rejected_id_events": 36,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-21",
+      "device": "mobile",
+      "raw_purchase_events": 27,
+      "missing_id_events": 1,
+      "rejected_id_events": 26,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-21",
+      "device": "tablet",
+      "raw_purchase_events": 4,
+      "missing_id_events": 0,
+      "rejected_id_events": 4,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-22",
+      "device": "desktop",
+      "raw_purchase_events": 31,
+      "missing_id_events": 1,
+      "rejected_id_events": 30,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-22",
+      "device": "mobile",
+      "raw_purchase_events": 29,
+      "missing_id_events": 1,
+      "rejected_id_events": 28,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-23",
+      "device": "desktop",
+      "raw_purchase_events": 73,
+      "missing_id_events": 1,
+      "rejected_id_events": 70,
+      "candidate_events": 2,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-11-23",
+      "device": "mobile",
+      "raw_purchase_events": 61,
+      "missing_id_events": 1,
+      "rejected_id_events": 56,
+      "candidate_events": 4,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-23",
+      "device": "tablet",
+      "raw_purchase_events": 7,
+      "missing_id_events": 1,
+      "rejected_id_events": 6,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-24",
+      "device": "desktop",
+      "raw_purchase_events": 85,
+      "missing_id_events": 1,
+      "rejected_id_events": 38,
+      "candidate_events": 46,
+      "candidate_transactions": 45,
+      "agreeing_transactions": 35
+    },
+    {
+      "source_date": "2020-11-24",
+      "device": "mobile",
+      "raw_purchase_events": 61,
+      "missing_id_events": 1,
+      "rejected_id_events": 32,
+      "candidate_events": 28,
+      "candidate_transactions": 25,
+      "agreeing_transactions": 21
+    },
+    {
+      "source_date": "2020-11-24",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-11-25",
+      "device": "desktop",
+      "raw_purchase_events": 65,
+      "missing_id_events": 3,
+      "rejected_id_events": 12,
+      "candidate_events": 50,
+      "candidate_transactions": 48,
+      "agreeing_transactions": 37
+    },
+    {
+      "source_date": "2020-11-25",
+      "device": "mobile",
+      "raw_purchase_events": 42,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 40,
+      "candidate_transactions": 40,
+      "agreeing_transactions": 28
+    },
+    {
+      "source_date": "2020-11-25",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-11-26",
+      "device": "desktop",
+      "raw_purchase_events": 30,
+      "missing_id_events": 3,
+      "rejected_id_events": 0,
+      "candidate_events": 27,
+      "candidate_transactions": 27,
+      "agreeing_transactions": 23
+    },
+    {
+      "source_date": "2020-11-26",
+      "device": "mobile",
+      "raw_purchase_events": 26,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 26,
+      "candidate_transactions": 26,
+      "agreeing_transactions": 22
+    },
+    {
+      "source_date": "2020-11-26",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-11-27",
+      "device": "desktop",
+      "raw_purchase_events": 56,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 54,
+      "candidate_transactions": 51,
+      "agreeing_transactions": 40
+    },
+    {
+      "source_date": "2020-11-27",
+      "device": "mobile",
+      "raw_purchase_events": 35,
+      "missing_id_events": 2,
+      "rejected_id_events": 1,
+      "candidate_events": 32,
+      "candidate_transactions": 32,
+      "agreeing_transactions": 23
+    },
+    {
+      "source_date": "2020-11-27",
+      "device": "tablet",
+      "raw_purchase_events": 6,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 6,
+      "candidate_transactions": 6,
+      "agreeing_transactions": 5
+    },
+    {
+      "source_date": "2020-11-28",
+      "device": "desktop",
+      "raw_purchase_events": 38,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 38,
+      "candidate_transactions": 38,
+      "agreeing_transactions": 31
+    },
+    {
+      "source_date": "2020-11-28",
+      "device": "mobile",
+      "raw_purchase_events": 38,
+      "missing_id_events": 7,
+      "rejected_id_events": 1,
+      "candidate_events": 30,
+      "candidate_transactions": 30,
+      "agreeing_transactions": 24
+    },
+    {
+      "source_date": "2020-11-28",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-11-29",
+      "device": "desktop",
+      "raw_purchase_events": 29,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 28,
+      "candidate_transactions": 28,
+      "agreeing_transactions": 22
+    },
+    {
+      "source_date": "2020-11-29",
+      "device": "mobile",
+      "raw_purchase_events": 20,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 19,
+      "candidate_transactions": 19,
+      "agreeing_transactions": 16
+    },
+    {
+      "source_date": "2020-11-29",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2020-11-30",
+      "device": "desktop",
+      "raw_purchase_events": 74,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 72,
+      "candidate_transactions": 72,
+      "agreeing_transactions": 52
+    },
+    {
+      "source_date": "2020-11-30",
+      "device": "mobile",
+      "raw_purchase_events": 66,
+      "missing_id_events": 3,
+      "rejected_id_events": 1,
+      "candidate_events": 62,
+      "candidate_transactions": 60,
+      "agreeing_transactions": 44
+    },
+    {
+      "source_date": "2020-11-30",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-12-01",
+      "device": "desktop",
+      "raw_purchase_events": 63,
+      "missing_id_events": 7,
+      "rejected_id_events": 0,
+      "candidate_events": 56,
+      "candidate_transactions": 55,
+      "agreeing_transactions": 47
+    },
+    {
+      "source_date": "2020-12-01",
+      "device": "mobile",
+      "raw_purchase_events": 43,
+      "missing_id_events": 3,
+      "rejected_id_events": 1,
+      "candidate_events": 39,
+      "candidate_transactions": 39,
+      "agreeing_transactions": 28
+    },
+    {
+      "source_date": "2020-12-01",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-12-02",
+      "device": "desktop",
+      "raw_purchase_events": 46,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 44,
+      "candidate_transactions": 44,
+      "agreeing_transactions": 37
+    },
+    {
+      "source_date": "2020-12-02",
+      "device": "mobile",
+      "raw_purchase_events": 32,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 30,
+      "candidate_transactions": 30,
+      "agreeing_transactions": 21
+    },
+    {
+      "source_date": "2020-12-02",
+      "device": "tablet",
+      "raw_purchase_events": 4,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 4,
+      "candidate_transactions": 3,
+      "agreeing_transactions": 3
+    },
+    {
+      "source_date": "2020-12-03",
+      "device": "desktop",
+      "raw_purchase_events": 58,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 56,
+      "candidate_transactions": 56,
+      "agreeing_transactions": 45
+    },
+    {
+      "source_date": "2020-12-03",
+      "device": "mobile",
+      "raw_purchase_events": 29,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 29,
+      "candidate_transactions": 28,
+      "agreeing_transactions": 23
+    },
+    {
+      "source_date": "2020-12-03",
+      "device": "tablet",
+      "raw_purchase_events": 3,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2020-12-04",
+      "device": "desktop",
+      "raw_purchase_events": 53,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 51,
+      "candidate_transactions": 51,
+      "agreeing_transactions": 41
+    },
+    {
+      "source_date": "2020-12-04",
+      "device": "mobile",
+      "raw_purchase_events": 41,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 40,
+      "candidate_transactions": 39,
+      "agreeing_transactions": 32
+    },
+    {
+      "source_date": "2020-12-04",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2020-12-05",
+      "device": "desktop",
+      "raw_purchase_events": 49,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 48,
+      "candidate_transactions": 47,
+      "agreeing_transactions": 34
+    },
+    {
+      "source_date": "2020-12-05",
+      "device": "mobile",
+      "raw_purchase_events": 36,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 35,
+      "candidate_transactions": 35,
+      "agreeing_transactions": 32
+    },
+    {
+      "source_date": "2020-12-05",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2020-12-06",
+      "device": "desktop",
+      "raw_purchase_events": 24,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 24,
+      "candidate_transactions": 24,
+      "agreeing_transactions": 22
+    },
+    {
+      "source_date": "2020-12-06",
+      "device": "mobile",
+      "raw_purchase_events": 16,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 15,
+      "candidate_transactions": 15,
+      "agreeing_transactions": 13
+    },
+    {
+      "source_date": "2020-12-06",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2020-12-07",
+      "device": "desktop",
+      "raw_purchase_events": 66,
+      "missing_id_events": 1,
+      "rejected_id_events": 2,
+      "candidate_events": 63,
+      "candidate_transactions": 62,
+      "agreeing_transactions": 50
+    },
+    {
+      "source_date": "2020-12-07",
+      "device": "mobile",
+      "raw_purchase_events": 43,
+      "missing_id_events": 3,
+      "rejected_id_events": 0,
+      "candidate_events": 40,
+      "candidate_transactions": 40,
+      "agreeing_transactions": 35
+    },
+    {
+      "source_date": "2020-12-07",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-12-08",
+      "device": "desktop",
+      "raw_purchase_events": 78,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 78,
+      "candidate_transactions": 77,
+      "agreeing_transactions": 63
+    },
+    {
+      "source_date": "2020-12-08",
+      "device": "mobile",
+      "raw_purchase_events": 41,
+      "missing_id_events": 1,
+      "rejected_id_events": 1,
+      "candidate_events": 39,
+      "candidate_transactions": 39,
+      "agreeing_transactions": 34
+    },
+    {
+      "source_date": "2020-12-08",
+      "device": "tablet",
+      "raw_purchase_events": 3,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 3,
+      "candidate_transactions": 3,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2020-12-09",
+      "device": "desktop",
+      "raw_purchase_events": 99,
+      "missing_id_events": 4,
+      "rejected_id_events": 1,
+      "candidate_events": 94,
+      "candidate_transactions": 90,
+      "agreeing_transactions": 71
+    },
+    {
+      "source_date": "2020-12-09",
+      "device": "mobile",
+      "raw_purchase_events": 47,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 46,
+      "candidate_transactions": 46,
+      "agreeing_transactions": 32
+    },
+    {
+      "source_date": "2020-12-09",
+      "device": "tablet",
+      "raw_purchase_events": 4,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 4,
+      "candidate_transactions": 4,
+      "agreeing_transactions": 3
+    },
+    {
+      "source_date": "2020-12-10",
+      "device": "desktop",
+      "raw_purchase_events": 83,
+      "missing_id_events": 3,
+      "rejected_id_events": 0,
+      "candidate_events": 80,
+      "candidate_transactions": 79,
+      "agreeing_transactions": 68
+    },
+    {
+      "source_date": "2020-12-10",
+      "device": "mobile",
+      "raw_purchase_events": 58,
+      "missing_id_events": 3,
+      "rejected_id_events": 0,
+      "candidate_events": 55,
+      "candidate_transactions": 55,
+      "agreeing_transactions": 48
+    },
+    {
+      "source_date": "2020-12-10",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2020-12-11",
+      "device": "desktop",
+      "raw_purchase_events": 92,
+      "missing_id_events": 4,
+      "rejected_id_events": 0,
+      "candidate_events": 88,
+      "candidate_transactions": 88,
+      "agreeing_transactions": 73
+    },
+    {
+      "source_date": "2020-12-11",
+      "device": "mobile",
+      "raw_purchase_events": 67,
+      "missing_id_events": 1,
+      "rejected_id_events": 1,
+      "candidate_events": 65,
+      "candidate_transactions": 65,
+      "agreeing_transactions": 53
+    },
+    {
+      "source_date": "2020-12-11",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-12-12",
+      "device": "desktop",
+      "raw_purchase_events": 71,
+      "missing_id_events": 3,
+      "rejected_id_events": 0,
+      "candidate_events": 68,
+      "candidate_transactions": 68,
+      "agreeing_transactions": 55
+    },
+    {
+      "source_date": "2020-12-12",
+      "device": "mobile",
+      "raw_purchase_events": 34,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 33,
+      "candidate_transactions": 33,
+      "agreeing_transactions": 28
+    },
+    {
+      "source_date": "2020-12-12",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-12-13",
+      "device": "desktop",
+      "raw_purchase_events": 43,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 41,
+      "candidate_transactions": 41,
+      "agreeing_transactions": 34
+    },
+    {
+      "source_date": "2020-12-13",
+      "device": "mobile",
+      "raw_purchase_events": 31,
+      "missing_id_events": 4,
+      "rejected_id_events": 0,
+      "candidate_events": 27,
+      "candidate_transactions": 27,
+      "agreeing_transactions": 22
+    },
+    {
+      "source_date": "2020-12-14",
+      "device": "desktop",
+      "raw_purchase_events": 38,
+      "missing_id_events": 3,
+      "rejected_id_events": 0,
+      "candidate_events": 35,
+      "candidate_transactions": 35,
+      "agreeing_transactions": 29
+    },
+    {
+      "source_date": "2020-12-14",
+      "device": "mobile",
+      "raw_purchase_events": 60,
+      "missing_id_events": 2,
+      "rejected_id_events": 1,
+      "candidate_events": 57,
+      "candidate_transactions": 55,
+      "agreeing_transactions": 45
+    },
+    {
+      "source_date": "2020-12-14",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-12-15",
+      "device": "desktop",
+      "raw_purchase_events": 86,
+      "missing_id_events": 5,
+      "rejected_id_events": 2,
+      "candidate_events": 79,
+      "candidate_transactions": 79,
+      "agreeing_transactions": 63
+    },
+    {
+      "source_date": "2020-12-15",
+      "device": "mobile",
+      "raw_purchase_events": 52,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 51,
+      "candidate_transactions": 51,
+      "agreeing_transactions": 40
+    },
+    {
+      "source_date": "2020-12-15",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-12-16",
+      "device": "desktop",
+      "raw_purchase_events": 87,
+      "missing_id_events": 0,
+      "rejected_id_events": 1,
+      "candidate_events": 86,
+      "candidate_transactions": 85,
+      "agreeing_transactions": 68
+    },
+    {
+      "source_date": "2020-12-16",
+      "device": "mobile",
+      "raw_purchase_events": 54,
+      "missing_id_events": 0,
+      "rejected_id_events": 2,
+      "candidate_events": 52,
+      "candidate_transactions": 52,
+      "agreeing_transactions": 43
+    },
+    {
+      "source_date": "2020-12-16",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2020-12-17",
+      "device": "desktop",
+      "raw_purchase_events": 72,
+      "missing_id_events": 0,
+      "rejected_id_events": 1,
+      "candidate_events": 71,
+      "candidate_transactions": 69,
+      "agreeing_transactions": 62
+    },
+    {
+      "source_date": "2020-12-17",
+      "device": "mobile",
+      "raw_purchase_events": 53,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 52,
+      "candidate_transactions": 52,
+      "agreeing_transactions": 48
+    },
+    {
+      "source_date": "2020-12-17",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-12-18",
+      "device": "desktop",
+      "raw_purchase_events": 67,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 66,
+      "candidate_transactions": 65,
+      "agreeing_transactions": 53
+    },
+    {
+      "source_date": "2020-12-18",
+      "device": "mobile",
+      "raw_purchase_events": 39,
+      "missing_id_events": 0,
+      "rejected_id_events": 1,
+      "candidate_events": 38,
+      "candidate_transactions": 38,
+      "agreeing_transactions": 31
+    },
+    {
+      "source_date": "2020-12-18",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-12-19",
+      "device": "desktop",
+      "raw_purchase_events": 30,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 29,
+      "candidate_transactions": 29,
+      "agreeing_transactions": 25
+    },
+    {
+      "source_date": "2020-12-19",
+      "device": "mobile",
+      "raw_purchase_events": 22,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 22,
+      "candidate_transactions": 21,
+      "agreeing_transactions": 19
+    },
+    {
+      "source_date": "2020-12-20",
+      "device": "desktop",
+      "raw_purchase_events": 12,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 11,
+      "candidate_transactions": 11,
+      "agreeing_transactions": 6
+    },
+    {
+      "source_date": "2020-12-20",
+      "device": "mobile",
+      "raw_purchase_events": 8,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 8,
+      "candidate_transactions": 8,
+      "agreeing_transactions": 5
+    },
+    {
+      "source_date": "2020-12-21",
+      "device": "desktop",
+      "raw_purchase_events": 29,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 28,
+      "candidate_transactions": 27,
+      "agreeing_transactions": 24
+    },
+    {
+      "source_date": "2020-12-21",
+      "device": "mobile",
+      "raw_purchase_events": 20,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 19,
+      "candidate_transactions": 19,
+      "agreeing_transactions": 17
+    },
+    {
+      "source_date": "2020-12-21",
+      "device": "tablet",
+      "raw_purchase_events": 4,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 4,
+      "candidate_transactions": 4,
+      "agreeing_transactions": 3
+    },
+    {
+      "source_date": "2020-12-22",
+      "device": "desktop",
+      "raw_purchase_events": 36,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 34,
+      "candidate_transactions": 33,
+      "agreeing_transactions": 28
+    },
+    {
+      "source_date": "2020-12-22",
+      "device": "mobile",
+      "raw_purchase_events": 23,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 22,
+      "candidate_transactions": 22,
+      "agreeing_transactions": 19
+    },
+    {
+      "source_date": "2020-12-22",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-12-23",
+      "device": "desktop",
+      "raw_purchase_events": 33,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 33,
+      "candidate_transactions": 33,
+      "agreeing_transactions": 26
+    },
+    {
+      "source_date": "2020-12-23",
+      "device": "mobile",
+      "raw_purchase_events": 34,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 34,
+      "candidate_transactions": 34,
+      "agreeing_transactions": 30
+    },
+    {
+      "source_date": "2020-12-24",
+      "device": "desktop",
+      "raw_purchase_events": 11,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 10,
+      "candidate_transactions": 10,
+      "agreeing_transactions": 9
+    },
+    {
+      "source_date": "2020-12-24",
+      "device": "mobile",
+      "raw_purchase_events": 10,
+      "missing_id_events": 0,
+      "rejected_id_events": 1,
+      "candidate_events": 9,
+      "candidate_transactions": 9,
+      "agreeing_transactions": 8
+    },
+    {
+      "source_date": "2020-12-24",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2020-12-25",
+      "device": "desktop",
+      "raw_purchase_events": 7,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 7,
+      "candidate_transactions": 7,
+      "agreeing_transactions": 6
+    },
+    {
+      "source_date": "2020-12-25",
+      "device": "mobile",
+      "raw_purchase_events": 10,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 9,
+      "candidate_transactions": 9,
+      "agreeing_transactions": 9
+    },
+    {
+      "source_date": "2020-12-26",
+      "device": "desktop",
+      "raw_purchase_events": 5,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 4,
+      "candidate_transactions": 4,
+      "agreeing_transactions": 4
+    },
+    {
+      "source_date": "2020-12-26",
+      "device": "mobile",
+      "raw_purchase_events": 12,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 12,
+      "candidate_transactions": 11,
+      "agreeing_transactions": 8
+    },
+    {
+      "source_date": "2020-12-27",
+      "device": "desktop",
+      "raw_purchase_events": 11,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 11,
+      "candidate_transactions": 11,
+      "agreeing_transactions": 8
+    },
+    {
+      "source_date": "2020-12-27",
+      "device": "mobile",
+      "raw_purchase_events": 8,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 8,
+      "candidate_transactions": 8,
+      "agreeing_transactions": 7
+    },
+    {
+      "source_date": "2020-12-27",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-12-28",
+      "device": "desktop",
+      "raw_purchase_events": 23,
+      "missing_id_events": 0,
+      "rejected_id_events": 1,
+      "candidate_events": 22,
+      "candidate_transactions": 21,
+      "agreeing_transactions": 15
+    },
+    {
+      "source_date": "2020-12-28",
+      "device": "mobile",
+      "raw_purchase_events": 12,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 11,
+      "candidate_transactions": 11,
+      "agreeing_transactions": 11
+    },
+    {
+      "source_date": "2020-12-28",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-12-29",
+      "device": "desktop",
+      "raw_purchase_events": 15,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 15,
+      "candidate_transactions": 15,
+      "agreeing_transactions": 14
+    },
+    {
+      "source_date": "2020-12-29",
+      "device": "mobile",
+      "raw_purchase_events": 8,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 8,
+      "candidate_transactions": 8,
+      "agreeing_transactions": 7
+    },
+    {
+      "source_date": "2020-12-29",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2020-12-30",
+      "device": "desktop",
+      "raw_purchase_events": 11,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 11,
+      "candidate_transactions": 11,
+      "agreeing_transactions": 7
+    },
+    {
+      "source_date": "2020-12-30",
+      "device": "mobile",
+      "raw_purchase_events": 25,
+      "missing_id_events": 15,
+      "rejected_id_events": 1,
+      "candidate_events": 9,
+      "candidate_transactions": 8,
+      "agreeing_transactions": 8
+    },
+    {
+      "source_date": "2020-12-30",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2020-12-31",
+      "device": "desktop",
+      "raw_purchase_events": 17,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 17,
+      "candidate_transactions": 16,
+      "agreeing_transactions": 11
+    },
+    {
+      "source_date": "2020-12-31",
+      "device": "mobile",
+      "raw_purchase_events": 7,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 7,
+      "candidate_transactions": 7,
+      "agreeing_transactions": 7
+    },
+    {
+      "source_date": "2020-12-31",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2021-01-01",
+      "device": "desktop",
+      "raw_purchase_events": 6,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 6,
+      "candidate_transactions": 5,
+      "agreeing_transactions": 3
+    },
+    {
+      "source_date": "2021-01-01",
+      "device": "mobile",
+      "raw_purchase_events": 7,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 7,
+      "candidate_transactions": 7,
+      "agreeing_transactions": 7
+    },
+    {
+      "source_date": "2021-01-01",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2021-01-02",
+      "device": "desktop",
+      "raw_purchase_events": 6,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 6,
+      "candidate_transactions": 6,
+      "agreeing_transactions": 3
+    },
+    {
+      "source_date": "2021-01-02",
+      "device": "mobile",
+      "raw_purchase_events": 7,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 6,
+      "candidate_transactions": 6,
+      "agreeing_transactions": 6
+    },
+    {
+      "source_date": "2021-01-02",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2021-01-03",
+      "device": "desktop",
+      "raw_purchase_events": 7,
+      "missing_id_events": 0,
+      "rejected_id_events": 1,
+      "candidate_events": 6,
+      "candidate_transactions": 6,
+      "agreeing_transactions": 5
+    },
+    {
+      "source_date": "2021-01-03",
+      "device": "mobile",
+      "raw_purchase_events": 7,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 6,
+      "candidate_transactions": 6,
+      "agreeing_transactions": 6
+    },
+    {
+      "source_date": "2021-01-04",
+      "device": "desktop",
+      "raw_purchase_events": 9,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 9,
+      "candidate_transactions": 9,
+      "agreeing_transactions": 7
+    },
+    {
+      "source_date": "2021-01-04",
+      "device": "mobile",
+      "raw_purchase_events": 6,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 6,
+      "candidate_transactions": 6,
+      "agreeing_transactions": 5
+    },
+    {
+      "source_date": "2021-01-04",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2021-01-05",
+      "device": "desktop",
+      "raw_purchase_events": 18,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 17,
+      "candidate_transactions": 16,
+      "agreeing_transactions": 15
+    },
+    {
+      "source_date": "2021-01-05",
+      "device": "mobile",
+      "raw_purchase_events": 11,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 11,
+      "candidate_transactions": 11,
+      "agreeing_transactions": 10
+    },
+    {
+      "source_date": "2021-01-06",
+      "device": "desktop",
+      "raw_purchase_events": 19,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 19,
+      "candidate_transactions": 19,
+      "agreeing_transactions": 16
+    },
+    {
+      "source_date": "2021-01-06",
+      "device": "mobile",
+      "raw_purchase_events": 11,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 11,
+      "candidate_transactions": 11,
+      "agreeing_transactions": 8
+    },
+    {
+      "source_date": "2021-01-06",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2021-01-07",
+      "device": "desktop",
+      "raw_purchase_events": 18,
+      "missing_id_events": 3,
+      "rejected_id_events": 0,
+      "candidate_events": 15,
+      "candidate_transactions": 15,
+      "agreeing_transactions": 13
+    },
+    {
+      "source_date": "2021-01-07",
+      "device": "mobile",
+      "raw_purchase_events": 8,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 8,
+      "candidate_transactions": 8,
+      "agreeing_transactions": 8
+    },
+    {
+      "source_date": "2021-01-08",
+      "device": "desktop",
+      "raw_purchase_events": 22,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 21,
+      "candidate_transactions": 21,
+      "agreeing_transactions": 19
+    },
+    {
+      "source_date": "2021-01-08",
+      "device": "mobile",
+      "raw_purchase_events": 11,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 10,
+      "candidate_transactions": 10,
+      "agreeing_transactions": 9
+    },
+    {
+      "source_date": "2021-01-08",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2021-01-09",
+      "device": "desktop",
+      "raw_purchase_events": 11,
+      "missing_id_events": 0,
+      "rejected_id_events": 2,
+      "candidate_events": 9,
+      "candidate_transactions": 9,
+      "agreeing_transactions": 6
+    },
+    {
+      "source_date": "2021-01-09",
+      "device": "mobile",
+      "raw_purchase_events": 9,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 8,
+      "candidate_transactions": 8,
+      "agreeing_transactions": 8
+    },
+    {
+      "source_date": "2021-01-10",
+      "device": "desktop",
+      "raw_purchase_events": 9,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 9,
+      "candidate_transactions": 9,
+      "agreeing_transactions": 6
+    },
+    {
+      "source_date": "2021-01-10",
+      "device": "mobile",
+      "raw_purchase_events": 5,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 5,
+      "candidate_transactions": 5,
+      "agreeing_transactions": 4
+    },
+    {
+      "source_date": "2021-01-11",
+      "device": "desktop",
+      "raw_purchase_events": 18,
+      "missing_id_events": 1,
+      "rejected_id_events": 1,
+      "candidate_events": 16,
+      "candidate_transactions": 16,
+      "agreeing_transactions": 14
+    },
+    {
+      "source_date": "2021-01-11",
+      "device": "mobile",
+      "raw_purchase_events": 9,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 9,
+      "candidate_transactions": 8,
+      "agreeing_transactions": 5
+    },
+    {
+      "source_date": "2021-01-11",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2021-01-12",
+      "device": "desktop",
+      "raw_purchase_events": 27,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 25,
+      "candidate_transactions": 25,
+      "agreeing_transactions": 24
+    },
+    {
+      "source_date": "2021-01-12",
+      "device": "mobile",
+      "raw_purchase_events": 19,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 19,
+      "candidate_transactions": 19,
+      "agreeing_transactions": 17
+    },
+    {
+      "source_date": "2021-01-12",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2021-01-13",
+      "device": "desktop",
+      "raw_purchase_events": 21,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 20,
+      "candidate_transactions": 20,
+      "agreeing_transactions": 20
+    },
+    {
+      "source_date": "2021-01-13",
+      "device": "mobile",
+      "raw_purchase_events": 15,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 14,
+      "candidate_transactions": 14,
+      "agreeing_transactions": 11
+    },
+    {
+      "source_date": "2021-01-14",
+      "device": "desktop",
+      "raw_purchase_events": 29,
+      "missing_id_events": 4,
+      "rejected_id_events": 0,
+      "candidate_events": 25,
+      "candidate_transactions": 25,
+      "agreeing_transactions": 21
+    },
+    {
+      "source_date": "2021-01-14",
+      "device": "mobile",
+      "raw_purchase_events": 25,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 24,
+      "candidate_transactions": 23,
+      "agreeing_transactions": 18
+    },
+    {
+      "source_date": "2021-01-15",
+      "device": "desktop",
+      "raw_purchase_events": 26,
+      "missing_id_events": 4,
+      "rejected_id_events": 1,
+      "candidate_events": 21,
+      "candidate_transactions": 21,
+      "agreeing_transactions": 17
+    },
+    {
+      "source_date": "2021-01-15",
+      "device": "mobile",
+      "raw_purchase_events": 19,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 18,
+      "candidate_transactions": 18,
+      "agreeing_transactions": 17
+    },
+    {
+      "source_date": "2021-01-15",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2021-01-16",
+      "device": "desktop",
+      "raw_purchase_events": 12,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 10,
+      "candidate_transactions": 9,
+      "agreeing_transactions": 9
+    },
+    {
+      "source_date": "2021-01-16",
+      "device": "mobile",
+      "raw_purchase_events": 15,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 14,
+      "candidate_transactions": 14,
+      "agreeing_transactions": 13
+    },
+    {
+      "source_date": "2021-01-17",
+      "device": "desktop",
+      "raw_purchase_events": 10,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 8,
+      "candidate_transactions": 8,
+      "agreeing_transactions": 6
+    },
+    {
+      "source_date": "2021-01-17",
+      "device": "mobile",
+      "raw_purchase_events": 4,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 4,
+      "candidate_transactions": 4,
+      "agreeing_transactions": 3
+    },
+    {
+      "source_date": "2021-01-18",
+      "device": "desktop",
+      "raw_purchase_events": 8,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 7,
+      "candidate_transactions": 7,
+      "agreeing_transactions": 7
+    },
+    {
+      "source_date": "2021-01-18",
+      "device": "mobile",
+      "raw_purchase_events": 11,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 11,
+      "candidate_transactions": 10,
+      "agreeing_transactions": 8
+    },
+    {
+      "source_date": "2021-01-19",
+      "device": "desktop",
+      "raw_purchase_events": 25,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 23,
+      "candidate_transactions": 23,
+      "agreeing_transactions": 21
+    },
+    {
+      "source_date": "2021-01-19",
+      "device": "mobile",
+      "raw_purchase_events": 20,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 18,
+      "candidate_transactions": 18,
+      "agreeing_transactions": 14
+    },
+    {
+      "source_date": "2021-01-19",
+      "device": "tablet",
+      "raw_purchase_events": 4,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 4,
+      "candidate_transactions": 4,
+      "agreeing_transactions": 4
+    },
+    {
+      "source_date": "2021-01-20",
+      "device": "desktop",
+      "raw_purchase_events": 56,
+      "missing_id_events": 7,
+      "rejected_id_events": 0,
+      "candidate_events": 49,
+      "candidate_transactions": 49,
+      "agreeing_transactions": 37
+    },
+    {
+      "source_date": "2021-01-20",
+      "device": "mobile",
+      "raw_purchase_events": 39,
+      "missing_id_events": 5,
+      "rejected_id_events": 1,
+      "candidate_events": 33,
+      "candidate_transactions": 32,
+      "agreeing_transactions": 24
+    },
+    {
+      "source_date": "2021-01-20",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2021-01-21",
+      "device": "desktop",
+      "raw_purchase_events": 35,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 33,
+      "candidate_transactions": 33,
+      "agreeing_transactions": 22
+    },
+    {
+      "source_date": "2021-01-21",
+      "device": "mobile",
+      "raw_purchase_events": 16,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 16,
+      "candidate_transactions": 16,
+      "agreeing_transactions": 13
+    },
+    {
+      "source_date": "2021-01-21",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2021-01-22",
+      "device": "desktop",
+      "raw_purchase_events": 60,
+      "missing_id_events": 7,
+      "rejected_id_events": 0,
+      "candidate_events": 53,
+      "candidate_transactions": 52,
+      "agreeing_transactions": 39
+    },
+    {
+      "source_date": "2021-01-22",
+      "device": "mobile",
+      "raw_purchase_events": 39,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 39,
+      "candidate_transactions": 38,
+      "agreeing_transactions": 32
+    },
+    {
+      "source_date": "2021-01-22",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 1,
+      "candidate_transactions": 1,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2021-01-23",
+      "device": "desktop",
+      "raw_purchase_events": 26,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 25,
+      "candidate_transactions": 25,
+      "agreeing_transactions": 17
+    },
+    {
+      "source_date": "2021-01-23",
+      "device": "mobile",
+      "raw_purchase_events": 15,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 14,
+      "candidate_transactions": 14,
+      "agreeing_transactions": 13
+    },
+    {
+      "source_date": "2021-01-23",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2021-01-24",
+      "device": "desktop",
+      "raw_purchase_events": 19,
+      "missing_id_events": 1,
+      "rejected_id_events": 1,
+      "candidate_events": 17,
+      "candidate_transactions": 17,
+      "agreeing_transactions": 14
+    },
+    {
+      "source_date": "2021-01-24",
+      "device": "mobile",
+      "raw_purchase_events": 17,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 16,
+      "candidate_transactions": 16,
+      "agreeing_transactions": 12
+    },
+    {
+      "source_date": "2021-01-25",
+      "device": "desktop",
+      "raw_purchase_events": 36,
+      "missing_id_events": 5,
+      "rejected_id_events": 0,
+      "candidate_events": 31,
+      "candidate_transactions": 31,
+      "agreeing_transactions": 24
+    },
+    {
+      "source_date": "2021-01-25",
+      "device": "mobile",
+      "raw_purchase_events": 23,
+      "missing_id_events": 3,
+      "rejected_id_events": 0,
+      "candidate_events": 20,
+      "candidate_transactions": 20,
+      "agreeing_transactions": 13
+    },
+    {
+      "source_date": "2021-01-25",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2021-01-26",
+      "device": "desktop",
+      "raw_purchase_events": 28,
+      "missing_id_events": 17,
+      "rejected_id_events": 0,
+      "candidate_events": 11,
+      "candidate_transactions": 11,
+      "agreeing_transactions": 10
+    },
+    {
+      "source_date": "2021-01-26",
+      "device": "mobile",
+      "raw_purchase_events": 26,
+      "missing_id_events": 15,
+      "rejected_id_events": 0,
+      "candidate_events": 11,
+      "candidate_transactions": 11,
+      "agreeing_transactions": 9
+    },
+    {
+      "source_date": "2021-01-26",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2021-01-27",
+      "device": "desktop",
+      "raw_purchase_events": 19,
+      "missing_id_events": 14,
+      "rejected_id_events": 0,
+      "candidate_events": 5,
+      "candidate_transactions": 5,
+      "agreeing_transactions": 5
+    },
+    {
+      "source_date": "2021-01-27",
+      "device": "mobile",
+      "raw_purchase_events": 34,
+      "missing_id_events": 27,
+      "rejected_id_events": 0,
+      "candidate_events": 7,
+      "candidate_transactions": 7,
+      "agreeing_transactions": 7
+    },
+    {
+      "source_date": "2021-01-27",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2021-01-28",
+      "device": "desktop",
+      "raw_purchase_events": 28,
+      "missing_id_events": 25,
+      "rejected_id_events": 0,
+      "candidate_events": 3,
+      "candidate_transactions": 3,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2021-01-28",
+      "device": "mobile",
+      "raw_purchase_events": 39,
+      "missing_id_events": 37,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 1
+    },
+    {
+      "source_date": "2021-01-28",
+      "device": "tablet",
+      "raw_purchase_events": 2,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2021-01-29",
+      "device": "desktop",
+      "raw_purchase_events": 29,
+      "missing_id_events": 26,
+      "rejected_id_events": 0,
+      "candidate_events": 3,
+      "candidate_transactions": 3,
+      "agreeing_transactions": 3
+    },
+    {
+      "source_date": "2021-01-29",
+      "device": "mobile",
+      "raw_purchase_events": 22,
+      "missing_id_events": 19,
+      "rejected_id_events": 0,
+      "candidate_events": 3,
+      "candidate_transactions": 3,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2021-01-29",
+      "device": "tablet",
+      "raw_purchase_events": 3,
+      "missing_id_events": 3,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2021-01-30",
+      "device": "desktop",
+      "raw_purchase_events": 19,
+      "missing_id_events": 17,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2021-01-30",
+      "device": "mobile",
+      "raw_purchase_events": 12,
+      "missing_id_events": 9,
+      "rejected_id_events": 0,
+      "candidate_events": 3,
+      "candidate_transactions": 3,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2021-01-31",
+      "device": "desktop",
+      "raw_purchase_events": 11,
+      "missing_id_events": 11,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2021-01-31",
+      "device": "mobile",
+      "raw_purchase_events": 7,
+      "missing_id_events": 7,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    },
+    {
+      "source_date": "2021-01-31",
+      "device": "tablet",
+      "raw_purchase_events": 1,
+      "missing_id_events": 1,
+      "rejected_id_events": 0,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    }
+  ],
+  "checks": [
+    {
+      "check_name": "event_key_partition",
+      "passed": true
+    },
+    {
+      "check_name": "item_rows_preserve_multiplicity",
+      "passed": true
+    },
+    {
+      "check_name": "keyed_events_to_visits",
+      "passed": true
+    },
+    {
+      "check_name": "missing_purchase_id_conservation",
+      "passed": true
+    },
+    {
+      "check_name": "money_absent_when_unsupported",
+      "passed": true
+    },
+    {
+      "check_name": "nested_ordered_steps",
+      "passed": true
+    },
+    {
+      "check_name": "policy_event_partition",
+      "passed": true
+    },
+    {
+      "check_name": "primary_flag_matches_reason",
+      "passed": true
+    },
+    {
+      "check_name": "purchase_coverage_complete",
+      "passed": true
+    },
+    {
+      "check_name": "purchase_coverage_partition",
+      "passed": true
+    },
+    {
+      "check_name": "qualified_event_count",
+      "passed": true
+    },
+    {
+      "check_name": "qualified_policy_count",
+      "passed": true
+    },
+    {
+      "check_name": "qualified_visit_links",
+      "passed": true
+    },
+    {
+      "check_name": "selected_item_values_reconcile",
+      "passed": true
+    },
+    {
+      "check_name": "selected_value_links",
+      "passed": true
+    },
+    {
+      "check_name": "unique_item_occurrence",
+      "passed": true
+    },
+    {
+      "check_name": "unique_policy_id",
+      "passed": true
+    },
+    {
+      "check_name": "unique_transaction_id",
+      "passed": true
+    },
+    {
+      "check_name": "unique_visit_key",
+      "passed": true
+    },
+    {
+      "check_name": "visit_exclusion_partition",
+      "passed": true
+    }
+  ],
+  "fingerprints": [
+    {
+      "model": "audit_event_keys",
+      "row_count": 276,
+      "content_checksum": "-76713567299128983135"
+    },
+    {
+      "model": "audit_purchase_coverage",
+      "row_count": 245,
+      "content_checksum": "-33542813867441763744"
+    },
+    {
+      "model": "audit_visit_exclusions",
+      "row_count": 17,
+      "content_checksum": "-8191439199691435847"
+    },
+    {
+      "model": "fact_transaction_items",
+      "row_count": 12383,
+      "content_checksum": "-405738691258637131415"
+    },
+    {
+      "model": "fact_transactions",
+      "row_count": 4172,
+      "content_checksum": "-285598432972762557626"
+    },
+    {
+      "model": "fact_visits",
+      "row_count": 360129,
+      "content_checksum": "-2772832771307244532739"
+    },
+    {
+      "model": "stg_events",
+      "row_count": 4295584,
+      "content_checksum": "144845759381116633910"
+    },
+    {
+      "model": "transaction_policy",
+      "row_count": 4451,
+      "content_checksum": "-296480074647037111430"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+name: Validate analytical evidence
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12.14'
+      - name: Validate tests, saved evidence and accepted measurements
+        run: python tests/run_local_validation.py
+      - name: Check fixture and configuration rendering without credentials
+        run: |
+          python tests/prepare_mart_fixture.py
+          python src/render_marts.py --project example-project --dataset ecommerce_v1_ci --output private/ci-render
+      - name: Retain validation evidence
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: analytical-evidence-validation
+          path: reports/validation/ci-validation.json
+          if-no-files-found: error
+          retention-days: 30

@@ -1,0 +1,382 @@
+{
+  "source": {
+    "events": 94,
+    "purchase_events": 22,
+    "unkeyed_events": 10
+  },
+  "transaction_policy": {
+    "id_groups": 16,
+    "qualified_ids": 11,
+    "agreeing_ids": 10
+  },
+  "transactions": {
+    "transactions": 11,
+    "recorded_events": 13,
+    "item_rows": 13,
+    "selected_recorded_value": 110
+  },
+  "scopes": [
+    {
+      "scope": "all_keyed",
+      "cohort_month": "202012",
+      "session_device": "desktop",
+      "sessions": 15,
+      "entry_sessions": 15,
+      "strict_cart_sessions": 13,
+      "strict_checkout_sessions": 13,
+      "raw_purchase_sessions": 14,
+      "candidate_purchase_sessions": 10,
+      "strict_candidate_sessions": 7,
+      "last_time_candidate_sessions": 8,
+      "tied_candidate_sessions": 8,
+      "raw_purchase_events": 19,
+      "missing_id_events": 1,
+      "rejected_id_events": 5,
+      "candidate_events": 13,
+      "candidate_transactions": 11,
+      "native_complete_transactions": 11,
+      "agreeing_transactions": 10,
+      "agreeing_recorded_value": 110,
+      "unresolved_purchase_sessions": 4,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 1
+    },
+    {
+      "scope": "all_keyed",
+      "cohort_month": "202101",
+      "session_device": "desktop",
+      "sessions": 1,
+      "entry_sessions": 1,
+      "strict_cart_sessions": 1,
+      "strict_checkout_sessions": 1,
+      "raw_purchase_sessions": 1,
+      "candidate_purchase_sessions": 0,
+      "strict_candidate_sessions": 0,
+      "last_time_candidate_sessions": 0,
+      "tied_candidate_sessions": 0,
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 1,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "native_complete_transactions": 0,
+      "agreeing_transactions": 0,
+      "agreeing_recorded_value": null,
+      "unresolved_purchase_sessions": 1,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior",
+      "cohort_month": "202012",
+      "session_device": "desktop",
+      "sessions": 15,
+      "entry_sessions": 15,
+      "strict_cart_sessions": 13,
+      "strict_checkout_sessions": 13,
+      "raw_purchase_sessions": 14,
+      "candidate_purchase_sessions": 10,
+      "strict_candidate_sessions": 7,
+      "last_time_candidate_sessions": 8,
+      "tied_candidate_sessions": 8,
+      "raw_purchase_events": 19,
+      "missing_id_events": 1,
+      "rejected_id_events": 5,
+      "candidate_events": 13,
+      "candidate_transactions": 11,
+      "native_complete_transactions": 11,
+      "agreeing_transactions": 10,
+      "agreeing_recorded_value": 110,
+      "unresolved_purchase_sessions": 4,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 1
+    },
+    {
+      "scope": "anchored_interior",
+      "cohort_month": "202101",
+      "session_device": "desktop",
+      "sessions": 1,
+      "entry_sessions": 1,
+      "strict_cart_sessions": 1,
+      "strict_checkout_sessions": 1,
+      "raw_purchase_sessions": 1,
+      "candidate_purchase_sessions": 0,
+      "strict_candidate_sessions": 0,
+      "last_time_candidate_sessions": 0,
+      "tied_candidate_sessions": 0,
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 1,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "native_complete_transactions": 0,
+      "agreeing_transactions": 0,
+      "agreeing_recorded_value": null,
+      "unresolved_purchase_sessions": 1,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior_single_date",
+      "cohort_month": "202012",
+      "session_device": "desktop",
+      "sessions": 13,
+      "entry_sessions": 13,
+      "strict_cart_sessions": 11,
+      "strict_checkout_sessions": 11,
+      "raw_purchase_sessions": 12,
+      "candidate_purchase_sessions": 8,
+      "strict_candidate_sessions": 5,
+      "last_time_candidate_sessions": 6,
+      "tied_candidate_sessions": 6,
+      "raw_purchase_events": 17,
+      "missing_id_events": 1,
+      "rejected_id_events": 5,
+      "candidate_events": 11,
+      "candidate_transactions": 9,
+      "native_complete_transactions": 9,
+      "agreeing_transactions": 8,
+      "agreeing_recorded_value": 90,
+      "unresolved_purchase_sessions": 4,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    },
+    {
+      "scope": "anchored_interior_single_date",
+      "cohort_month": "202101",
+      "session_device": "desktop",
+      "sessions": 1,
+      "entry_sessions": 1,
+      "strict_cart_sessions": 1,
+      "strict_checkout_sessions": 1,
+      "raw_purchase_sessions": 1,
+      "candidate_purchase_sessions": 0,
+      "strict_candidate_sessions": 0,
+      "last_time_candidate_sessions": 0,
+      "tied_candidate_sessions": 0,
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 1,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "native_complete_transactions": 0,
+      "agreeing_transactions": 0,
+      "agreeing_recorded_value": null,
+      "unresolved_purchase_sessions": 1,
+      "mixed_outcome_sessions": 0,
+      "long_sessions": 0
+    }
+  ],
+  "event_key_coverage": [
+    {
+      "source_date": "2020-12-15",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 75,
+      "purchase_events": 17
+    },
+    {
+      "source_date": "2020-12-15",
+      "device": "desktop",
+      "key_status": "unusable_session_key",
+      "events": 10,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2020-12-16",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 4,
+      "purchase_events": 2
+    },
+    {
+      "source_date": "2021-01-15",
+      "device": "desktop",
+      "key_status": "keyed_event",
+      "events": 5,
+      "purchase_events": 1
+    }
+  ],
+  "visit_exclusions": [
+    {
+      "cohort_month": "202012",
+      "exclusion_reason": "cross_date",
+      "visits": 2,
+      "events": 10,
+      "raw_purchase_events": 2,
+      "candidate_transactions": 2
+    },
+    {
+      "cohort_month": "202012",
+      "exclusion_reason": "eligible_primary",
+      "visits": 13,
+      "events": 69,
+      "raw_purchase_events": 17,
+      "candidate_transactions": 9
+    },
+    {
+      "cohort_month": "202101",
+      "exclusion_reason": "outside_primary_month",
+      "visits": 1,
+      "events": 5,
+      "raw_purchase_events": 1,
+      "candidate_transactions": 0
+    }
+  ],
+  "purchase_coverage": [
+    {
+      "source_date": "2020-12-15",
+      "device": "desktop",
+      "raw_purchase_events": 19,
+      "missing_id_events": 1,
+      "rejected_id_events": 7,
+      "candidate_events": 11,
+      "candidate_transactions": 9,
+      "agreeing_transactions": 8
+    },
+    {
+      "source_date": "2020-12-16",
+      "device": "desktop",
+      "raw_purchase_events": 2,
+      "missing_id_events": 0,
+      "rejected_id_events": 0,
+      "candidate_events": 2,
+      "candidate_transactions": 2,
+      "agreeing_transactions": 2
+    },
+    {
+      "source_date": "2021-01-15",
+      "device": "desktop",
+      "raw_purchase_events": 1,
+      "missing_id_events": 0,
+      "rejected_id_events": 1,
+      "candidate_events": 0,
+      "candidate_transactions": 0,
+      "agreeing_transactions": 0
+    }
+  ],
+  "checks": [
+    {
+      "check_name": "event_key_partition",
+      "passed": true
+    },
+    {
+      "check_name": "item_rows_preserve_multiplicity",
+      "passed": true
+    },
+    {
+      "check_name": "keyed_events_to_visits",
+      "passed": true
+    },
+    {
+      "check_name": "missing_purchase_id_conservation",
+      "passed": true
+    },
+    {
+      "check_name": "money_absent_when_unsupported",
+      "passed": true
+    },
+    {
+      "check_name": "nested_ordered_steps",
+      "passed": true
+    },
+    {
+      "check_name": "policy_event_partition",
+      "passed": true
+    },
+    {
+      "check_name": "primary_flag_matches_reason",
+      "passed": true
+    },
+    {
+      "check_name": "purchase_coverage_complete",
+      "passed": true
+    },
+    {
+      "check_name": "purchase_coverage_partition",
+      "passed": true
+    },
+    {
+      "check_name": "qualified_event_count",
+      "passed": true
+    },
+    {
+      "check_name": "qualified_policy_count",
+      "passed": true
+    },
+    {
+      "check_name": "qualified_visit_links",
+      "passed": true
+    },
+    {
+      "check_name": "selected_item_values_reconcile",
+      "passed": true
+    },
+    {
+      "check_name": "selected_value_links",
+      "passed": true
+    },
+    {
+      "check_name": "unique_item_occurrence",
+      "passed": true
+    },
+    {
+      "check_name": "unique_policy_id",
+      "passed": true
+    },
+    {
+      "check_name": "unique_transaction_id",
+      "passed": true
+    },
+    {
+      "check_name": "unique_visit_key",
+      "passed": true
+    },
+    {
+      "check_name": "visit_exclusion_partition",
+      "passed": true
+    }
+  ],
+  "fingerprints": [
+    {
+      "model": "audit_event_keys",
+      "row_count": 4,
+      "content_checksum": "-2191776881695007241"
+    },
+    {
+      "model": "audit_purchase_coverage",
+      "row_count": 3,
+      "content_checksum": "963397743297132134"
+    },
+    {
+      "model": "audit_visit_exclusions",
+      "row_count": 3,
+      "content_checksum": "7712838127428662485"
+    },
+    {
+      "model": "fact_transaction_items",
+      "row_count": 13,
+      "content_checksum": "13328930314177775209"
+    },
+    {
+      "model": "fact_transactions",
+      "row_count": 11,
+      "content_checksum": "8281278081535325170"
+    },
+    {
+      "model": "fact_visits",
+      "row_count": 16,
+      "content_checksum": "-5971416446760218633"
+    },
+    {
+      "model": "stg_events",
+      "row_count": 94,
+      "content_checksum": "-12090655744751301134"
+    },
+    {
+      "model": "transaction_policy",
+      "row_count": 16,
+      "content_checksum": "-5481997070494309923"
+    }
+  ]
+}

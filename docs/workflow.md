@@ -20,9 +20,9 @@ Deliverables: docs/data_access.md, docs/metric_contract.md, reports/source_audit
 
 [Issue #2](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/2) · Dependency: #1
 
-Create a reconciled analytical foundation in BigQuery without multiplying events or order revenue.
+Create a reconciled analytical foundation in BigQuery without multiplying events, visits, qualified transactions or selected recorded values.
 
-Acceptance: The same inputs and parameters reproduce the marts. Joins do not inflate session, order or revenue counts, and all exclusions reconcile. Meaningful edge-case fixtures and BigQuery assertions pass.
+Acceptance: The same inputs and parameters reproduce the marts. Joins do not inflate event, visit, qualified-transaction or selected-value totals, and all exclusions reconcile. Meaningful edge-case fixtures and BigQuery assertions pass. Total revenue, AOV and revenue per visit remain unavailable under measurement contract version 1.
 
 Deliverables: sql/, tests/, docs/sql_workflow.md and reports/milestone_2_findings.md.
 

@@ -1,0 +1,46 @@
+{
+  "method": "Each production model SELECT was recomputed read-only against its declared inputs; the event model reread the bounded public source. Counts and order-independent content checksums compared with physical tables.",
+  "capture": "Console JSON panel. Presentation whitespace normalized; INT64 count strings retained as displayed. No row-level identifiers exported.",
+  "models": [
+    {
+      "model": "stg_events",
+      "row_count": "4295584",
+      "content_checksum": "144845759381116633910"
+    },
+    {
+      "model": "transaction_policy",
+      "row_count": "4451",
+      "content_checksum": "-296480074647037111430"
+    },
+    {
+      "model": "fact_transactions",
+      "row_count": "4172",
+      "content_checksum": "-285598432972762557626"
+    },
+    {
+      "model": "fact_transaction_items",
+      "row_count": "12383",
+      "content_checksum": "-405738691258637131415"
+    },
+    {
+      "model": "fact_visits",
+      "row_count": "360129",
+      "content_checksum": "-2772832771307244532739"
+    },
+    {
+      "model": "audit_event_keys",
+      "row_count": "276",
+      "content_checksum": "-76713567299128983135"
+    },
+    {
+      "model": "audit_visit_exclusions",
+      "row_count": "17",
+      "content_checksum": "-8191439199691435847"
+    },
+    {
+      "model": "audit_purchase_coverage",
+      "row_count": "245",
+      "content_checksum": "-33542813867441763744"
+    }
+  ]
+}

@@ -33,3 +33,11 @@ Regenerate the coverage summary using the command in the method document. The lo
 See the [measurement-gate method](../docs/measurement_gate.md) for commands. `prepare_measurement_fixture.py` replaces SQL 07's source with 56 typed synthetic events across eleven journeys. Independent expected scope counts distinguish two orders from one buying visit, earliest from replay timing, and cross-month ID conflict from an eligible December transaction. The final native fixture passes 93 checks; the real aggregate passes 525; 268 comparisons to earlier audit evidence also pass. The full local regression suite contains 22 passing tests.
 
 Regenerate `reports/evidence/measurement-scope-20261106.json` using `src/build_measurement_summary.py` and compare it byte-for-byte. No source identifiers, credentials or full native job references are needed for these local checks.
+
+## Materialized analytical tables
+
+See the [SQL workflow](../docs/sql_workflow.md). `prepare_mart_fixture.py` generates a materialized temporary-table script over 94 synthetic events. The single-input SELECT validates at zero source bytes; the full temporary-table script has no complete dry-run estimate and its table reads process/bill bytes within the existing Sandbox quota. It never reads the public source or writes permanent targets.
+
+The fixture aggregate passes 66 checks against independently declared counts. The source aggregate passes 995 checks, including all accepted scope cells. Twenty native assertions cover unique grains, conservation, joins, item multiplicity per transaction, selected item values and ordered populations. Eight read-only recomputations match stored model row counts and content checksums. The local regression suite has 31 tests.
+
+Run `python tests/run_local_validation.py` for the same credential-free validation used on GitHub. It also compares inventory/recomputation evidence and checks that current SQL, renderer and regenerated fixture hashes match the native receipt. CI uploads only the small public validation report, never private configuration or source records.

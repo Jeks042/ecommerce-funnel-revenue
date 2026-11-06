@@ -1,0 +1,79 @@
+{
+  "tables": [
+    {
+      "table_name": "audit_event_keys",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "audit_purchase_coverage",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "audit_visit_exclusions",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "fact_transaction_items",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "fact_transactions",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "fact_visits",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "stg_events",
+      "table_type": "BASE TABLE"
+    },
+    {
+      "table_name": "transaction_policy",
+      "table_type": "BASE TABLE"
+    }
+  ],
+  "expiration": [
+    {
+      "table_name": "audit_event_keys",
+      "option_name": "expiration_timestamp",
+      "option_value": "TIMESTAMP \"2027-01-05T22:00:02.341Z\""
+    },
+    {
+      "table_name": "audit_purchase_coverage",
+      "option_name": "expiration_timestamp",
+      "option_value": "TIMESTAMP \"2027-01-05T22:02:16.276Z\""
+    },
+    {
+      "table_name": "audit_visit_exclusions",
+      "option_name": "expiration_timestamp",
+      "option_value": "TIMESTAMP \"2027-01-05T22:01:31.073Z\""
+    },
+    {
+      "table_name": "fact_transaction_items",
+      "option_name": "expiration_timestamp",
+      "option_value": "TIMESTAMP \"2027-01-05T21:58:04.434Z\""
+    },
+    {
+      "table_name": "fact_transactions",
+      "option_name": "expiration_timestamp",
+      "option_value": "TIMESTAMP \"2027-01-05T21:57:14.277Z\""
+    },
+    {
+      "table_name": "fact_visits",
+      "option_name": "expiration_timestamp",
+      "option_value": "TIMESTAMP \"2027-01-05T21:59:29.061Z\""
+    },
+    {
+      "table_name": "stg_events",
+      "option_name": "expiration_timestamp",
+      "option_value": "TIMESTAMP \"2027-01-05T21:55:12.446Z\""
+    },
+    {
+      "table_name": "transaction_policy",
+      "option_name": "expiration_timestamp",
+      "option_value": "TIMESTAMP \"2027-01-05T21:55:55.359Z\""
+    }
+  ],
+  "partition_columns": 0
+}

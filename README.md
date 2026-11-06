@@ -1,6 +1,6 @@
 # E-commerce Funnel & Revenue Analytics
 
-**Measurement checks complete; analytical tables next.** The study now has agreed rules for examining recorded shopping journeys in December 2020.
+**Analytical tables complete; journey analysis next.** The study now has a reconciled BigQuery foundation for examining recorded shopping journeys in December 2020.
 
 Which parts of the shopping journey should a product team investigate first, and what evidence would justify an experiment?
 
@@ -10,7 +10,7 @@ The first finding is about what the records can tell us. Eighteen dates in Novem
 
 Within that scope, 131,418 visits meet the agreed recording rules, including 27,289 with a product view. Repeated purchase records count once, and uncertain purchases remain visible. Some purchase and item values still disagree, so total revenue and average order value are unavailable. [Read the measurement findings](reports/milestone_1_findings.md) for the decisions and their limits.
 
-The next stage turns these rules into repeatable analytical tables. The analysis will then examine which recorded steps deserve investigation and what a product team would need to test before acting. No commercial recommendation or measured sales improvement has been established yet.
+The [analytical tables](reports/milestone_2_findings.md) now keep events, visits, purchases and basket items separate, with checks that prevent repeated records or multi-item baskets inflating the totals. Their results match the earlier measurement decisions. The next stage will examine which recorded steps deserve investigation and what a product team would need to test before acting. No commercial recommendation or measured sales improvement has been established yet.
 
 ## Planned workflow
 
@@ -21,7 +21,7 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 ## Milestones
 
 1. [Validate GA4 access, source quality and metric definitions](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/1) — complete
-2. [Build reproducible event, session and purchase SQL marts](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/2) — planned
+2. [Build reproducible event, session and purchase SQL marts](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/2) — complete
 3. [Diagnose conversion funnels and segment differences](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/3) — planned
 4. [Prioritise revenue opportunities and propose an experiment](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/4) — planned
 5. [Build Python charts and a commercial decision memo](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/5) — planned
@@ -35,6 +35,8 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 - [Source access and handling](docs/data_access.md)
 - [Agreed measurement definitions](docs/metric_contract.md)
 - [Measurement findings and scope decision](reports/milestone_1_findings.md)
+- [Analytical foundation and reconciliation](reports/milestone_2_findings.md)
+- [SQL workflow and reproduction](docs/sql_workflow.md)
 - [Delivery workflow and acceptance gates](docs/workflow.md)
 - [Current progress and next session](reports/progress.md)
 - [Source audit and current decisions](reports/source_audit.md)
@@ -55,7 +57,7 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 | src/ | Python analysis and chart-generation code |
 | reports/figures/ | Reviewed PNG and SVG charts generated from approved aggregates |
 
-Source profiling, purchase linkage and the reviewed measurement evidence are available. Analytical tables, funnel diagnosis and the Python report will follow their milestone checks.
+Source profiling, measurement evidence and reconciled analytical tables are available. Funnel diagnosis and the Python report will follow their milestone checks.
 
 ## Evidence boundaries
 
