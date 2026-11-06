@@ -1,0 +1,2330 @@
+{
+  "population": {
+    "purchase_events": 5692,
+    "unusable_id_events": 906
+  },
+  "group_checks": {
+    "id_groups": 4451,
+    "usable_id_events": 4786,
+    "repeated_id_groups": 326,
+    "raw_payload_difference_groups": 300,
+    "identity_or_summary_conflict_groups": 15,
+    "ecommerce_difference_groups": 15,
+    "core_item_difference_groups": 15,
+    "canonical_item_difference_groups": 279,
+    "cross_date_repeated_groups": 15,
+    "cross_date_identity_or_summary_conflicts": 15,
+    "conservative_id_candidates": 4172,
+    "conservative_candidate_events": 4223,
+    "native_complete_candidates": 4172,
+    "native_item_agree_candidates": 3393,
+    "diagnostic_native_amount": 288470,
+    "diagnostic_agreeing_native_amount": 212582
+  },
+  "diagnostic_buckets": [
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "id_groups": 15,
+      "purchase_events": 33
+    },
+    {
+      "diagnostic_bucket": "item_metadata_difference",
+      "id_groups": 264,
+      "purchase_events": 530
+    },
+    {
+      "diagnostic_bucket": "item_order_only_difference",
+      "id_groups": 21,
+      "purchase_events": 45
+    },
+    {
+      "diagnostic_bucket": "repeated_exact_payload",
+      "id_groups": 26,
+      "purchase_events": 53
+    },
+    {
+      "diagnostic_bucket": "single_observation",
+      "id_groups": 4125,
+      "purchase_events": 4125
+    }
+  ],
+  "field_differences": [
+    {
+      "field_path": "ecommerce.purchase_revenue",
+      "differing_id_groups": 15
+    },
+    {
+      "field_path": "ecommerce.purchase_revenue_in_usd",
+      "differing_id_groups": 15
+    },
+    {
+      "field_path": "ecommerce.refund_value",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.refund_value_in_usd",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.shipping_value",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.shipping_value_in_usd",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.tax_value",
+      "differing_id_groups": 13
+    },
+    {
+      "field_path": "ecommerce.tax_value_in_usd",
+      "differing_id_groups": 13
+    },
+    {
+      "field_path": "ecommerce.total_item_quantity",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "ecommerce.transaction_id",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.unique_items",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.affiliation",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.coupon",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.creative_name",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.creative_slot",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.item_brand",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.item_category",
+      "differing_id_groups": 15
+    },
+    {
+      "field_path": "items.item_category2",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.item_category3",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.item_category4",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.item_category5",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.item_id",
+      "differing_id_groups": 15
+    },
+    {
+      "field_path": "items.item_list_id",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.item_list_index",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.item_list_name",
+      "differing_id_groups": 14
+    },
+    {
+      "field_path": "items.item_name",
+      "differing_id_groups": 15
+    },
+    {
+      "field_path": "items.item_refund",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.item_refund_in_usd",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.item_revenue",
+      "differing_id_groups": 15
+    },
+    {
+      "field_path": "items.item_revenue_in_usd",
+      "differing_id_groups": 15
+    },
+    {
+      "field_path": "items.item_variant",
+      "differing_id_groups": 15
+    },
+    {
+      "field_path": "items.location_id",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.price",
+      "differing_id_groups": 15
+    },
+    {
+      "field_path": "items.price_in_usd",
+      "differing_id_groups": 15
+    },
+    {
+      "field_path": "items.promotion_id",
+      "differing_id_groups": 12
+    },
+    {
+      "field_path": "items.promotion_name",
+      "differing_id_groups": 278
+    },
+    {
+      "field_path": "items.quantity",
+      "differing_id_groups": 13
+    }
+  ],
+  "field_differences_by_bucket": [
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "ecommerce.purchase_revenue",
+      "differing_id_groups": 15
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "ecommerce.purchase_revenue_in_usd",
+      "differing_id_groups": 15
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "ecommerce.tax_value",
+      "differing_id_groups": 13
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "ecommerce.tax_value_in_usd",
+      "differing_id_groups": 13
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "ecommerce.total_item_quantity",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "ecommerce.unique_items",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.affiliation",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.coupon",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.creative_name",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.creative_slot",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_brand",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_category",
+      "differing_id_groups": 15
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_category2",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_category3",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_category4",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_category5",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_id",
+      "differing_id_groups": 15
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_list_id",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_list_index",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_list_name",
+      "differing_id_groups": 14
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_name",
+      "differing_id_groups": 15
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_refund",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_refund_in_usd",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_revenue",
+      "differing_id_groups": 15
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_revenue_in_usd",
+      "differing_id_groups": 15
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.item_variant",
+      "differing_id_groups": 15
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.location_id",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.price",
+      "differing_id_groups": 15
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.price_in_usd",
+      "differing_id_groups": 15
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.promotion_id",
+      "differing_id_groups": 12
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.promotion_name",
+      "differing_id_groups": 14
+    },
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "field_path": "items.quantity",
+      "differing_id_groups": 13
+    },
+    {
+      "diagnostic_bucket": "item_metadata_difference",
+      "field_path": "items.promotion_name",
+      "differing_id_groups": 264
+    }
+  ],
+  "coverage_by_date_device": [
+    {
+      "source_suffix": "20201101",
+      "device": "desktop",
+      "purchase_events": 9,
+      "unusable_id_events": 9,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201101",
+      "device": "mobile",
+      "purchase_events": 5,
+      "unusable_id_events": 5,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201102",
+      "device": "desktop",
+      "purchase_events": 31,
+      "unusable_id_events": 31,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201102",
+      "device": "mobile",
+      "purchase_events": 17,
+      "unusable_id_events": 17,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201102",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201103",
+      "device": "desktop",
+      "purchase_events": 30,
+      "unusable_id_events": 30,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201103",
+      "device": "mobile",
+      "purchase_events": 19,
+      "unusable_id_events": 19,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201104",
+      "device": "desktop",
+      "purchase_events": 33,
+      "unusable_id_events": 33,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201104",
+      "device": "mobile",
+      "purchase_events": 12,
+      "unusable_id_events": 12,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201104",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201105",
+      "device": "desktop",
+      "purchase_events": 16,
+      "unusable_id_events": 16,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201105",
+      "device": "mobile",
+      "purchase_events": 9,
+      "unusable_id_events": 9,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201105",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201106",
+      "device": "desktop",
+      "purchase_events": 28,
+      "unusable_id_events": 28,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201106",
+      "device": "mobile",
+      "purchase_events": 27,
+      "unusable_id_events": 27,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201106",
+      "device": "tablet",
+      "purchase_events": 3,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201107",
+      "device": "desktop",
+      "purchase_events": 17,
+      "unusable_id_events": 17,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201107",
+      "device": "mobile",
+      "purchase_events": 14,
+      "unusable_id_events": 14,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201108",
+      "device": "desktop",
+      "purchase_events": 15,
+      "unusable_id_events": 15,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201108",
+      "device": "mobile",
+      "purchase_events": 15,
+      "unusable_id_events": 15,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201108",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201109",
+      "device": "desktop",
+      "purchase_events": 29,
+      "unusable_id_events": 29,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201109",
+      "device": "mobile",
+      "purchase_events": 23,
+      "unusable_id_events": 23,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201110",
+      "device": "desktop",
+      "purchase_events": 35,
+      "unusable_id_events": 35,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201110",
+      "device": "mobile",
+      "purchase_events": 29,
+      "unusable_id_events": 29,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201111",
+      "device": "desktop",
+      "purchase_events": 37,
+      "unusable_id_events": 20,
+      "conservative_candidate_events": 17,
+      "native_item_agree_candidate_events": 13
+    },
+    {
+      "source_suffix": "20201111",
+      "device": "mobile",
+      "purchase_events": 26,
+      "unusable_id_events": 15,
+      "conservative_candidate_events": 11,
+      "native_item_agree_candidate_events": 9
+    },
+    {
+      "source_suffix": "20201111",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201112",
+      "device": "desktop",
+      "purchase_events": 30,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 29,
+      "native_item_agree_candidate_events": 22
+    },
+    {
+      "source_suffix": "20201112",
+      "device": "mobile",
+      "purchase_events": 24,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 24,
+      "native_item_agree_candidate_events": 19
+    },
+    {
+      "source_suffix": "20201113",
+      "device": "desktop",
+      "purchase_events": 54,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 54,
+      "native_item_agree_candidate_events": 47
+    },
+    {
+      "source_suffix": "20201113",
+      "device": "mobile",
+      "purchase_events": 25,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 25,
+      "native_item_agree_candidate_events": 22
+    },
+    {
+      "source_suffix": "20201114",
+      "device": "desktop",
+      "purchase_events": 18,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 18,
+      "native_item_agree_candidate_events": 13
+    },
+    {
+      "source_suffix": "20201114",
+      "device": "mobile",
+      "purchase_events": 12,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 12,
+      "native_item_agree_candidate_events": 8
+    },
+    {
+      "source_suffix": "20201115",
+      "device": "desktop",
+      "purchase_events": 13,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 13,
+      "native_item_agree_candidate_events": 12
+    },
+    {
+      "source_suffix": "20201115",
+      "device": "mobile",
+      "purchase_events": 7,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 7,
+      "native_item_agree_candidate_events": 7
+    },
+    {
+      "source_suffix": "20201115",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201116",
+      "device": "desktop",
+      "purchase_events": 37,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 36,
+      "native_item_agree_candidate_events": 28
+    },
+    {
+      "source_suffix": "20201116",
+      "device": "mobile",
+      "purchase_events": 29,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 29,
+      "native_item_agree_candidate_events": 24
+    },
+    {
+      "source_suffix": "20201116",
+      "device": "tablet",
+      "purchase_events": 3,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 3,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201117",
+      "device": "desktop",
+      "purchase_events": 56,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 54,
+      "native_item_agree_candidate_events": 41
+    },
+    {
+      "source_suffix": "20201117",
+      "device": "mobile",
+      "purchase_events": 42,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 42,
+      "native_item_agree_candidate_events": 27
+    },
+    {
+      "source_suffix": "20201118",
+      "device": "desktop",
+      "purchase_events": 36,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 30,
+      "native_item_agree_candidate_events": 21
+    },
+    {
+      "source_suffix": "20201118",
+      "device": "mobile",
+      "purchase_events": 32,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 18,
+      "native_item_agree_candidate_events": 16
+    },
+    {
+      "source_suffix": "20201119",
+      "device": "desktop",
+      "purchase_events": 45,
+      "unusable_id_events": 4,
+      "conservative_candidate_events": 5,
+      "native_item_agree_candidate_events": 5
+    },
+    {
+      "source_suffix": "20201119",
+      "device": "mobile",
+      "purchase_events": 39,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201120",
+      "device": "desktop",
+      "purchase_events": 57,
+      "unusable_id_events": 5,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201120",
+      "device": "mobile",
+      "purchase_events": 61,
+      "unusable_id_events": 7,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201121",
+      "device": "desktop",
+      "purchase_events": 37,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201121",
+      "device": "mobile",
+      "purchase_events": 27,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201121",
+      "device": "tablet",
+      "purchase_events": 4,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201122",
+      "device": "desktop",
+      "purchase_events": 31,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201122",
+      "device": "mobile",
+      "purchase_events": 29,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201123",
+      "device": "desktop",
+      "purchase_events": 73,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201123",
+      "device": "mobile",
+      "purchase_events": 61,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 4,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201123",
+      "device": "tablet",
+      "purchase_events": 7,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201124",
+      "device": "desktop",
+      "purchase_events": 85,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 46,
+      "native_item_agree_candidate_events": 35
+    },
+    {
+      "source_suffix": "20201124",
+      "device": "mobile",
+      "purchase_events": 61,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 28,
+      "native_item_agree_candidate_events": 23
+    },
+    {
+      "source_suffix": "20201124",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201125",
+      "device": "desktop",
+      "purchase_events": 65,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 50,
+      "native_item_agree_candidate_events": 38
+    },
+    {
+      "source_suffix": "20201125",
+      "device": "mobile",
+      "purchase_events": 42,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 40,
+      "native_item_agree_candidate_events": 28
+    },
+    {
+      "source_suffix": "20201125",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201126",
+      "device": "desktop",
+      "purchase_events": 30,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 27,
+      "native_item_agree_candidate_events": 23
+    },
+    {
+      "source_suffix": "20201126",
+      "device": "mobile",
+      "purchase_events": 26,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 26,
+      "native_item_agree_candidate_events": 22
+    },
+    {
+      "source_suffix": "20201126",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201127",
+      "device": "desktop",
+      "purchase_events": 56,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 54,
+      "native_item_agree_candidate_events": 43
+    },
+    {
+      "source_suffix": "20201127",
+      "device": "mobile",
+      "purchase_events": 35,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 32,
+      "native_item_agree_candidate_events": 23
+    },
+    {
+      "source_suffix": "20201127",
+      "device": "tablet",
+      "purchase_events": 6,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 6,
+      "native_item_agree_candidate_events": 5
+    },
+    {
+      "source_suffix": "20201128",
+      "device": "desktop",
+      "purchase_events": 38,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 38,
+      "native_item_agree_candidate_events": 31
+    },
+    {
+      "source_suffix": "20201128",
+      "device": "mobile",
+      "purchase_events": 38,
+      "unusable_id_events": 7,
+      "conservative_candidate_events": 30,
+      "native_item_agree_candidate_events": 24
+    },
+    {
+      "source_suffix": "20201128",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201129",
+      "device": "desktop",
+      "purchase_events": 29,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 28,
+      "native_item_agree_candidate_events": 22
+    },
+    {
+      "source_suffix": "20201129",
+      "device": "mobile",
+      "purchase_events": 20,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 19,
+      "native_item_agree_candidate_events": 16
+    },
+    {
+      "source_suffix": "20201129",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201130",
+      "device": "desktop",
+      "purchase_events": 74,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 72,
+      "native_item_agree_candidate_events": 52
+    },
+    {
+      "source_suffix": "20201130",
+      "device": "mobile",
+      "purchase_events": 66,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 62,
+      "native_item_agree_candidate_events": 44
+    },
+    {
+      "source_suffix": "20201130",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201201",
+      "device": "desktop",
+      "purchase_events": 63,
+      "unusable_id_events": 7,
+      "conservative_candidate_events": 56,
+      "native_item_agree_candidate_events": 48
+    },
+    {
+      "source_suffix": "20201201",
+      "device": "mobile",
+      "purchase_events": 43,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 39,
+      "native_item_agree_candidate_events": 28
+    },
+    {
+      "source_suffix": "20201201",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201202",
+      "device": "desktop",
+      "purchase_events": 46,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 44,
+      "native_item_agree_candidate_events": 37
+    },
+    {
+      "source_suffix": "20201202",
+      "device": "mobile",
+      "purchase_events": 32,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 30,
+      "native_item_agree_candidate_events": 21
+    },
+    {
+      "source_suffix": "20201202",
+      "device": "tablet",
+      "purchase_events": 4,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 4,
+      "native_item_agree_candidate_events": 4
+    },
+    {
+      "source_suffix": "20201203",
+      "device": "desktop",
+      "purchase_events": 58,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 56,
+      "native_item_agree_candidate_events": 45
+    },
+    {
+      "source_suffix": "20201203",
+      "device": "mobile",
+      "purchase_events": 29,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 29,
+      "native_item_agree_candidate_events": 24
+    },
+    {
+      "source_suffix": "20201203",
+      "device": "tablet",
+      "purchase_events": 3,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201204",
+      "device": "desktop",
+      "purchase_events": 53,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 51,
+      "native_item_agree_candidate_events": 41
+    },
+    {
+      "source_suffix": "20201204",
+      "device": "mobile",
+      "purchase_events": 41,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 40,
+      "native_item_agree_candidate_events": 33
+    },
+    {
+      "source_suffix": "20201204",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201205",
+      "device": "desktop",
+      "purchase_events": 49,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 48,
+      "native_item_agree_candidate_events": 35
+    },
+    {
+      "source_suffix": "20201205",
+      "device": "mobile",
+      "purchase_events": 36,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 35,
+      "native_item_agree_candidate_events": 32
+    },
+    {
+      "source_suffix": "20201205",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201206",
+      "device": "desktop",
+      "purchase_events": 24,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 24,
+      "native_item_agree_candidate_events": 22
+    },
+    {
+      "source_suffix": "20201206",
+      "device": "mobile",
+      "purchase_events": 16,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 15,
+      "native_item_agree_candidate_events": 13
+    },
+    {
+      "source_suffix": "20201206",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201207",
+      "device": "desktop",
+      "purchase_events": 66,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 63,
+      "native_item_agree_candidate_events": 51
+    },
+    {
+      "source_suffix": "20201207",
+      "device": "mobile",
+      "purchase_events": 43,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 40,
+      "native_item_agree_candidate_events": 35
+    },
+    {
+      "source_suffix": "20201207",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201208",
+      "device": "desktop",
+      "purchase_events": 78,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 78,
+      "native_item_agree_candidate_events": 64
+    },
+    {
+      "source_suffix": "20201208",
+      "device": "mobile",
+      "purchase_events": 41,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 39,
+      "native_item_agree_candidate_events": 34
+    },
+    {
+      "source_suffix": "20201208",
+      "device": "tablet",
+      "purchase_events": 3,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 3,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201209",
+      "device": "desktop",
+      "purchase_events": 99,
+      "unusable_id_events": 4,
+      "conservative_candidate_events": 94,
+      "native_item_agree_candidate_events": 75
+    },
+    {
+      "source_suffix": "20201209",
+      "device": "mobile",
+      "purchase_events": 47,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 46,
+      "native_item_agree_candidate_events": 32
+    },
+    {
+      "source_suffix": "20201209",
+      "device": "tablet",
+      "purchase_events": 4,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 4,
+      "native_item_agree_candidate_events": 3
+    },
+    {
+      "source_suffix": "20201210",
+      "device": "desktop",
+      "purchase_events": 83,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 80,
+      "native_item_agree_candidate_events": 69
+    },
+    {
+      "source_suffix": "20201210",
+      "device": "mobile",
+      "purchase_events": 58,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 55,
+      "native_item_agree_candidate_events": 48
+    },
+    {
+      "source_suffix": "20201210",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201211",
+      "device": "desktop",
+      "purchase_events": 92,
+      "unusable_id_events": 4,
+      "conservative_candidate_events": 88,
+      "native_item_agree_candidate_events": 73
+    },
+    {
+      "source_suffix": "20201211",
+      "device": "mobile",
+      "purchase_events": 67,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 65,
+      "native_item_agree_candidate_events": 53
+    },
+    {
+      "source_suffix": "20201211",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201212",
+      "device": "desktop",
+      "purchase_events": 71,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 68,
+      "native_item_agree_candidate_events": 55
+    },
+    {
+      "source_suffix": "20201212",
+      "device": "mobile",
+      "purchase_events": 34,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 33,
+      "native_item_agree_candidate_events": 28
+    },
+    {
+      "source_suffix": "20201212",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201213",
+      "device": "desktop",
+      "purchase_events": 43,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 41,
+      "native_item_agree_candidate_events": 34
+    },
+    {
+      "source_suffix": "20201213",
+      "device": "mobile",
+      "purchase_events": 31,
+      "unusable_id_events": 4,
+      "conservative_candidate_events": 27,
+      "native_item_agree_candidate_events": 22
+    },
+    {
+      "source_suffix": "20201214",
+      "device": "desktop",
+      "purchase_events": 38,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 35,
+      "native_item_agree_candidate_events": 29
+    },
+    {
+      "source_suffix": "20201214",
+      "device": "mobile",
+      "purchase_events": 60,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 57,
+      "native_item_agree_candidate_events": 46
+    },
+    {
+      "source_suffix": "20201214",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201215",
+      "device": "desktop",
+      "purchase_events": 86,
+      "unusable_id_events": 5,
+      "conservative_candidate_events": 79,
+      "native_item_agree_candidate_events": 63
+    },
+    {
+      "source_suffix": "20201215",
+      "device": "mobile",
+      "purchase_events": 52,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 51,
+      "native_item_agree_candidate_events": 40
+    },
+    {
+      "source_suffix": "20201215",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201216",
+      "device": "desktop",
+      "purchase_events": 87,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 86,
+      "native_item_agree_candidate_events": 69
+    },
+    {
+      "source_suffix": "20201216",
+      "device": "mobile",
+      "purchase_events": 54,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 52,
+      "native_item_agree_candidate_events": 43
+    },
+    {
+      "source_suffix": "20201216",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201217",
+      "device": "desktop",
+      "purchase_events": 72,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 71,
+      "native_item_agree_candidate_events": 64
+    },
+    {
+      "source_suffix": "20201217",
+      "device": "mobile",
+      "purchase_events": 53,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 52,
+      "native_item_agree_candidate_events": 48
+    },
+    {
+      "source_suffix": "20201217",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201218",
+      "device": "desktop",
+      "purchase_events": 67,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 66,
+      "native_item_agree_candidate_events": 54
+    },
+    {
+      "source_suffix": "20201218",
+      "device": "mobile",
+      "purchase_events": 39,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 38,
+      "native_item_agree_candidate_events": 31
+    },
+    {
+      "source_suffix": "20201218",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201219",
+      "device": "desktop",
+      "purchase_events": 30,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 29,
+      "native_item_agree_candidate_events": 25
+    },
+    {
+      "source_suffix": "20201219",
+      "device": "mobile",
+      "purchase_events": 22,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 22,
+      "native_item_agree_candidate_events": 20
+    },
+    {
+      "source_suffix": "20201220",
+      "device": "desktop",
+      "purchase_events": 12,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 11,
+      "native_item_agree_candidate_events": 6
+    },
+    {
+      "source_suffix": "20201220",
+      "device": "mobile",
+      "purchase_events": 8,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 8,
+      "native_item_agree_candidate_events": 5
+    },
+    {
+      "source_suffix": "20201221",
+      "device": "desktop",
+      "purchase_events": 29,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 28,
+      "native_item_agree_candidate_events": 25
+    },
+    {
+      "source_suffix": "20201221",
+      "device": "mobile",
+      "purchase_events": 20,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 19,
+      "native_item_agree_candidate_events": 17
+    },
+    {
+      "source_suffix": "20201221",
+      "device": "tablet",
+      "purchase_events": 4,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 4,
+      "native_item_agree_candidate_events": 3
+    },
+    {
+      "source_suffix": "20201222",
+      "device": "desktop",
+      "purchase_events": 36,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 34,
+      "native_item_agree_candidate_events": 29
+    },
+    {
+      "source_suffix": "20201222",
+      "device": "mobile",
+      "purchase_events": 23,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 22,
+      "native_item_agree_candidate_events": 19
+    },
+    {
+      "source_suffix": "20201222",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201223",
+      "device": "desktop",
+      "purchase_events": 33,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 33,
+      "native_item_agree_candidate_events": 26
+    },
+    {
+      "source_suffix": "20201223",
+      "device": "mobile",
+      "purchase_events": 34,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 34,
+      "native_item_agree_candidate_events": 30
+    },
+    {
+      "source_suffix": "20201224",
+      "device": "desktop",
+      "purchase_events": 11,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 10,
+      "native_item_agree_candidate_events": 9
+    },
+    {
+      "source_suffix": "20201224",
+      "device": "mobile",
+      "purchase_events": 10,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 9,
+      "native_item_agree_candidate_events": 8
+    },
+    {
+      "source_suffix": "20201224",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20201225",
+      "device": "desktop",
+      "purchase_events": 7,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 7,
+      "native_item_agree_candidate_events": 6
+    },
+    {
+      "source_suffix": "20201225",
+      "device": "mobile",
+      "purchase_events": 10,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 9,
+      "native_item_agree_candidate_events": 9
+    },
+    {
+      "source_suffix": "20201226",
+      "device": "desktop",
+      "purchase_events": 5,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 4,
+      "native_item_agree_candidate_events": 4
+    },
+    {
+      "source_suffix": "20201226",
+      "device": "mobile",
+      "purchase_events": 12,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 12,
+      "native_item_agree_candidate_events": 9
+    },
+    {
+      "source_suffix": "20201227",
+      "device": "desktop",
+      "purchase_events": 11,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 11,
+      "native_item_agree_candidate_events": 8
+    },
+    {
+      "source_suffix": "20201227",
+      "device": "mobile",
+      "purchase_events": 8,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 8,
+      "native_item_agree_candidate_events": 7
+    },
+    {
+      "source_suffix": "20201227",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201228",
+      "device": "desktop",
+      "purchase_events": 23,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 22,
+      "native_item_agree_candidate_events": 15
+    },
+    {
+      "source_suffix": "20201228",
+      "device": "mobile",
+      "purchase_events": 12,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 11,
+      "native_item_agree_candidate_events": 11
+    },
+    {
+      "source_suffix": "20201228",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201229",
+      "device": "desktop",
+      "purchase_events": 15,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 15,
+      "native_item_agree_candidate_events": 14
+    },
+    {
+      "source_suffix": "20201229",
+      "device": "mobile",
+      "purchase_events": 8,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 8,
+      "native_item_agree_candidate_events": 7
+    },
+    {
+      "source_suffix": "20201229",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201230",
+      "device": "desktop",
+      "purchase_events": 11,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 11,
+      "native_item_agree_candidate_events": 7
+    },
+    {
+      "source_suffix": "20201230",
+      "device": "mobile",
+      "purchase_events": 25,
+      "unusable_id_events": 15,
+      "conservative_candidate_events": 9,
+      "native_item_agree_candidate_events": 9
+    },
+    {
+      "source_suffix": "20201230",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20201231",
+      "device": "desktop",
+      "purchase_events": 17,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 17,
+      "native_item_agree_candidate_events": 12
+    },
+    {
+      "source_suffix": "20201231",
+      "device": "mobile",
+      "purchase_events": 7,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 7,
+      "native_item_agree_candidate_events": 7
+    },
+    {
+      "source_suffix": "20201231",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20210101",
+      "device": "desktop",
+      "purchase_events": 6,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 6,
+      "native_item_agree_candidate_events": 4
+    },
+    {
+      "source_suffix": "20210101",
+      "device": "mobile",
+      "purchase_events": 7,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 7,
+      "native_item_agree_candidate_events": 7
+    },
+    {
+      "source_suffix": "20210101",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20210102",
+      "device": "desktop",
+      "purchase_events": 6,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 6,
+      "native_item_agree_candidate_events": 3
+    },
+    {
+      "source_suffix": "20210102",
+      "device": "mobile",
+      "purchase_events": 7,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 6,
+      "native_item_agree_candidate_events": 6
+    },
+    {
+      "source_suffix": "20210102",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20210103",
+      "device": "desktop",
+      "purchase_events": 7,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 6,
+      "native_item_agree_candidate_events": 5
+    },
+    {
+      "source_suffix": "20210103",
+      "device": "mobile",
+      "purchase_events": 7,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 6,
+      "native_item_agree_candidate_events": 6
+    },
+    {
+      "source_suffix": "20210104",
+      "device": "desktop",
+      "purchase_events": 9,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 9,
+      "native_item_agree_candidate_events": 7
+    },
+    {
+      "source_suffix": "20210104",
+      "device": "mobile",
+      "purchase_events": 6,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 6,
+      "native_item_agree_candidate_events": 5
+    },
+    {
+      "source_suffix": "20210104",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20210105",
+      "device": "desktop",
+      "purchase_events": 18,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 17,
+      "native_item_agree_candidate_events": 16
+    },
+    {
+      "source_suffix": "20210105",
+      "device": "mobile",
+      "purchase_events": 11,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 11,
+      "native_item_agree_candidate_events": 10
+    },
+    {
+      "source_suffix": "20210106",
+      "device": "desktop",
+      "purchase_events": 19,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 19,
+      "native_item_agree_candidate_events": 16
+    },
+    {
+      "source_suffix": "20210106",
+      "device": "mobile",
+      "purchase_events": 11,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 11,
+      "native_item_agree_candidate_events": 8
+    },
+    {
+      "source_suffix": "20210106",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20210107",
+      "device": "desktop",
+      "purchase_events": 18,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 15,
+      "native_item_agree_candidate_events": 13
+    },
+    {
+      "source_suffix": "20210107",
+      "device": "mobile",
+      "purchase_events": 8,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 8,
+      "native_item_agree_candidate_events": 8
+    },
+    {
+      "source_suffix": "20210108",
+      "device": "desktop",
+      "purchase_events": 22,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 21,
+      "native_item_agree_candidate_events": 19
+    },
+    {
+      "source_suffix": "20210108",
+      "device": "mobile",
+      "purchase_events": 11,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 10,
+      "native_item_agree_candidate_events": 9
+    },
+    {
+      "source_suffix": "20210108",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20210109",
+      "device": "desktop",
+      "purchase_events": 11,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 9,
+      "native_item_agree_candidate_events": 6
+    },
+    {
+      "source_suffix": "20210109",
+      "device": "mobile",
+      "purchase_events": 9,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 8,
+      "native_item_agree_candidate_events": 8
+    },
+    {
+      "source_suffix": "20210110",
+      "device": "desktop",
+      "purchase_events": 9,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 9,
+      "native_item_agree_candidate_events": 6
+    },
+    {
+      "source_suffix": "20210110",
+      "device": "mobile",
+      "purchase_events": 5,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 5,
+      "native_item_agree_candidate_events": 4
+    },
+    {
+      "source_suffix": "20210111",
+      "device": "desktop",
+      "purchase_events": 18,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 16,
+      "native_item_agree_candidate_events": 14
+    },
+    {
+      "source_suffix": "20210111",
+      "device": "mobile",
+      "purchase_events": 9,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 9,
+      "native_item_agree_candidate_events": 6
+    },
+    {
+      "source_suffix": "20210111",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20210112",
+      "device": "desktop",
+      "purchase_events": 27,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 25,
+      "native_item_agree_candidate_events": 24
+    },
+    {
+      "source_suffix": "20210112",
+      "device": "mobile",
+      "purchase_events": 19,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 19,
+      "native_item_agree_candidate_events": 17
+    },
+    {
+      "source_suffix": "20210112",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20210113",
+      "device": "desktop",
+      "purchase_events": 21,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 20,
+      "native_item_agree_candidate_events": 20
+    },
+    {
+      "source_suffix": "20210113",
+      "device": "mobile",
+      "purchase_events": 15,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 14,
+      "native_item_agree_candidate_events": 11
+    },
+    {
+      "source_suffix": "20210114",
+      "device": "desktop",
+      "purchase_events": 29,
+      "unusable_id_events": 4,
+      "conservative_candidate_events": 25,
+      "native_item_agree_candidate_events": 21
+    },
+    {
+      "source_suffix": "20210114",
+      "device": "mobile",
+      "purchase_events": 25,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 24,
+      "native_item_agree_candidate_events": 18
+    },
+    {
+      "source_suffix": "20210115",
+      "device": "desktop",
+      "purchase_events": 26,
+      "unusable_id_events": 4,
+      "conservative_candidate_events": 21,
+      "native_item_agree_candidate_events": 17
+    },
+    {
+      "source_suffix": "20210115",
+      "device": "mobile",
+      "purchase_events": 19,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 18,
+      "native_item_agree_candidate_events": 17
+    },
+    {
+      "source_suffix": "20210115",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20210116",
+      "device": "desktop",
+      "purchase_events": 12,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 10,
+      "native_item_agree_candidate_events": 10
+    },
+    {
+      "source_suffix": "20210116",
+      "device": "mobile",
+      "purchase_events": 15,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 14,
+      "native_item_agree_candidate_events": 13
+    },
+    {
+      "source_suffix": "20210117",
+      "device": "desktop",
+      "purchase_events": 10,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 8,
+      "native_item_agree_candidate_events": 6
+    },
+    {
+      "source_suffix": "20210117",
+      "device": "mobile",
+      "purchase_events": 4,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 4,
+      "native_item_agree_candidate_events": 3
+    },
+    {
+      "source_suffix": "20210118",
+      "device": "desktop",
+      "purchase_events": 8,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 7,
+      "native_item_agree_candidate_events": 7
+    },
+    {
+      "source_suffix": "20210118",
+      "device": "mobile",
+      "purchase_events": 11,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 11,
+      "native_item_agree_candidate_events": 9
+    },
+    {
+      "source_suffix": "20210119",
+      "device": "desktop",
+      "purchase_events": 25,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 23,
+      "native_item_agree_candidate_events": 21
+    },
+    {
+      "source_suffix": "20210119",
+      "device": "mobile",
+      "purchase_events": 20,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 18,
+      "native_item_agree_candidate_events": 14
+    },
+    {
+      "source_suffix": "20210119",
+      "device": "tablet",
+      "purchase_events": 4,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 4,
+      "native_item_agree_candidate_events": 4
+    },
+    {
+      "source_suffix": "20210120",
+      "device": "desktop",
+      "purchase_events": 56,
+      "unusable_id_events": 7,
+      "conservative_candidate_events": 49,
+      "native_item_agree_candidate_events": 37
+    },
+    {
+      "source_suffix": "20210120",
+      "device": "mobile",
+      "purchase_events": 39,
+      "unusable_id_events": 5,
+      "conservative_candidate_events": 33,
+      "native_item_agree_candidate_events": 25
+    },
+    {
+      "source_suffix": "20210120",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20210121",
+      "device": "desktop",
+      "purchase_events": 35,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 33,
+      "native_item_agree_candidate_events": 22
+    },
+    {
+      "source_suffix": "20210121",
+      "device": "mobile",
+      "purchase_events": 16,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 16,
+      "native_item_agree_candidate_events": 13
+    },
+    {
+      "source_suffix": "20210121",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20210122",
+      "device": "desktop",
+      "purchase_events": 60,
+      "unusable_id_events": 7,
+      "conservative_candidate_events": 53,
+      "native_item_agree_candidate_events": 40
+    },
+    {
+      "source_suffix": "20210122",
+      "device": "mobile",
+      "purchase_events": 39,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 39,
+      "native_item_agree_candidate_events": 32
+    },
+    {
+      "source_suffix": "20210122",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 1,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20210123",
+      "device": "desktop",
+      "purchase_events": 26,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 25,
+      "native_item_agree_candidate_events": 17
+    },
+    {
+      "source_suffix": "20210123",
+      "device": "mobile",
+      "purchase_events": 15,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 14,
+      "native_item_agree_candidate_events": 13
+    },
+    {
+      "source_suffix": "20210123",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20210124",
+      "device": "desktop",
+      "purchase_events": 19,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 17,
+      "native_item_agree_candidate_events": 14
+    },
+    {
+      "source_suffix": "20210124",
+      "device": "mobile",
+      "purchase_events": 17,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 16,
+      "native_item_agree_candidate_events": 12
+    },
+    {
+      "source_suffix": "20210125",
+      "device": "desktop",
+      "purchase_events": 36,
+      "unusable_id_events": 5,
+      "conservative_candidate_events": 31,
+      "native_item_agree_candidate_events": 24
+    },
+    {
+      "source_suffix": "20210125",
+      "device": "mobile",
+      "purchase_events": 23,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 20,
+      "native_item_agree_candidate_events": 13
+    },
+    {
+      "source_suffix": "20210125",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20210126",
+      "device": "desktop",
+      "purchase_events": 28,
+      "unusable_id_events": 17,
+      "conservative_candidate_events": 11,
+      "native_item_agree_candidate_events": 10
+    },
+    {
+      "source_suffix": "20210126",
+      "device": "mobile",
+      "purchase_events": 26,
+      "unusable_id_events": 15,
+      "conservative_candidate_events": 11,
+      "native_item_agree_candidate_events": 9
+    },
+    {
+      "source_suffix": "20210126",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20210127",
+      "device": "desktop",
+      "purchase_events": 19,
+      "unusable_id_events": 14,
+      "conservative_candidate_events": 5,
+      "native_item_agree_candidate_events": 5
+    },
+    {
+      "source_suffix": "20210127",
+      "device": "mobile",
+      "purchase_events": 34,
+      "unusable_id_events": 27,
+      "conservative_candidate_events": 7,
+      "native_item_agree_candidate_events": 7
+    },
+    {
+      "source_suffix": "20210127",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20210128",
+      "device": "desktop",
+      "purchase_events": 28,
+      "unusable_id_events": 25,
+      "conservative_candidate_events": 3,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20210128",
+      "device": "mobile",
+      "purchase_events": 39,
+      "unusable_id_events": 37,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 1
+    },
+    {
+      "source_suffix": "20210128",
+      "device": "tablet",
+      "purchase_events": 2,
+      "unusable_id_events": 2,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20210129",
+      "device": "desktop",
+      "purchase_events": 29,
+      "unusable_id_events": 26,
+      "conservative_candidate_events": 3,
+      "native_item_agree_candidate_events": 3
+    },
+    {
+      "source_suffix": "20210129",
+      "device": "mobile",
+      "purchase_events": 22,
+      "unusable_id_events": 19,
+      "conservative_candidate_events": 3,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20210129",
+      "device": "tablet",
+      "purchase_events": 3,
+      "unusable_id_events": 3,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20210130",
+      "device": "desktop",
+      "purchase_events": 19,
+      "unusable_id_events": 17,
+      "conservative_candidate_events": 2,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20210130",
+      "device": "mobile",
+      "purchase_events": 12,
+      "unusable_id_events": 9,
+      "conservative_candidate_events": 3,
+      "native_item_agree_candidate_events": 2
+    },
+    {
+      "source_suffix": "20210131",
+      "device": "desktop",
+      "purchase_events": 11,
+      "unusable_id_events": 11,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20210131",
+      "device": "mobile",
+      "purchase_events": 7,
+      "unusable_id_events": 7,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20210131",
+      "device": "tablet",
+      "purchase_events": 1,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    }
+  ]
+}

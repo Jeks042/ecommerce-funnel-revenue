@@ -46,3 +46,11 @@ These are working decisions and tests to perform, not approved headline definiti
 The [purchase reconciliation](../reports/purchase_reconciliation.md) establishes that the fifteen identity and fifteen summary conflict groups overlap completely. Another 285 repeated-ID groups differ in stored e-commerce/item details while matching the compared identity and monetary summaries; this comparison is sensitive to item metadata and array order. Twenty-six repeated groups have consistent compared payloads, but still need review before being treated as duplicates.
 
 All recorded purchases on 1–10 November 2020 and 31 January 2021 lack usable identifiers. A valid-ID-only population therefore has systematic date exclusions. Quantify those exclusions and their effect on comparisons before freezing order or revenue definitions. Only seven of the 1,001 observed native/item differences numerically match the tax field; this does not establish tax as the explanation. Milestone 1 remains open.
+
+## Candidate counting sensitivity — 6 November
+
+The [detail review](../reports/purchase_detail_findings.md) resolves the 285 additional stored-detail differences into 264 metadata-changing groups and 21 item-order-only groups. All 15 cross-date repeated identifiers fall within the customer/summary conflict group. Item comparison now permits array reordering while preserving duplicate item rows.
+
+The [candidate rule](purchase_counting_review.md) retains one identifier group only after customer/session, currency, full e-commerce and order-insensitive complete-item agreement, with one observed date/device and usable keys. It retains 4,172 groups, including 47 repeated groups represented by 98 events. This is a sensitivity policy, not an approved order definition. Do not select an arbitrary first/last record to resolve conflicts.
+
+All retained groups have complete native purchase amounts, but 779 fail native/item agreement; 3,393 pass both tests. Amount sums remain diagnostics. The retained events cover 1,003/2,054 November purchases, 2,323/2,434 December purchases and 897/1,204 January purchases. These event-coverage differences require date-mix checks before comparisons. Session ordering, boundary and tracking-coverage decisions remain unresolved; the contract is not frozen.

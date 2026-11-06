@@ -8,7 +8,7 @@ I am examining how shoppers move from viewing a product to making a purchase, wh
 
 The first checks found missing and repeated purchase identifiers, incomplete money fields and events that share a timestamp. Those details affect how visits, orders and progression can be counted. [Read the source audit](reports/source_audit.md) for the observations and the decisions still to make. There are no accepted funnel or revenue findings yet.
 
-The [purchase follow-up](reports/purchase_reconciliation.md) separates conflicting records from consistent repeats and examines the dates with missing order identifiers. The counting rules remain under review before building funnel results.
+The [purchase review](reports/purchase_detail_findings.md) now distinguishes changed promotion details, reordered baskets and conflicting purchase records. It also shows why excluding uncertain records affects some months much more than others. The counting rules remain under review before building funnel results.
 
 ## Planned workflow
 
@@ -36,6 +36,7 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 - [Current progress and next session](reports/progress.md)
 - [Source audit and current decisions](reports/source_audit.md)
 - [Purchase-reconciliation findings](reports/purchase_reconciliation.md)
+- [Purchase-detail findings and counting sensitivity](reports/purchase_detail_findings.md)
 - [Python chart and report plan](docs/chart_specification.md)
 - [Decision log](docs/decision_log.md)
 

@@ -11,3 +11,11 @@ For real-data results, run `python tests/check_purchase_result.py reports/eviden
 The native fixture run passed thirteen scalar expectations and four bucket expectations on 5 November 2026. See the purchase-reconciliation receipt for query hashes and execution evidence. No credentialed execution runs automatically on GitHub pushes.
 
 Run the credential-free validator regression checks with `python -m unittest discover -s tests -p "test_*.py"`. These check that corrupted bucket counts, dropped missing-ID events, double-counted conflict groups and inconsistent monetary-difference counts are rejected. They complement the native SQL fixture; they do not replace warehouse execution.
+
+## Complete purchase-detail comparison
+
+Run `python tests/prepare_purchase_detail_fixture.py`. Execute the generated ignored `private/purchase_detail_fixture.sql` in BigQuery after confirming its zero-byte scan estimate. The 29 synthetic events exercise the production detail SQL, including basket order, metadata changes, duplicate item-row multiplicity, matching totals with different lines, missing values, placeholder customers and cross-date/device repeats. Expected results are declared independently.
+
+Export the result as local JSON, parse the outer row's `audit_json`, and save that inner object privately. Run `python tests/check_purchase_detail_result.py private/purchase_detail_fixture_result.json --expected private/purchase_detail_fixture_expected.json`. Run the same checker without `--expected` against `reports/evidence/purchase-detail-diagnostics-20261106.json` for the source result. It checks event/group partitions, nested candidate populations, daily device coverage and overlapping field/bucket reconciliation. See the [method](../docs/purchase_counting_review.md) and [receipt](../reports/evidence/purchase-detail-receipt-20261106.json).
+
+The credential-free regression suite also rejects dropped date/device coverage, inflated candidate populations, inconsistent field/bucket attribution and nonfinite diagnostic amounts. These checks validate evidence integrity; they do not certify real orders or sales.

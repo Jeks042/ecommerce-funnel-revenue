@@ -33,3 +33,9 @@ Preserve the report owner's preference to review Power BI formatting and provide
 Replace the planned Power BI reporting stage with Python analysis and charts using Matplotlib and Seaborn. Retain BigQuery SQL, all measurement gates and the six-stage dependency order. Deliver reproducible figures, an illustrated commercial report and a decision memo. This broadens the portfolio's analytical presentation while preserving consistent quality checks. Earlier Power BI entries describe the original plan and are superseded by this decision.
 
 Continue the unfinished source-validation stage: purchase reconciliation is the next evidence task. Do not skip to building analytical tables or drawing conversion charts while counting rules remain unresolved.
+
+## 6 November 2026 — Purchase counting remains a sensitivity
+
+Compare full item contents without treating array order as a change in the basket; preserve duplicate rows. The 285 further stored-detail differences comprise 264 metadata-changing groups and 21 order-only groups. Keep metadata-changing and customer/amount-conflicting groups outside a cautious candidate population rather than selecting a convenient first or last record.
+
+The candidate rule retains 4,172 identifier groups; 779 fail native/item amount agreement. Retained purchase events have markedly uneven monthly coverage. Publish this effect and keep raw-event counts separate from candidate groups. No headline orders, revenue, average order value or conversion results are approved. Continue daily tracking, ordering and session-boundary checks before freezing the contract. The SQL, aggregate evidence, native fixture and run receipt accompany the findings.

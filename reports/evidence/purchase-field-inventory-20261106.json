@@ -1,0 +1,204 @@
+{
+  "field_coverage": [
+    {
+      "field_path": "ecommerce.purchase_revenue",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.purchase_revenue_in_usd",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.refund_value",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.refund_value_in_usd",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.shipping_value",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.shipping_value_in_usd",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.tax_value",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.tax_value_in_usd",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.total_item_quantity",
+      "data_type": "INT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.transaction_id",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "ecommerce.unique_items",
+      "data_type": "INT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "event_bundle_sequence_id",
+      "data_type": "INT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "event_previous_timestamp",
+      "data_type": "INT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "event_server_timestamp_offset",
+      "data_type": "INT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.affiliation",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.coupon",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.creative_name",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.creative_slot",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_brand",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_category",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_category2",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_category3",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_category4",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_category5",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_id",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_list_id",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_list_index",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_list_name",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_name",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_refund",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_refund_in_usd",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_revenue",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_revenue_in_usd",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.item_variant",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.location_id",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.price",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.price_in_usd",
+      "data_type": "FLOAT64",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.promotion_id",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.promotion_name",
+      "data_type": "STRING",
+      "tables_with_field": 92
+    },
+    {
+      "field_path": "items.quantity",
+      "data_type": "INT64",
+      "tables_with_field": 92
+    }
+  ]
+}

@@ -34,3 +34,9 @@ Successful execution of the profile is not acceptance of the metric contract. Se
 After the broad profile, run [03_purchase_reconciliation.sql](../sql/03_purchase_reconciliation.sql) using the same fixed window and Sandbox/scan-review controls. First generate and run its native synthetic [fixture](../tests/README.md). The source query returns only aggregate partitions, conflict overlap and monetary-field diagnostics. Reconcile it to the previous purchase-event, missing-ID, native-revenue and difference counts; investigate any drift.
 
 The complete e-commerce/item payload comparison is order-sensitive and includes item metadata. It is an investigation flag, not a decision that a sale is duplicated or financially different. Do not use its diagnostic buckets as approved orders or revenue.
+
+## Field-level purchase review
+
+Run [04_purchase_field_inventory.sql](../sql/04_purchase_field_inventory.sql) and check the actual available fields before testing [05_purchase_detail_diagnostics.sql](../sql/05_purchase_detail_diagnostics.sql). Use the same Sandbox and scan-review controls. The [method](purchase_counting_review.md) defines the complete-item multiset comparison, overlapping field differences and candidate counting sensitivity. First generate and execute its literal-only fixture; validate the saved inner JSON against the independent expected results. Then run the bounded source query, use Console's local JSON download and validate the parsed aggregate before publication. Do not export source event rows or identifiers.
+
+The detail query returns daily device coverage at purchase-event grain. Its candidate counts and amount sums are diagnostics. Passing those tests does not freeze the metric contract or establish commercial order/revenue truth.

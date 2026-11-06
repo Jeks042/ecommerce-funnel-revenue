@@ -1,0 +1,89 @@
+{
+  "scope": "Field inventory and final accepted diagnostic-query version; earlier exploratory executions are listed separately.",
+  "source": "bigquery-public-data.ga4_obfuscated_sample_ecommerce.events_*",
+  "start_suffix": "20201101",
+  "end_suffix": "20210131",
+  "capture_method": "BigQuery Console local JSON download; parsed outer row and inner audit_json. Aggregate output only; no source event rows exported.",
+  "runs": [
+    {
+      "kind": "field_inventory",
+      "started_utc": "2026-11-06T00:28:03Z",
+      "ended_utc": "2026-11-06T00:28:03Z",
+      "duration_ms": 362,
+      "processed_display": "20 MB",
+      "billed_display": "20 MB",
+      "validator_estimate_display": "20 MB",
+      "query_sha256": "b1f75bee6d7b4a87e14ccadf39c8881e31f9e4e996e584cc437495fd2cb8e12e",
+      "output_sha256": "dad281f29360104f3c01e33370aa1065aa6bb9aa5e43f69d9113deb42c30302f",
+      "job_reference_sha256": "6c1e6a555ce45f961be214dceb5058d6d3e115b50faad8d7d9626a0d27875798",
+      "location": "US",
+      "status": "completed"
+    },
+    {
+      "kind": "synthetic_fixture_final",
+      "created_utc": "2026-11-06T00:37:07Z",
+      "started_utc": "2026-11-06T00:37:07Z",
+      "ended_utc": "2026-11-06T00:37:10Z",
+      "duration_ms": 2754,
+      "processed_display": "0 B",
+      "billed_display": "0 B",
+      "validator_estimate_display": "0 B",
+      "query_sha256": "da88599b67a10c9e0382048d578ecd81cafc673ec62be7afbc2b845f70930b17",
+      "job_reference_sha256": "d15b5b1fd02711cfb89f90208db46e06605e06596f95a58825762bfbe43f523f",
+      "location": "US",
+      "status": "completed",
+      "output_sha256": "8c7fb163a484b94f40044e92dd64d4da36007f3fdcf42f3f3beac3a36e02c4ff"
+    },
+    {
+      "kind": "source_detail_final",
+      "created_utc": "2026-11-06T00:39:47Z",
+      "started_utc": "2026-11-06T00:39:47Z",
+      "ended_utc": "2026-11-06T00:39:52Z",
+      "duration_ms": 5084,
+      "processed_display": "2.42 GB",
+      "billed_display": "2.42 GB",
+      "validator_estimate_display": "2.42 GB",
+      "query_sha256": "81d72c023ae8612a6950d9dda4c972eb4a6a5e0dcce18ce91e0070229baee17c",
+      "output_sha256": "fe0d3838800069aa896afabfc9ae6a85905b0f591cb61b7ca68bc685626bfa30",
+      "job_reference_sha256": "ef80a34dfa417c449374fa91fb1550c31b4e6b62a77807379d49dbc2fa0dd511",
+      "location": "US",
+      "status": "completed"
+    }
+  ],
+  "earlier_exploratory_executions": [
+    {
+      "kind": "synthetic_fixture_initial_28_events",
+      "started_utc": "2026-11-06T00:33:26Z",
+      "duration_ms": 1015,
+      "processed_display": "0 B",
+      "billed_display": "0 B",
+      "job_reference_sha256": "eb8133accfbf30bdde2fa644988683ea092930d4cec69f1a00ce7dd6bf0ae3fa"
+    },
+    {
+      "kind": "source_detail_initial",
+      "started_utc": "2026-11-06T00:34:45Z",
+      "duration_ms": 4125,
+      "processed_display": "2.42 GB",
+      "billed_display": "2.42 GB",
+      "job_reference_sha256": "4b892d897d82852b488aae9708bc44bc332f63199e739311d9ad16de714b9c88",
+      "note": "Before explicit placeholder-customer exclusion and bucket/field cross-tab; final group totals unchanged."
+    }
+  ],
+  "cost_control": {
+    "sandbox_observed": true,
+    "paid_billing_enabled": false,
+    "per_job_cap_confirmed": false,
+    "review_ceiling_gib": 3,
+    "displayed_sizes_are_rounded_console_metadata": true
+  },
+  "validation": {
+    "synthetic_events": 29,
+    "fixture_checks_passed": 40,
+    "source_aggregate_checks_passed": 21,
+    "local_regression_tests_passed": 11,
+    "prior_purchase_audit_comparisons_passed": 8,
+    "export_parsed_without_rekeying_or_filling_nulls": true
+  },
+  "metric_contract_frozen": false,
+  "milestone_1_complete": false
+}

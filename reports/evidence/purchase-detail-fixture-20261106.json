@@ -1,0 +1,379 @@
+{
+  "population": {
+    "purchase_events": 29,
+    "unusable_id_events": 1
+  },
+  "group_checks": {
+    "id_groups": 16,
+    "usable_id_events": 28,
+    "repeated_id_groups": 12,
+    "raw_payload_difference_groups": 6,
+    "identity_or_summary_conflict_groups": 2,
+    "ecommerce_difference_groups": 1,
+    "core_item_difference_groups": 3,
+    "canonical_item_difference_groups": 4,
+    "cross_date_repeated_groups": 1,
+    "cross_date_identity_or_summary_conflicts": 0,
+    "conservative_id_candidates": 5,
+    "conservative_candidate_events": 8,
+    "native_complete_candidates": 4,
+    "native_item_agree_candidates": 3,
+    "diagnostic_native_amount": 45,
+    "diagnostic_agreeing_native_amount": 35
+  },
+  "diagnostic_buckets": [
+    {
+      "diagnostic_bucket": "identity_or_summary_conflict",
+      "id_groups": 2,
+      "purchase_events": 4
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "id_groups": 3,
+      "purchase_events": 6
+    },
+    {
+      "diagnostic_bucket": "item_metadata_difference",
+      "id_groups": 1,
+      "purchase_events": 2
+    },
+    {
+      "diagnostic_bucket": "item_order_only_difference",
+      "id_groups": 1,
+      "purchase_events": 2
+    },
+    {
+      "diagnostic_bucket": "other_ecommerce_difference",
+      "id_groups": 1,
+      "purchase_events": 2
+    },
+    {
+      "diagnostic_bucket": "repeated_exact_payload",
+      "id_groups": 4,
+      "purchase_events": 8
+    },
+    {
+      "diagnostic_bucket": "single_observation",
+      "id_groups": 4,
+      "purchase_events": 4
+    }
+  ],
+  "field_differences": [
+    {
+      "field_path": "ecommerce.purchase_revenue",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.purchase_revenue_in_usd",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.refund_value",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.refund_value_in_usd",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.shipping_value",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.shipping_value_in_usd",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.tax_value",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "ecommerce.tax_value_in_usd",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.total_item_quantity",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.transaction_id",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "ecommerce.unique_items",
+      "differing_id_groups": 0
+    },
+    {
+      "field_path": "items.affiliation",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.coupon",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.creative_name",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.creative_slot",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.item_brand",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.item_category",
+      "differing_id_groups": 2
+    },
+    {
+      "field_path": "items.item_category2",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.item_category3",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.item_category4",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.item_category5",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.item_id",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.item_list_id",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.item_list_index",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.item_list_name",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.item_name",
+      "differing_id_groups": 2
+    },
+    {
+      "field_path": "items.item_refund",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.item_refund_in_usd",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.item_revenue",
+      "differing_id_groups": 2
+    },
+    {
+      "field_path": "items.item_revenue_in_usd",
+      "differing_id_groups": 2
+    },
+    {
+      "field_path": "items.item_variant",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.location_id",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.price",
+      "differing_id_groups": 2
+    },
+    {
+      "field_path": "items.price_in_usd",
+      "differing_id_groups": 2
+    },
+    {
+      "field_path": "items.promotion_id",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.promotion_name",
+      "differing_id_groups": 1
+    },
+    {
+      "field_path": "items.quantity",
+      "differing_id_groups": 1
+    }
+  ],
+  "field_differences_by_bucket": [
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.affiliation",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.coupon",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.creative_name",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.creative_slot",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_brand",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_category",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_category2",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_category3",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_category4",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_category5",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_id",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_list_id",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_list_index",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_list_name",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_name",
+      "differing_id_groups": 2
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_refund",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_refund_in_usd",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_revenue",
+      "differing_id_groups": 2
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_revenue_in_usd",
+      "differing_id_groups": 2
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.item_variant",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.location_id",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.price",
+      "differing_id_groups": 2
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.price_in_usd",
+      "differing_id_groups": 2
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.promotion_id",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.promotion_name",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_identity_or_money_difference",
+      "field_path": "items.quantity",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "item_metadata_difference",
+      "field_path": "items.item_category",
+      "differing_id_groups": 1
+    },
+    {
+      "diagnostic_bucket": "other_ecommerce_difference",
+      "field_path": "ecommerce.tax_value",
+      "differing_id_groups": 1
+    }
+  ],
+  "coverage_by_date_device": [
+    {
+      "source_suffix": "20201101",
+      "device": "desktop",
+      "purchase_events": 27,
+      "unusable_id_events": 1,
+      "conservative_candidate_events": 8,
+      "native_item_agree_candidate_events": 5
+    },
+    {
+      "source_suffix": "20201101",
+      "device": "mobile",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    },
+    {
+      "source_suffix": "20201102",
+      "device": "desktop",
+      "purchase_events": 1,
+      "unusable_id_events": 0,
+      "conservative_candidate_events": 0,
+      "native_item_agree_candidate_events": 0
+    }
+  ]
+}

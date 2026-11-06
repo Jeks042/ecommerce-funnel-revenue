@@ -24,6 +24,8 @@ The [metric contract](../docs/metric_contract.md) remains a draft. No funnel res
 
 ## Resume here
 
-The focused [purchase reconciliation](purchase_reconciliation.md) has run, after seventeen native fixture expectations passed. It confirms conflict overlap, further stored-detail differences and eleven dates without usable purchase IDs. Ten aggregate checks and five comparisons with the prior audit pass. Continue [issue #1](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/1): inspect the fields behind stored-detail differences, daily funnel-event coverage, unresolved monetary differences and available ordering fields. Quantify exclusion, tie and boundary sensitivities. Agree the supported measures and freeze the contract before beginning the SQL marts in issue #2.
+The [purchase-detail review](purchase_detail_findings.md) now separates item-order changes, metadata changes and customer/amount conflicts. A cautious counting sensitivity retains 4,172 candidate identifier groups; 779 still fail purchase/item amount agreement. These are diagnostic populations, not approved orders or revenue. The earlier [purchase reconciliation](purchase_reconciliation.md) remains the baseline.
+
+Continue [issue #1](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/1): review daily funnel-event coverage, remaining monetary differences and the populated ordering fields; quantify tied-step and session-boundary sensitivities. Account for the uneven date/device coverage of purchase exclusions. Agree supported measures and freeze the contract before beginning the SQL marts in issue #2. Milestone 1 remains open.
 
 At every milestone, give the project briefing: work completed, findings, decisions and reasons, limits and next step. See the [workflow](../docs/workflow.md) for the full sequence.
