@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "observed_period": "December 2020",
+  "observed_visit_counts": {
+    "sessions": 131418,
+    "entry_sessions": 27289,
+    "strict_cart_sessions": 7874,
+    "strict_checkout_sessions": 2819,
+    "strict_candidate_sessions": 1437,
+    "candidate_purchase_sessions": 1976,
+    "candidate_transactions": 2240,
+    "unresolved_sessions": 92
+  },
+  "scenarios": [
+    {
+      "name": "downside",
+      "assumed_absolute_cart_rate_change": "-0.01",
+      "assumed_marginal_downstream_multiplier": "0",
+      "hypothetical_cart_rate": "0.278541",
+      "additional_cart_visit_equivalents": "-272.890000",
+      "additional_qualified_completion_visit_equivalents": "0.000000",
+      "hypothetical_total_completions": "1437.000000"
+    },
+    {
+      "name": "downside",
+      "assumed_absolute_cart_rate_change": "-0.01",
+      "assumed_marginal_downstream_multiplier": "0.5",
+      "hypothetical_cart_rate": "0.278541",
+      "additional_cart_visit_equivalents": "-272.890000",
+      "additional_qualified_completion_visit_equivalents": "-24.901126",
+      "hypothetical_total_completions": "1412.098874"
+    },
+    {
+      "name": "downside",
+      "assumed_absolute_cart_rate_change": "-0.01",
+      "assumed_marginal_downstream_multiplier": "1",
+      "hypothetical_cart_rate": "0.278541",
+      "additional_cart_visit_equivalents": "-272.890000",
+      "additional_qualified_completion_visit_equivalents": "-49.802252",
+      "hypothetical_total_completions": "1387.197748"
+    },
+    {
+      "name": "no_change",
+      "assumed_absolute_cart_rate_change": "0",
+      "assumed_marginal_downstream_multiplier": "0",
+      "hypothetical_cart_rate": "0.288541",
+      "additional_cart_visit_equivalents": "0.000000",
+      "additional_qualified_completion_visit_equivalents": "0.000000",
+      "hypothetical_total_completions": "1437.000000"
+    },
+    {
+      "name": "no_change",
+      "assumed_absolute_cart_rate_change": "0",
+      "assumed_marginal_downstream_multiplier": "0.5",
+      "hypothetical_cart_rate": "0.288541",
+      "additional_cart_visit_equivalents": "0.000000",
+      "additional_qualified_completion_visit_equivalents": "0.000000",
+      "hypothetical_total_completions": "1437.000000"
+    },
+    {
+      "name": "no_change",
+      "assumed_absolute_cart_rate_change": "0",
+      "assumed_marginal_downstream_multiplier": "1",
+      "hypothetical_cart_rate": "0.288541",
+      "additional_cart_visit_equivalents": "0.000000",
+      "additional_qualified_completion_visit_equivalents": "0.000000",
+      "hypothetical_total_completions": "1437.000000"
+    },
+    {
+      "name": "low",
+      "assumed_absolute_cart_rate_change": "0.005",
+      "assumed_marginal_downstream_multiplier": "0",
+      "hypothetical_cart_rate": "0.293541",
+      "additional_cart_visit_equivalents": "136.445000",
+      "additional_qualified_completion_visit_equivalents": "0.000000",
+      "hypothetical_total_completions": "1437.000000"
+    },
+    {
+      "name": "low",
+      "assumed_absolute_cart_rate_change": "0.005",
+      "assumed_marginal_downstream_multiplier": "0.5",
+      "hypothetical_cart_rate": "0.293541",
+      "additional_cart_visit_equivalents": "136.445000",
+      "additional_qualified_completion_visit_equivalents": "12.450563",
+      "hypothetical_total_completions": "1449.450563"
+    },
+    {
+      "name": "low",
+      "assumed_absolute_cart_rate_change": "0.005",
+      "assumed_marginal_downstream_multiplier": "1",
+      "hypothetical_cart_rate": "0.293541",
+      "additional_cart_visit_equivalents": "136.445000",
+      "additional_qualified_completion_visit_equivalents": "24.901126",
+      "hypothetical_total_completions": "1461.901126"
+    },
+    {
+      "name": "base",
+      "assumed_absolute_cart_rate_change": "0.01",
+      "assumed_marginal_downstream_multiplier": "0",
+      "hypothetical_cart_rate": "0.298541",
+      "additional_cart_visit_equivalents": "272.890000",
+      "additional_qualified_completion_visit_equivalents": "0.000000",
+      "hypothetical_total_completions": "1437.000000"
+    },
+    {
+      "name": "base",
+      "assumed_absolute_cart_rate_change": "0.01",
+      "assumed_marginal_downstream_multiplier": "0.5",
+      "hypothetical_cart_rate": "0.298541",
+      "additional_cart_visit_equivalents": "272.890000",
+      "additional_qualified_completion_visit_equivalents": "24.901126",
+      "hypothetical_total_completions": "1461.901126"
+    },
+    {
+      "name": "base",
+      "assumed_absolute_cart_rate_change": "0.01",
+      "assumed_marginal_downstream_multiplier": "1",
+      "hypothetical_cart_rate": "0.298541",
+      "additional_cart_visit_equivalents": "272.890000",
+      "additional_qualified_completion_visit_equivalents": "49.802252",
+      "hypothetical_total_completions": "1486.802252"
+    },
+    {
+      "name": "high",
+      "assumed_absolute_cart_rate_change": "0.02",
+      "assumed_marginal_downstream_multiplier": "0",
+      "hypothetical_cart_rate": "0.308541",
+      "additional_cart_visit_equivalents": "545.780000",
+      "additional_qualified_completion_visit_equivalents": "0.000000",
+      "hypothetical_total_completions": "1437.000000"
+    },
+    {
+      "name": "high",
+      "assumed_absolute_cart_rate_change": "0.02",
+      "assumed_marginal_downstream_multiplier": "0.5",
+      "hypothetical_cart_rate": "0.308541",
+      "additional_cart_visit_equivalents": "545.780000",
+      "additional_qualified_completion_visit_equivalents": "49.802252",
+      "hypothetical_total_completions": "1486.802252"
+    },
+    {
+      "name": "high",
+      "assumed_absolute_cart_rate_change": "0.02",
+      "assumed_marginal_downstream_multiplier": "1",
+      "hypothetical_cart_rate": "0.308541",
+      "additional_cart_visit_equivalents": "545.780000",
+      "additional_qualified_completion_visit_equivalents": "99.604503",
+      "hypothetical_total_completions": "1536.604503"
+    }
+  ],
+  "visitor_power_illustrations": [
+    {
+      "assumed_visitor_baseline": 0.2,
+      "assumed_absolute_effect": 0.005,
+      "visitors_per_arm": 101403,
+      "total_visitors": 202806,
+      "normal_approximation_power": 0.800003192539,
+      "previous_integer_power": 0.799999325109
+    },
+    {
+      "assumed_visitor_baseline": 0.2,
+      "assumed_absolute_effect": 0.01,
+      "visitors_per_arm": 25583,
+      "total_visitors": 51166,
+      "normal_approximation_power": 0.800012540478,
+      "previous_integer_power": 0.799997210455
+    },
+    {
+      "assumed_visitor_baseline": 0.2,
+      "assumed_absolute_effect": 0.02,
+      "visitors_per_arm": 6510,
+      "total_visitors": 13020,
+      "normal_approximation_power": 0.800033089401,
+      "previous_integer_power": 0.799972832343
+    },
+    {
+      "assumed_visitor_baseline": 0.3,
+      "assumed_absolute_effect": 0.005,
+      "visitors_per_arm": 132484,
+      "total_visitors": 264968,
+      "normal_approximation_power": 0.800001000149,
+      "previous_integer_power": 0.79999804003
+    },
+    {
+      "assumed_visitor_baseline": 0.3,
+      "assumed_absolute_effect": 0.01,
+      "visitors_per_arm": 33275,
+      "total_visitors": 66550,
+      "normal_approximation_power": 0.800011016793,
+      "previous_integer_power": 0.799999230732
+    },
+    {
+      "assumed_visitor_baseline": 0.3,
+      "assumed_absolute_effect": 0.02,
+      "visitors_per_arm": 8394,
+      "total_visitors": 16788,
+      "normal_approximation_power": 0.800038439157,
+      "previous_integer_power": 0.799991710555
+    },
+    {
+      "assumed_visitor_baseline": 0.4,
+      "assumed_absolute_effect": 0.005,
+      "visitors_per_arm": 151007,
+      "total_visitors": 302014,
+      "normal_approximation_power": 0.80000007031,
+      "previous_integer_power": 0.799997473289
+    },
+    {
+      "assumed_visitor_baseline": 0.4,
+      "assumed_absolute_effect": 0.01,
+      "visitors_per_arm": 37827,
+      "total_visitors": 75654,
+      "normal_approximation_power": 0.800006175335,
+      "previous_integer_power": 0.799995807573
+    },
+    {
+      "assumed_visitor_baseline": 0.4,
+      "assumed_absolute_effect": 0.02,
+      "visitors_per_arm": 9493,
+      "total_visitors": 18986,
+      "normal_approximation_power": 0.800040579304,
+      "previous_integer_power": 0.799999261865
+    }
+  ],
+  "interpretation": "Conditional arithmetic, not forecast validation or a measured treatment effect. Visit scenarios and visitor power are different units.",
+  "financial_return": null,
+  "live_experiment_started": false,
+  "launch_ready": false,
+  "calendar_duration": null,
+  "input_sha256": {
+    "reports/evidence/funnel-analysis-20261110.json": "78b75a14c0e00e68a03b3a5aa2d2630db1c8f7ee124eaf0a7ca99fcd5e0a37f2",
+    "reports/evidence/scenario-assumptions-v1.json": "58bdc017c0d93f57b776ad0cda678740b46bd6268442516f1b49cc0611c49631"
+  }
+}

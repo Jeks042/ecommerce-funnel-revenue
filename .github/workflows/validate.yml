@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.12.14'
       - name: Validate tests, saved evidence and accepted measurements
-        run: python tests/run_local_validation.py
+        run: python tests/run_project_validation.py
       - name: Check fixture and configuration rendering without credentials
         run: |
           python tests/prepare_mart_fixture.py

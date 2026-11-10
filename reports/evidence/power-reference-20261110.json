@@ -1,0 +1,82 @@
+{
+  "reference": "statsmodels.stats.proportion.power_proportions_2indep; independent library evaluation of all nine selected samples and their preceding integers",
+  "statsmodels_version": "0.15.0",
+  "scipy_version": "1.18.1",
+  "alpha_two_sided": 0.05,
+  "allocation": "1:1",
+  "source_url": "https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.power_proportions_2indep.html",
+  "cases": [
+    {
+      "baseline": 0.2,
+      "effect": 0.005,
+      "visitors_per_arm": 101403,
+      "power": 0.8000031925389206,
+      "previous_integer": 101402,
+      "previous_power": 0.7999993251093316
+    },
+    {
+      "baseline": 0.2,
+      "effect": 0.01,
+      "visitors_per_arm": 25583,
+      "power": 0.8000125404776761,
+      "previous_integer": 25582,
+      "previous_power": 0.7999972104545833
+    },
+    {
+      "baseline": 0.2,
+      "effect": 0.02,
+      "visitors_per_arm": 6510,
+      "power": 0.800033089400543,
+      "previous_integer": 6509,
+      "previous_power": 0.7999728323426342
+    },
+    {
+      "baseline": 0.3,
+      "effect": 0.005,
+      "visitors_per_arm": 132484,
+      "power": 0.8000010001494404,
+      "previous_integer": 132483,
+      "previous_power": 0.7999980400301561
+    },
+    {
+      "baseline": 0.3,
+      "effect": 0.01,
+      "visitors_per_arm": 33275,
+      "power": 0.8000110167930898,
+      "previous_integer": 33274,
+      "previous_power": 0.7999992307322891
+    },
+    {
+      "baseline": 0.3,
+      "effect": 0.02,
+      "visitors_per_arm": 8394,
+      "power": 0.8000384391565378,
+      "previous_integer": 8393,
+      "previous_power": 0.7999917105552674
+    },
+    {
+      "baseline": 0.4,
+      "effect": 0.005,
+      "visitors_per_arm": 151007,
+      "power": 0.8000000703097039,
+      "previous_integer": 151006,
+      "previous_power": 0.7999974732892283
+    },
+    {
+      "baseline": 0.4,
+      "effect": 0.01,
+      "visitors_per_arm": 37827,
+      "power": 0.8000061753350813,
+      "previous_integer": 37826,
+      "previous_power": 0.7999958075733937
+    },
+    {
+      "baseline": 0.4,
+      "effect": 0.02,
+      "visitors_per_arm": 9493,
+      "power": 0.8000405793044614,
+      "previous_integer": 9492,
+      "previous_power": 0.7999992618650943
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # E-commerce Funnel & Revenue Analytics
 
-**Recorded journey analysis complete; experiment design next.**
+**Journey analysis, improvement scenarios and experiment proposal complete; decision report next.**
 
 Where should a product team investigate the shopping journey first?
 
@@ -16,7 +16,9 @@ Mobile does not show a broad disadvantage. Its recorded progression from view to
 
 Before drawing these findings, I checked missing steps, repeated purchase records and uncertain identifiers, then built separate analytical tables for events, visits, purchases and basket items. Eighteen November dates had no cart records despite checkout and purchase activity, so I kept those dates out of the primary comparison. Some monetary records also disagree; total revenue and average order value remain unavailable.
 
-BigQuery SQL provides the data foundation and checks. Python with Matplotlib and Seaborn produces the charts directly from reviewed totals. Detailed methods sit in the supporting docs. The next stage will set out improvement assumptions and a controlled experiment; no sales uplift or commercial return has been measured.
+I then explored what an improvement might mean. In a cohort this size, an assumed one-percentage-point increase in cart progression means about 273 additional visits reaching the cart. Whether those visits lead to purchases still needs testing. The [scenario assessment](reports/opportunity_assessment.md) makes the assumptions clear, and the [experiment proposal](docs/experiment_proposal.md) sets out one candidate page change, fair visitor assignment and the checks needed before acting. No live test, sales uplift or commercial return has been measured.
+
+BigQuery SQL provides the data foundation and checks. Python with Matplotlib and Seaborn produces the charts directly from reviewed totals. Detailed methods sit in the supporting docs. The next stage will bring the evidence into an illustrated report and a short decision memo.
 
 ## Planned workflow
 
@@ -29,7 +31,7 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 1. [Validate GA4 access, source quality and metric definitions](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/1) — complete
 2. [Build reproducible event, session and purchase SQL marts](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/2) — complete
 3. [Diagnose conversion funnels and segment differences](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/3) — complete
-4. [Prioritise revenue opportunities and propose an experiment](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/4) — planned
+4. [Prioritise revenue opportunities and propose an experiment](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/4) — complete
 5. [Build Python charts and a commercial decision memo](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/5) — planned
 6. [Reproduce, review and publish the completed case study](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/6) — planned
 
@@ -44,6 +46,9 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 - [Analytical foundation and reconciliation](reports/milestone_2_findings.md)
 - [Recorded journey findings](reports/milestone_3_findings.md)
 - [Funnel methods and Python reproduction](docs/funnel_analysis.md)
+- [Improvement scenarios and investigation priorities](reports/opportunity_assessment.md)
+- [Controlled experiment proposal](docs/experiment_proposal.md)
+- [Scenario and experiment findings](reports/milestone_4_findings.md)
 - [SQL workflow and reproduction](docs/sql_workflow.md)
 - [Delivery workflow and acceptance gates](docs/workflow.md)
 - [Current progress and next session](reports/progress.md)
@@ -65,7 +70,7 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 | src/ | Python analysis and chart-generation code |
 | reports/figures/ | Reviewed PNG and SVG charts generated from approved aggregates |
 
-Source checks, analytical tables and recorded-journey findings are available. Commercial scenarios, experiment design and the final illustrated report follow their milestone checks.
+Source checks, analytical tables, recorded-journey findings, conditional scenarios and an experiment proposal are available. The final illustrated report and public case-study release follow their milestone checks.
 
 ## Evidence boundaries
 

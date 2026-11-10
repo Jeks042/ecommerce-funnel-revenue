@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "status": "Analyst-chosen hypothetical planning inputs; no measured effect or probability ranking",
+  "scenario_unit": "Eligible December product-view visit; not a unique visitor or a live experiment unit",
+  "cart_rate_changes": [
+    {"name": "downside", "absolute_change": "-0.01"},
+    {"name": "no_change", "absolute_change": "0"},
+    {"name": "low", "absolute_change": "0.005"},
+    {"name": "base", "absolute_change": "0.01"},
+    {"name": "high", "absolute_change": "0.02"}
+  ],
+  "marginal_downstream_multipliers": ["0", "0.5", "1"],
+  "downstream_assumption": "Additional or removed cart visits have 0%, 50% or 100% of the observed strict cart-to-qualified-completion rate; existing downstream progression is otherwise held fixed",
+  "money": {"total_revenue": null, "aov": null, "unit_value_assumption": null, "profit": null},
+  "power_planning": {
+    "version": 1,
+    "unit": "Independently assigned persistent first-party visitor ID; one binary seven-day cart outcome per ID",
+    "baseline_probabilities_assumed": [0.2, 0.3, 0.4],
+    "absolute_effects_assumed": [0.005, 0.01, 0.02],
+    "alpha_two_sided": 0.05,
+    "target_power": 0.8,
+    "allocation": "1:1",
+    "live_baseline_available": false,
+    "daily_eligible_visitor_volume_available": false,
+    "business_minimum_effect_approved": false,
+    "calendar_duration": null,
+    "rule": "Illustrative sensitivity only. The observed visit rate cannot supply the visitor-level seven-day baseline. Re-estimate the baseline, effect worth detecting, sample and calendar plan before launch."
+  }
+}

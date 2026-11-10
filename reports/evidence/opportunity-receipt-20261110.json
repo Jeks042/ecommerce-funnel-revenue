@@ -1,0 +1,44 @@
+{
+  "stage": 4,
+  "date": "2026-11-10",
+  "historical_measurement_contract_version": 1,
+  "prospective_design_version": 1,
+  "python_version": "3.12.14",
+  "execution": "Local standard-library arithmetic over accepted reviewed aggregates. No native warehouse query or live trial.",
+  "source_commit": "3a2b8d4eb023c4e8e70a9e11f8bc48fddc157347",
+  "inputs_sha256": {
+    "reports/evidence/funnel-analysis-20261110.json": "78b75a14c0e00e68a03b3a5aa2d2630db1c8f7ee124eaf0a7ca99fcd5e0a37f2",
+    "reports/evidence/funnel-receipt-20261110.json": "c07a0c4b43e38e119862b662aca827c638c3aace714bb7d82e4c361418e4187c"
+  },
+  "code_sha256": {
+    "src/assess_opportunity.py": "5b65f589b63f9930b693195b8c7f8d963854c3962a9a7fb21788e27d4e668142",
+    "tests/check_opportunity_result.py": "86cccbb3210fe69fb5e89a9b177289a88ca7d3427f682808f164cb3ebce6739d",
+    "tests/test_opportunity.py": "cdf54de0cd2cfbff42488793b05f16654d512b1878ad3a7ca6230dbb7240c852",
+    "tests/run_project_validation.py": "ffce7c734e722f2af5171033dd3946bf3efa9f1f123d7d73f5fc432606f8ddb6",
+    ".github/workflows/validate.yml": "dd2a55ce2f04fd9d9c25302e8d70e49c1769e1c0ef62a236456c1fdd8e93ef6b",
+    "docs/experiment_proposal.md": "1e1ce4aa0726040979e92d35b345a6f838f16f587411646a7c94d88ad96221dc",
+    "reports/opportunity_assessment.md": "14d71d58d9d8d1ec03588af9f8b15c466d6f28ebfa6597a69f9d89edb1f58ce2",
+    "reports/milestone_4_findings.md": "4d2ae8b6764f79e91ed39a621a110630242e2d6b6e5b472ad027cec4af31eb60"
+  },
+  "outputs_sha256": {
+    "reports/evidence/scenario-assumptions-v1.json": "58bdc017c0d93f57b776ad0cda678740b46bd6268442516f1b49cc0611c49631",
+    "reports/evidence/opportunity-analysis-20261110.json": "0ffaf6224e208547886a80863c4e91547dc41edc0e3e2575079a558f0679aa4e",
+    "reports/evidence/power-reference-20261110.json": "aebc18a34066dba1e517e87a5c98e5b214118a53d78e80d52e9392bb16ced601"
+  },
+  "validation": {
+    "scenario_cases": 15,
+    "power_illustrations": 9,
+    "independent_rational_scenario_checks": 30,
+    "statsmodels_reference_cases": 9,
+    "reference_power_evaluations": 18,
+    "statistical_reference": "statsmodels 0.15.0; scipy 1.18.1; pooled null/unpooled alternative; equal arms, two-sided alpha .05",
+    "regression_test_scope": "Absolute percentage points; zero/downside; feasibility; power/sample monotonicity; two tails; integer target; independent reference; unavailable outcomes",
+    "forecast_validation_performed": false,
+    "historical_inference_performed": false
+  },
+  "money": "No total revenue, AOV, selected-value extrapolation or financial return admitted.",
+  "launch_ready": false,
+  "live_experiment_started": false,
+  "calendar_duration": null,
+  "release_scope": "Scenario arithmetic and a reviewable experiment proposal; illustrated report and independent case-study release remain subsequent milestones."
+}
