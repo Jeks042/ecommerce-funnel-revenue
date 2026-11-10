@@ -1,16 +1,22 @@
 # E-commerce Funnel & Revenue Analytics
 
-**Analytical tables complete; journey analysis next.** The study now has a reconciled BigQuery foundation for examining recorded shopping journeys in December 2020.
+**Recorded journey analysis complete; experiment design next.**
 
-Which parts of the shopping journey should a product team investigate first, and what evidence would justify an experiment?
+Where should a product team investigate the shopping journey first?
 
-I am examining how shoppers move from viewing a product to making a purchase, which differences deserve closer investigation, and what a product team should test next. BigQuery SQL will provide the analytical tables. Python analysis and charts will present the findings in an illustrated commercial report.
+I examined how visits progressed from viewing a product to adding it to a cart, starting checkout and making a recorded purchase. The study uses Google's historical e-commerce sample, with December 2020 chosen after checking the quality of the records.
 
-The first finding is about what the records can tell us. Eighteen dates in November have no cart records even though checkout and purchase activity continued. Treating that gap as shoppers abandoning their baskets would give a misleading picture. I have chosen December as a narrower comparison period and will show how the results change under alternative counting rules.
+The largest recorded gap is before the cart: 7,874 of 27,289 product-view visits reached that next step. Only 1,437 completed the full observed sequence. That gives the product team a focused research question, but it does not explain why people stopped or establish how many sales could be recovered.
 
-Within that scope, 131,418 visits meet the agreed recording rules, including 27,289 with a product view. Repeated purchase records count once, and uncertain purchases remain visible. Some purchase and item values still disagree, so total revenue and average order value are unavailable. [Read the measurement findings](reports/milestone_1_findings.md) for the decisions and their limits.
+Mobile does not show a broad disadvantage. Its recorded progression from view to purchase is 5.41%, compared with 5.16% on desktop. Giving both groups the same daily mix leaves a small difference of 0.28 percentage points. The final checkout step points in the other direction, so a mobile-only redesign would be premature.
 
-The [analytical tables](reports/milestone_2_findings.md) now keep events, visits, purchases and basket items separate, with checks that prevent repeated records or multi-item baskets inflating the totals. Their results match the earlier measurement decisions. The next stage will examine which recorded steps deserve investigation and what a product team would need to test before acting. No commercial recommendation or measured sales improvement has been established yet.
+![Recorded shopping progression](reports/figures/recorded_journey.png)
+
+[Read the journey findings](reports/milestone_3_findings.md) for the device comparison, alternative counting rules and the questions to carry into experiment design.
+
+Before drawing these findings, I checked missing steps, repeated purchase records and uncertain identifiers, then built separate analytical tables for events, visits, purchases and basket items. Eighteen November dates had no cart records despite checkout and purchase activity, so I kept those dates out of the primary comparison. Some monetary records also disagree; total revenue and average order value remain unavailable.
+
+BigQuery SQL provides the data foundation and checks. Python with Matplotlib and Seaborn produces the charts directly from reviewed totals. Detailed methods sit in the supporting docs. The next stage will set out improvement assumptions and a controlled experiment; no sales uplift or commercial return has been measured.
 
 ## Planned workflow
 
@@ -22,7 +28,7 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 
 1. [Validate GA4 access, source quality and metric definitions](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/1) — complete
 2. [Build reproducible event, session and purchase SQL marts](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/2) — complete
-3. [Diagnose conversion funnels and segment differences](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/3) — planned
+3. [Diagnose conversion funnels and segment differences](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/3) — complete
 4. [Prioritise revenue opportunities and propose an experiment](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/4) — planned
 5. [Build Python charts and a commercial decision memo](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/5) — planned
 6. [Reproduce, review and publish the completed case study](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/6) — planned
@@ -36,6 +42,8 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 - [Agreed measurement definitions](docs/metric_contract.md)
 - [Measurement findings and scope decision](reports/milestone_1_findings.md)
 - [Analytical foundation and reconciliation](reports/milestone_2_findings.md)
+- [Recorded journey findings](reports/milestone_3_findings.md)
+- [Funnel methods and Python reproduction](docs/funnel_analysis.md)
 - [SQL workflow and reproduction](docs/sql_workflow.md)
 - [Delivery workflow and acceptance gates](docs/workflow.md)
 - [Current progress and next session](reports/progress.md)
@@ -57,7 +65,7 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 | src/ | Python analysis and chart-generation code |
 | reports/figures/ | Reviewed PNG and SVG charts generated from approved aggregates |
 
-Source profiling, measurement evidence and reconciled analytical tables are available. Funnel diagnosis and the Python report will follow their milestone checks.
+Source checks, analytical tables and recorded-journey findings are available. Commercial scenarios, experiment design and the final illustrated report follow their milestone checks.
 
 ## Evidence boundaries
 

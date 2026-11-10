@@ -12,7 +12,7 @@ The output is an illustrated commercial report supported by reproducible Python 
 | Definition sensitivity | Does the priority change when defensible counting rules change? | Reconciled strict/tied-step, boundary and exclusion variants. |
 | Commercial scenarios | What assumptions would justify testing an opportunity? | Accepted eligible volumes, approved monetary inputs where available and clearly marked assumptions. |
 
-These are planned figures, not completed findings. A revenue chart remains unavailable if financial reconciliation does not support it.
+Milestone 3 now delivers the ordered progression and device-comparison figures in `reports/figures/`, with PNG/SVG assets, numeric chart data, source/code hashes and dependency versions. The [journey findings](../reports/milestone_3_findings.md) and [reproduction method](funnel_analysis.md) explain them. Other figures remain planned. A revenue chart remains unavailable while financial reconciliation does not support it.
 
 ## Publication standard
 

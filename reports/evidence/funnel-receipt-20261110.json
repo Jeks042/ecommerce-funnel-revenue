@@ -1,0 +1,106 @@
+{
+  "contract_version": 1,
+  "analysis_month": "202012",
+  "execution_date": "2026-11-10",
+  "capture": "Console local aggregate JSON downloads; no row-level identifiers exported. Full configuration and execution references remain private.",
+  "destination_reference_sha256": "5332ba66fd78ddad48e295f0d3da619d26178800692e2051bc4000bcd61fb224",
+  "runs": {
+    "01_recorded_progression_fixture": {
+      "canonical_sql_sha256": "4caf52e66960376f9921a1c83f963e03099fe129dee2ea6def6bb09357730f5b",
+      "result_job_reference_sha256": "b894500eecc1c9ef2652a88d8519af0c1e4f914d7da60703b0fdeeb4002efb79",
+      "started_utc": "2026-11-10T14:58:15Z",
+      "ended_utc": "2026-11-10T14:58:16Z",
+      "duration_ms": 1301,
+      "validator_estimate_display": "Could not compute bytes processed estimate for script",
+      "result_processed_display": "22.71 KB",
+      "result_billed_display": "30 MB",
+      "status": "SUCCESS",
+      "location": "US",
+      "literal_source_rows": 94,
+      "temporary_models": 9,
+      "result_statement_index": 10,
+      "processed_scope": "Final SELECT child only; not the total script",
+      "control": "Literal-only input and temporary models; no external source or permanent target. Temp reads consume free quota."
+    },
+    "02_independent_reverse_check_fixture": {
+      "canonical_sql_sha256": "dd9eccf53d1da329d3d8f376677d04326ac838b8aa6023389ab5c34e1b6de4b4",
+      "result_job_reference_sha256": "6b288b461f8389798fbcf6ca856c86fe1f32f9c89103d6bfea3b7cd4c255c468",
+      "started_utc": "2026-11-10T14:59:12Z",
+      "ended_utc": "2026-11-10T14:59:13Z",
+      "duration_ms": 1295,
+      "validator_estimate_display": "Could not compute bytes processed estimate for script",
+      "result_processed_display": "4.63 KB",
+      "result_billed_display": "30 MB",
+      "status": "SUCCESS",
+      "location": "US",
+      "literal_source_rows": 94,
+      "temporary_models": 9,
+      "result_statement_index": 10,
+      "processed_scope": "Final SELECT child only; not the total script",
+      "control": "Literal-only input and temporary models; no external source or permanent target. Temp reads consume free quota."
+    },
+    "01_recorded_progression": {
+      "canonical_sql_sha256": "7e18f68cb876ce66765acc6d7e78170b7e96661c5af6de8f4aaf4c8c9f933ab8",
+      "result_job_reference_sha256": "eff1a7dd3e7285ae06a9a4e1938fb306dfbc65ee7ac6cfe8e561d254e13fe164",
+      "started_utc": "2026-11-10T14:59:56Z",
+      "ended_utc": "2026-11-10T14:59:58Z",
+      "duration_ms": 1966,
+      "validator_estimate_display": "1.61 GB",
+      "result_processed_display": "1.61 GB",
+      "result_billed_display": "1.61 GB",
+      "status": "SUCCESS",
+      "location": "US"
+    },
+    "02_independent_reverse_check": {
+      "canonical_sql_sha256": "be1bcc1cc8fd4eb24cef404df610a63ee51b5ad0a481eb6b97202d1577157f31",
+      "result_job_reference_sha256": "31de39bd18a81adb3f5a7cdfa7cf36ba67c09e3390929639a8ee24b73b5e0413",
+      "started_utc": "2026-11-10T15:00:37Z",
+      "ended_utc": "2026-11-10T15:00:39Z",
+      "duration_ms": 2533,
+      "validator_estimate_display": "219.66 MB",
+      "result_processed_display": "219.66 MB",
+      "result_billed_display": "220 MB",
+      "status": "SUCCESS",
+      "location": "US"
+    }
+  },
+  "code_sha256": {
+    "src/analyse_funnel.py": "ad6fad1797ca809b9b8f54f2c7f7357dda5955ee418ece7db369d4206ee11e25",
+    "src/plot_funnel.py": "711600c5a83b12fbbe7654f3421afa56555ad26047a07f223ef2ca13335b92bd",
+    "src/render_funnel.py": "30fc72cec9d5ff6eb9658f0191fb5b8ef28654deadf54baface2ec406b976020",
+    "tests/check_funnel_result.py": "deddb841452c86dab6a872a8da25b22d0e944d6a06a1e0d4190931c0d351bb5e",
+    "tests/test_funnel_analysis.py": "5420b32cf8f0a00807f0b44e64e9e470dad49319ff10e261bc4ef918782c957c",
+    "tests/test_funnel_evidence.py": "d6742cc169b08d569d97afeff3c4034557b4c28f1e1512546597a9349e3368ca",
+    "tests/run_local_validation.py": "3f72d42b611f23e180e7b7b00b7fcbccc51ac5370e48d771f5a9489a36036cfb",
+    "requirements-analysis.txt": "090397e7f61d8b4d09657bb34d108ce96f63d94afbf81f90a4ff6623b4564c26",
+    "sql/funnel/01_recorded_progression.sql": "e3e1c1d0e8f128f1cd0cde977d094c5159c6764e130d8dfe0c00ef5530921f9f",
+    "sql/funnel/02_independent_reverse_check.sql": "b891a66239cf3a91c13216436a7229c56879222fb57a2c06011b577834057d6a"
+  },
+  "outputs_sha256": {
+    "reports/evidence/funnel-analysis-20261110.json": "78b75a14c0e00e68a03b3a5aa2d2630db1c8f7ee124eaf0a7ca99fcd5e0a37f2",
+    "reports/evidence/funnel-figures-20261110.json": "fbfe286b17628ce3cdc25086d33aeebeee76a8b7879e94bb86f35d00123184ec",
+    "reports/evidence/funnel-fixture-20261110.json": "911b6b30b50d1d1a1e83f7d0fd53c2ad87ea45d387bcf6b183a6d945610d4b78",
+    "reports/evidence/funnel-reverse-20261110.json": "a73ebfb9d302f84a09916f9ea9b4e2ffb818638178a3686c9dbb629f232179a8",
+    "reports/evidence/funnel-reverse-fixture-20261110.json": "6a8245969ba0c1c33df1257061b8c9b8d5cf24c3b291b38b1fd2ddba829648f0",
+    "reports/evidence/funnel-20261110.json": "05438c1e47ba8ba005fa7b7b97ae1983df73364ac25f41f27410a23c426bba20"
+  },
+  "validation": {
+    "fixture_checks": 80,
+    "source_and_reconciliation_checks": 4682,
+    "independent_primary_date_device_cells": 93,
+    "independently_recalculated_metrics_per_cell": 11,
+    "input_fingerprints_matched": 3,
+    "python_summary_reproduced": true,
+    "chart_data_reconciled": true,
+    "visual_review": "Both final PNGs inspected; labels, denominators and date-sensitivity legend legible without overlaps."
+  },
+  "cost_control": {
+    "paid_billing_enabled": false,
+    "source_review_ceiling_gib": 3,
+    "per_job_cap_confirmed": false,
+    "no_new_permanent_tables": true,
+    "display_sizes_are_rounded": true
+  },
+  "uncertainty": "Descriptive coverage, population, definition and date sensitivity. No confidence intervals or causal effect estimates.",
+  "stage_scope": "Recorded journey diagnosis only. Commercial scenarios and experiment design next."
+}

@@ -1,0 +1,747 @@
+{
+  "period": "December 2020",
+  "contract_version": 1,
+  "scopes": {
+    "all_keyed": {
+      "sessions": 133351,
+      "entry_sessions": 27971,
+      "strict_cart_sessions": 8057,
+      "strict_checkout_sessions": 2891,
+      "strict_candidate_sessions": 1475,
+      "tied_cart_sessions": 8442,
+      "tied_checkout_sessions": 3015,
+      "tied_candidate_sessions": 1508,
+      "strict_raw_purchase_sessions": 1543,
+      "tied_raw_purchase_sessions": 1576,
+      "unordered_cart_sessions": 8445,
+      "unordered_checkout_sessions": 3374,
+      "unordered_candidate_sessions": 1516,
+      "candidate_purchase_sessions": 2025,
+      "candidate_transactions": 2297,
+      "raw_purchase_events": 2433,
+      "missing_id_events": 94,
+      "rejected_id_events": 17,
+      "unresolved_sessions": 96,
+      "entry_unresolved_sessions": 88,
+      "checkout_unresolved_sessions": 74,
+      "mixed_outcome_sessions": 6,
+      "raw_only_completion_sessions": 68,
+      "raw_only_with_unresolved_ids_sessions": 68
+    },
+    "anchored_interior": {
+      "sessions": 131713,
+      "entry_sessions": 27466,
+      "strict_cart_sessions": 7951,
+      "strict_checkout_sessions": 2858,
+      "strict_candidate_sessions": 1461,
+      "tied_cart_sessions": 8328,
+      "tied_checkout_sessions": 2977,
+      "tied_candidate_sessions": 1494,
+      "strict_raw_purchase_sessions": 1528,
+      "tied_raw_purchase_sessions": 1561,
+      "unordered_cart_sessions": 8331,
+      "unordered_checkout_sessions": 3336,
+      "unordered_candidate_sessions": 1502,
+      "candidate_purchase_sessions": 2006,
+      "candidate_transactions": 2277,
+      "raw_purchase_events": 2412,
+      "missing_id_events": 93,
+      "rejected_id_events": 17,
+      "unresolved_sessions": 95,
+      "entry_unresolved_sessions": 87,
+      "checkout_unresolved_sessions": 73,
+      "mixed_outcome_sessions": 6,
+      "raw_only_completion_sessions": 67,
+      "raw_only_with_unresolved_ids_sessions": 67
+    },
+    "primary": {
+      "sessions": 131418,
+      "entry_sessions": 27289,
+      "strict_cart_sessions": 7874,
+      "strict_checkout_sessions": 2819,
+      "strict_candidate_sessions": 1437,
+      "tied_cart_sessions": 8245,
+      "tied_checkout_sessions": 2935,
+      "tied_candidate_sessions": 1470,
+      "strict_raw_purchase_sessions": 1501,
+      "tied_raw_purchase_sessions": 1534,
+      "unordered_cart_sessions": 8248,
+      "unordered_checkout_sessions": 3290,
+      "unordered_candidate_sessions": 1478,
+      "candidate_purchase_sessions": 1976,
+      "candidate_transactions": 2240,
+      "raw_purchase_events": 2371,
+      "missing_id_events": 90,
+      "rejected_id_events": 17,
+      "unresolved_sessions": 92,
+      "entry_unresolved_sessions": 84,
+      "checkout_unresolved_sessions": 70,
+      "mixed_outcome_sessions": 6,
+      "raw_only_completion_sessions": 64,
+      "raw_only_with_unresolved_ids_sessions": 64
+    }
+  },
+  "devices": {
+    "desktop": {
+      "sessions": 76304,
+      "entry_sessions": 15960,
+      "strict_cart_sessions": 4508,
+      "strict_checkout_sessions": 1599,
+      "strict_candidate_sessions": 824,
+      "tied_cart_sessions": 4724,
+      "tied_checkout_sessions": 1669,
+      "tied_candidate_sessions": 843,
+      "strict_raw_purchase_sessions": 860,
+      "tied_raw_purchase_sessions": 879,
+      "unordered_cart_sessions": 4726,
+      "unordered_checkout_sessions": 1875,
+      "unordered_candidate_sessions": 847,
+      "candidate_purchase_sessions": 1140,
+      "candidate_transactions": 1308,
+      "raw_purchase_events": 1375,
+      "missing_id_events": 43,
+      "rejected_id_events": 8,
+      "unresolved_sessions": 49,
+      "entry_unresolved_sessions": 45,
+      "checkout_unresolved_sessions": 38,
+      "mixed_outcome_sessions": 2,
+      "raw_only_completion_sessions": 36,
+      "raw_only_with_unresolved_ids_sessions": 36
+    },
+    "mobile": {
+      "sessions": 52176,
+      "entry_sessions": 10773,
+      "strict_cart_sessions": 3202,
+      "strict_checkout_sessions": 1158,
+      "strict_candidate_sessions": 583,
+      "tied_cart_sessions": 3350,
+      "tied_checkout_sessions": 1204,
+      "tied_candidate_sessions": 597,
+      "strict_raw_purchase_sessions": 609,
+      "tied_raw_purchase_sessions": 623,
+      "unordered_cart_sessions": 3351,
+      "unordered_checkout_sessions": 1343,
+      "unordered_candidate_sessions": 600,
+      "candidate_purchase_sessions": 795,
+      "candidate_transactions": 891,
+      "raw_purchase_events": 952,
+      "missing_id_events": 45,
+      "rejected_id_events": 9,
+      "unresolved_sessions": 41,
+      "entry_unresolved_sessions": 37,
+      "checkout_unresolved_sessions": 30,
+      "mixed_outcome_sessions": 4,
+      "raw_only_completion_sessions": 26,
+      "raw_only_with_unresolved_ids_sessions": 26
+    },
+    "tablet": {
+      "sessions": 2938,
+      "entry_sessions": 556,
+      "strict_cart_sessions": 164,
+      "strict_checkout_sessions": 62,
+      "strict_candidate_sessions": 30,
+      "tied_cart_sessions": 171,
+      "tied_checkout_sessions": 62,
+      "tied_candidate_sessions": 30,
+      "strict_raw_purchase_sessions": 32,
+      "tied_raw_purchase_sessions": 32,
+      "unordered_cart_sessions": 171,
+      "unordered_checkout_sessions": 72,
+      "unordered_candidate_sessions": 31,
+      "candidate_purchase_sessions": 41,
+      "candidate_transactions": 41,
+      "raw_purchase_events": 44,
+      "missing_id_events": 2,
+      "rejected_id_events": 0,
+      "unresolved_sessions": 2,
+      "entry_unresolved_sessions": 2,
+      "checkout_unresolved_sessions": 2,
+      "mixed_outcome_sessions": 0,
+      "raw_only_completion_sessions": 2,
+      "raw_only_with_unresolved_ids_sessions": 2
+    }
+  },
+  "device_order": [
+    "desktop",
+    "mobile"
+  ],
+  "device_comparisons": {
+    "view_to_cart": {
+      "all_counts": [
+        {
+          "successes": 4508,
+          "denominator": 15960
+        },
+        {
+          "successes": 3202,
+          "denominator": 10773
+        }
+      ],
+      "common_counts": [
+        {
+          "successes": 4508,
+          "denominator": 15960
+        },
+        {
+          "successes": 3202,
+          "denominator": 10773
+        }
+      ],
+      "common_dates": [
+        "2020-12-01",
+        "2020-12-02",
+        "2020-12-03",
+        "2020-12-04",
+        "2020-12-05",
+        "2020-12-06",
+        "2020-12-07",
+        "2020-12-08",
+        "2020-12-09",
+        "2020-12-10",
+        "2020-12-11",
+        "2020-12-12",
+        "2020-12-13",
+        "2020-12-14",
+        "2020-12-15",
+        "2020-12-16",
+        "2020-12-17",
+        "2020-12-18",
+        "2020-12-19",
+        "2020-12-20",
+        "2020-12-21",
+        "2020-12-22",
+        "2020-12-23",
+        "2020-12-24",
+        "2020-12-25",
+        "2020-12-26",
+        "2020-12-27",
+        "2020-12-28",
+        "2020-12-29",
+        "2020-12-30",
+        "2020-12-31"
+      ],
+      "crude_rates": [
+        0.2824561403508772,
+        0.2972245428385779
+      ],
+      "standardized_rates": [
+        0.28226630802836955,
+        0.2976179510298165
+      ],
+      "standardized_gap_pp": 1.5351643001446924,
+      "crude_gap_pp": 1.4768402487700727,
+      "leave_one_day_out_gap_pp": [
+        1.2945245775816405,
+        1.8261045472537707
+      ],
+      "admissible_omissions": 31
+    },
+    "cart_to_checkout": {
+      "all_counts": [
+        {
+          "successes": 1599,
+          "denominator": 4508
+        },
+        {
+          "successes": 1158,
+          "denominator": 3202
+        }
+      ],
+      "common_counts": [
+        {
+          "successes": 1599,
+          "denominator": 4508
+        },
+        {
+          "successes": 1158,
+          "denominator": 3202
+        }
+      ],
+      "common_dates": [
+        "2020-12-01",
+        "2020-12-02",
+        "2020-12-03",
+        "2020-12-04",
+        "2020-12-05",
+        "2020-12-06",
+        "2020-12-07",
+        "2020-12-08",
+        "2020-12-09",
+        "2020-12-10",
+        "2020-12-11",
+        "2020-12-12",
+        "2020-12-13",
+        "2020-12-14",
+        "2020-12-15",
+        "2020-12-16",
+        "2020-12-17",
+        "2020-12-18",
+        "2020-12-19",
+        "2020-12-20",
+        "2020-12-21",
+        "2020-12-22",
+        "2020-12-23",
+        "2020-12-24",
+        "2020-12-25",
+        "2020-12-26",
+        "2020-12-27",
+        "2020-12-28",
+        "2020-12-29",
+        "2020-12-30",
+        "2020-12-31"
+      ],
+      "crude_rates": [
+        0.35470275066548357,
+        0.36164896939412866
+      ],
+      "standardized_rates": [
+        0.35429612452475134,
+        0.3625319815146701
+      ],
+      "standardized_gap_pp": 0.8235856989918744,
+      "crude_gap_pp": 0.6946218728645093,
+      "leave_one_day_out_gap_pp": [
+        0.4953512270859106,
+        1.421443578570053
+      ],
+      "admissible_omissions": 31
+    },
+    "checkout_to_purchase": {
+      "all_counts": [
+        {
+          "successes": 824,
+          "denominator": 1599
+        },
+        {
+          "successes": 583,
+          "denominator": 1158
+        }
+      ],
+      "common_counts": [
+        {
+          "successes": 824,
+          "denominator": 1599
+        },
+        {
+          "successes": 583,
+          "denominator": 1158
+        }
+      ],
+      "common_dates": [
+        "2020-12-01",
+        "2020-12-02",
+        "2020-12-03",
+        "2020-12-04",
+        "2020-12-05",
+        "2020-12-06",
+        "2020-12-07",
+        "2020-12-08",
+        "2020-12-09",
+        "2020-12-10",
+        "2020-12-11",
+        "2020-12-12",
+        "2020-12-13",
+        "2020-12-14",
+        "2020-12-15",
+        "2020-12-16",
+        "2020-12-17",
+        "2020-12-18",
+        "2020-12-19",
+        "2020-12-20",
+        "2020-12-21",
+        "2020-12-22",
+        "2020-12-23",
+        "2020-12-24",
+        "2020-12-25",
+        "2020-12-26",
+        "2020-12-27",
+        "2020-12-28",
+        "2020-12-29",
+        "2020-12-30",
+        "2020-12-31"
+      ],
+      "crude_rates": [
+        0.515322076297686,
+        0.5034542314335061
+      ],
+      "standardized_rates": [
+        0.5160717296364193,
+        0.5047268762460881
+      ],
+      "standardized_gap_pp": -1.13448533903312,
+      "crude_gap_pp": -1.186784486417991,
+      "leave_one_day_out_gap_pp": [
+        -1.6856051285878637,
+        -0.008686529257939668
+      ],
+      "admissible_omissions": 31
+    },
+    "view_to_purchase": {
+      "all_counts": [
+        {
+          "successes": 824,
+          "denominator": 15960
+        },
+        {
+          "successes": 583,
+          "denominator": 10773
+        }
+      ],
+      "common_counts": [
+        {
+          "successes": 824,
+          "denominator": 15960
+        },
+        {
+          "successes": 583,
+          "denominator": 10773
+        }
+      ],
+      "common_dates": [
+        "2020-12-01",
+        "2020-12-02",
+        "2020-12-03",
+        "2020-12-04",
+        "2020-12-05",
+        "2020-12-06",
+        "2020-12-07",
+        "2020-12-08",
+        "2020-12-09",
+        "2020-12-10",
+        "2020-12-11",
+        "2020-12-12",
+        "2020-12-13",
+        "2020-12-14",
+        "2020-12-15",
+        "2020-12-16",
+        "2020-12-17",
+        "2020-12-18",
+        "2020-12-19",
+        "2020-12-20",
+        "2020-12-21",
+        "2020-12-22",
+        "2020-12-23",
+        "2020-12-24",
+        "2020-12-25",
+        "2020-12-26",
+        "2020-12-27",
+        "2020-12-28",
+        "2020-12-29",
+        "2020-12-30",
+        "2020-12-31"
+      ],
+      "crude_rates": [
+        0.05162907268170426,
+        0.054116773415019026
+      ],
+      "standardized_rates": [
+        0.05152882690969641,
+        0.054296174523163106
+      ],
+      "standardized_gap_pp": 0.27673476134666974,
+      "crude_gap_pp": 0.24877007333147655,
+      "leave_one_day_out_gap_pp": [
+        0.1645907903174905,
+        0.3741326891966837
+      ],
+      "admissible_omissions": 31
+    }
+  },
+  "context_order": [
+    {
+      "first_user_source": "google",
+      "first_user_medium": "organic"
+    },
+    {
+      "first_user_source": "(direct)",
+      "first_user_medium": "(none)"
+    }
+  ],
+  "context_comparisons": {
+    "view_to_cart": {
+      "all_counts": [
+        {
+          "successes": 2277,
+          "denominator": 8418
+        },
+        {
+          "successes": 1864,
+          "denominator": 6337
+        }
+      ],
+      "common_counts": [
+        {
+          "successes": 2277,
+          "denominator": 8418
+        },
+        {
+          "successes": 1864,
+          "denominator": 6337
+        }
+      ],
+      "common_dates": [
+        "2020-12-01",
+        "2020-12-02",
+        "2020-12-03",
+        "2020-12-04",
+        "2020-12-05",
+        "2020-12-06",
+        "2020-12-07",
+        "2020-12-08",
+        "2020-12-09",
+        "2020-12-10",
+        "2020-12-11",
+        "2020-12-12",
+        "2020-12-13",
+        "2020-12-14",
+        "2020-12-15",
+        "2020-12-16",
+        "2020-12-17",
+        "2020-12-18",
+        "2020-12-19",
+        "2020-12-20",
+        "2020-12-21",
+        "2020-12-22",
+        "2020-12-23",
+        "2020-12-24",
+        "2020-12-25",
+        "2020-12-26",
+        "2020-12-27",
+        "2020-12-28",
+        "2020-12-29",
+        "2020-12-30",
+        "2020-12-31"
+      ],
+      "crude_rates": [
+        0.27049180327868855,
+        0.29414549471358686
+      ],
+      "standardized_rates": [
+        0.27100120570104025,
+        0.2936072405864537
+      ],
+      "standardized_gap_pp": 2.260603488541346,
+      "crude_gap_pp": 2.365369143489832,
+      "leave_one_day_out_gap_pp": [
+        1.827293156614146,
+        2.57964048484392
+      ],
+      "admissible_omissions": 31
+    },
+    "cart_to_checkout": {
+      "all_counts": [
+        {
+          "successes": 757,
+          "denominator": 2277
+        },
+        {
+          "successes": 673,
+          "denominator": 1864
+        }
+      ],
+      "common_counts": [
+        {
+          "successes": 757,
+          "denominator": 2277
+        },
+        {
+          "successes": 673,
+          "denominator": 1864
+        }
+      ],
+      "common_dates": [
+        "2020-12-01",
+        "2020-12-02",
+        "2020-12-03",
+        "2020-12-04",
+        "2020-12-05",
+        "2020-12-06",
+        "2020-12-07",
+        "2020-12-08",
+        "2020-12-09",
+        "2020-12-10",
+        "2020-12-11",
+        "2020-12-12",
+        "2020-12-13",
+        "2020-12-14",
+        "2020-12-15",
+        "2020-12-16",
+        "2020-12-17",
+        "2020-12-18",
+        "2020-12-19",
+        "2020-12-20",
+        "2020-12-21",
+        "2020-12-22",
+        "2020-12-23",
+        "2020-12-24",
+        "2020-12-25",
+        "2020-12-26",
+        "2020-12-27",
+        "2020-12-28",
+        "2020-12-29",
+        "2020-12-30",
+        "2020-12-31"
+      ],
+      "crude_rates": [
+        0.33245498462889767,
+        0.36105150214592274
+      ],
+      "standardized_rates": [
+        0.33224150651467665,
+        0.35946805420024197
+      ],
+      "standardized_gap_pp": 2.7226547685565317,
+      "crude_gap_pp": 2.8596517517025077,
+      "leave_one_day_out_gap_pp": [
+        2.218858602705831,
+        3.1556052517974944
+      ],
+      "admissible_omissions": 31
+    },
+    "checkout_to_purchase": {
+      "all_counts": [
+        {
+          "successes": 371,
+          "denominator": 757
+        },
+        {
+          "successes": 332,
+          "denominator": 673
+        }
+      ],
+      "common_counts": [
+        {
+          "successes": 371,
+          "denominator": 757
+        },
+        {
+          "successes": 332,
+          "denominator": 673
+        }
+      ],
+      "common_dates": [
+        "2020-12-01",
+        "2020-12-02",
+        "2020-12-03",
+        "2020-12-04",
+        "2020-12-05",
+        "2020-12-06",
+        "2020-12-07",
+        "2020-12-08",
+        "2020-12-09",
+        "2020-12-10",
+        "2020-12-11",
+        "2020-12-12",
+        "2020-12-13",
+        "2020-12-14",
+        "2020-12-15",
+        "2020-12-16",
+        "2020-12-17",
+        "2020-12-18",
+        "2020-12-19",
+        "2020-12-20",
+        "2020-12-21",
+        "2020-12-22",
+        "2020-12-23",
+        "2020-12-24",
+        "2020-12-25",
+        "2020-12-26",
+        "2020-12-27",
+        "2020-12-28",
+        "2020-12-29",
+        "2020-12-30",
+        "2020-12-31"
+      ],
+      "crude_rates": [
+        0.4900924702774108,
+        0.4933135215453195
+      ],
+      "standardized_rates": [
+        0.4881090715008507,
+        0.48461734751846014
+      ],
+      "standardized_gap_pp": -0.349172398239056,
+      "crude_gap_pp": 0.322105126790867,
+      "leave_one_day_out_gap_pp": [
+        -1.7318391948194622,
+        1.1337537419568333
+      ],
+      "admissible_omissions": 31
+    },
+    "view_to_purchase": {
+      "all_counts": [
+        {
+          "successes": 371,
+          "denominator": 8418
+        },
+        {
+          "successes": 332,
+          "denominator": 6337
+        }
+      ],
+      "common_counts": [
+        {
+          "successes": 371,
+          "denominator": 8418
+        },
+        {
+          "successes": 332,
+          "denominator": 6337
+        }
+      ],
+      "common_dates": [
+        "2020-12-01",
+        "2020-12-02",
+        "2020-12-03",
+        "2020-12-04",
+        "2020-12-05",
+        "2020-12-06",
+        "2020-12-07",
+        "2020-12-08",
+        "2020-12-09",
+        "2020-12-10",
+        "2020-12-11",
+        "2020-12-12",
+        "2020-12-13",
+        "2020-12-14",
+        "2020-12-15",
+        "2020-12-16",
+        "2020-12-17",
+        "2020-12-18",
+        "2020-12-19",
+        "2020-12-20",
+        "2020-12-21",
+        "2020-12-22",
+        "2020-12-23",
+        "2020-12-24",
+        "2020-12-25",
+        "2020-12-26",
+        "2020-12-27",
+        "2020-12-28",
+        "2020-12-29",
+        "2020-12-30",
+        "2020-12-31"
+      ],
+      "crude_rates": [
+        0.04407222618199097,
+        0.052390721161432854
+      ],
+      "standardized_rates": [
+        0.04421784730821406,
+        0.05235298529523187
+      ],
+      "standardized_gap_pp": 0.8135137987017809,
+      "crude_gap_pp": 0.8318494979441884,
+      "leave_one_day_out_gap_pp": [
+        0.5681161657993323,
+        1.0136032606815817
+      ],
+      "admissible_omissions": 31
+    }
+  },
+  "context_coverage": {
+    "interpretable_sessions": 95664,
+    "sessions": 131418
+  },
+  "uncertainty": "Definition, population and leave-one-date-out sensitivities; no confidence interval or significance claim."
+}

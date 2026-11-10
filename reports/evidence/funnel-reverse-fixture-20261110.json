@@ -1,0 +1,19 @@
+{
+  "daily_independent": [
+    {
+      "visit_date": "2020-12-15",
+      "device": "desktop",
+      "sessions": 13,
+      "entry_sessions": 13,
+      "strict_cart_sessions": 11,
+      "tied_cart_sessions": 12,
+      "strict_checkout_sessions": 11,
+      "tied_checkout_sessions": 12,
+      "strict_candidate_sessions": 5,
+      "tied_candidate_sessions": 6,
+      "strict_raw_purchase_sessions": 10,
+      "candidate_purchase_sessions": 8,
+      "candidate_transactions": 9
+    }
+  ]
+}

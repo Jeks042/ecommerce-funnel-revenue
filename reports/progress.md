@@ -1,19 +1,19 @@
 # Project progress
 
-Updated: 6 November 2026.
+Updated: 10 November 2026.
 
-**Milestones 1 and 2 are complete.** The accepted December measurement scope now has eight reconciled physical tables in BigQuery. [Read the analytical-foundation findings](milestone_2_findings.md) for the work, validation and limits. Milestones 3–6 remain open.
+**Milestones 1–3 are complete.** [Journey findings](milestone_3_findings.md) now identify the product-view-to-cart step as the first investigation question. Its recorded reduction is largest across the accepted population and counting alternatives. This does not establish abandonment, a cause or recoverable sales.
 
-The full source contains 4,295,584 events and 360,129 usable composite visit groups. The build retains 4,172 qualified recorded transactions and 12,383 item occurrences, with rejected/missing-ID records visible in audit totals. Every accepted scope cell matches milestone 1. Eight read-only model recomputations match the materialized row counts and content checksums.
+The December primary sequence is 27,289 product-view visits → 7,874 carts → 2,819 checkouts → 1,437 qualified recorded completions. Separately, 1,976 of 131,418 eligible visits contain a qualified purchase. The 92 visits containing unresolved purchases remain visible. Total revenue, AOV and revenue per visit remain unavailable.
 
-For the primary December scope, the baseline remains 131,418 eligible visits, 27,289 product-view entries and 2,240 qualified transactions across 1,976 buying visits. The 92 visits containing unresolved purchases remain explicit. Total revenue, average order value and revenue per visit are unavailable; only the item-agreeing selected recorded-value sum is supported.
+Mobile's overall recorded progression is slightly higher than desktop's; the date-standardised difference is +0.28 percentage points. Checkout-only progression points the other way and is date-sensitive. First-user context comparisons remain descriptive, with 35,754 eligible visits lacking interpretable context. No device redesign or advertising allocation is justified by these associations alone.
 
-## Next: diagnose the recorded journey
+Two reviewed Python figures are available as PNG and SVG. Native edge-case fixtures, a separate backwards calculation across all 93 primary device/date cells, model fingerprints and prior-baseline reconciliation support the findings. Credential-free validation reproduces the summary, reconciles chart data and checks code/evidence/asset freshness. [Methods and reproduction](../docs/funnel_analysis.md) document the detail.
 
-[Issue #3](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/3) can now examine ordered progression, device differences, daily composition and definition sensitivity under [measurement version 1](../docs/metric_contract.md). Apply the minimum comparison sizes and retain purchase coverage. These are observational investigation questions; no product effect or revenue opportunity has been established.
+## Next: scenarios and an experiment proposal
 
-The [SQL workflow](../docs/sql_workflow.md) records table grains, execution order, scan-review controls, native fixtures and reproduction. The existing Sandbox tables expire on 5 January 2027. Reviewed aggregate evidence and executable SQL remain in the repository. GitHub validation uses no warehouse credentials, retains artifacts and creates no bot commits.
+[Issue #4](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/4) should examine the view-to-cart opportunity across devices, identify the tracking and shopper-research checks needed, and compare explicitly assumed progression improvements. Design a controlled experiment with a primary outcome, guardrails, measurement readiness and a justified sample-size approach. Do not convert all missing next steps into recoverable orders or use selected recorded values as complete revenue.
 
-## Reporting direction
+Milestones 4–6 remain open. The final illustrated report and decision memo belong to milestone 5; independent reproduction and the public case-study release belong to milestone 6. No portfolio/CV publication or completed experiment is implied by the current analysis.
 
-The agreed output remains Python analysis with Matplotlib/Seaborn charts, an illustrated commercial report and a decision memo. The existing [milestones](https://github.com/Jeks042/ecommerce-funnel-revenue/milestones) retain their dependency order. Brief each stage in plain language: work completed, findings, decisions, limits and the next deliverable.
+The eight Sandbox tables expire on 5 January 2027. Reviewed aggregates and executable SQL remain in GitHub. Configuration, source identifiers and full job references stay private. Workflows retain validation artifacts, use no warehouse credentials and create no bot commits.
