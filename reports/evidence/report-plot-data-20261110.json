@@ -1,0 +1,1063 @@
+{
+  "version": 1,
+  "coverage": {
+    "grain": "All source events by UTC source date; not visits, orders or conversion rates",
+    "daily": [
+      {
+        "date": "2020-11-01",
+        "events": 31272,
+        "cart_events": 4,
+        "checkout_events": 127,
+        "purchase_events": 14
+      },
+      {
+        "date": "2020-11-02",
+        "events": 48388,
+        "cart_events": 0,
+        "checkout_events": 219,
+        "purchase_events": 49
+      },
+      {
+        "date": "2020-11-03",
+        "events": 61672,
+        "cart_events": 0,
+        "checkout_events": 233,
+        "purchase_events": 49
+      },
+      {
+        "date": "2020-11-04",
+        "events": 51866,
+        "cart_events": 0,
+        "checkout_events": 218,
+        "purchase_events": 46
+      },
+      {
+        "date": "2020-11-05",
+        "events": 51952,
+        "cart_events": 0,
+        "checkout_events": 195,
+        "purchase_events": 26
+      },
+      {
+        "date": "2020-11-06",
+        "events": 49004,
+        "cart_events": 0,
+        "checkout_events": 269,
+        "purchase_events": 58
+      },
+      {
+        "date": "2020-11-07",
+        "events": 34309,
+        "cart_events": 0,
+        "checkout_events": 150,
+        "purchase_events": 31
+      },
+      {
+        "date": "2020-11-08",
+        "events": 30137,
+        "cart_events": 0,
+        "checkout_events": 132,
+        "purchase_events": 32
+      },
+      {
+        "date": "2020-11-09",
+        "events": 44756,
+        "cart_events": 0,
+        "checkout_events": 211,
+        "purchase_events": 52
+      },
+      {
+        "date": "2020-11-10",
+        "events": 51195,
+        "cart_events": 0,
+        "checkout_events": 266,
+        "purchase_events": 64
+      },
+      {
+        "date": "2020-11-11",
+        "events": 51941,
+        "cart_events": 0,
+        "checkout_events": 248,
+        "purchase_events": 64
+      },
+      {
+        "date": "2020-11-12",
+        "events": 49166,
+        "cart_events": 0,
+        "checkout_events": 355,
+        "purchase_events": 54
+      },
+      {
+        "date": "2020-11-13",
+        "events": 50358,
+        "cart_events": 0,
+        "checkout_events": 605,
+        "purchase_events": 79
+      },
+      {
+        "date": "2020-11-14",
+        "events": 34039,
+        "cart_events": 0,
+        "checkout_events": 320,
+        "purchase_events": 30
+      },
+      {
+        "date": "2020-11-15",
+        "events": 31195,
+        "cart_events": 0,
+        "checkout_events": 324,
+        "purchase_events": 21
+      },
+      {
+        "date": "2020-11-16",
+        "events": 49320,
+        "cart_events": 85,
+        "checkout_events": 542,
+        "purchase_events": 69
+      },
+      {
+        "date": "2020-11-17",
+        "events": 59789,
+        "cart_events": 535,
+        "checkout_events": 693,
+        "purchase_events": 98
+      },
+      {
+        "date": "2020-11-18",
+        "events": 55456,
+        "cart_events": 621,
+        "checkout_events": 354,
+        "purchase_events": 68
+      },
+      {
+        "date": "2020-11-19",
+        "events": 53932,
+        "cart_events": 187,
+        "checkout_events": 335,
+        "purchase_events": 84
+      },
+      {
+        "date": "2020-11-20",
+        "events": 57894,
+        "cart_events": 15,
+        "checkout_events": 318,
+        "purchase_events": 118
+      },
+      {
+        "date": "2020-11-21",
+        "events": 41980,
+        "cart_events": 0,
+        "checkout_events": 174,
+        "purchase_events": 68
+      },
+      {
+        "date": "2020-11-22",
+        "events": 36446,
+        "cart_events": 0,
+        "checkout_events": 166,
+        "purchase_events": 60
+      },
+      {
+        "date": "2020-11-23",
+        "events": 52844,
+        "cart_events": 0,
+        "checkout_events": 277,
+        "purchase_events": 141
+      },
+      {
+        "date": "2020-11-24",
+        "events": 62971,
+        "cart_events": 0,
+        "checkout_events": 366,
+        "purchase_events": 147
+      },
+      {
+        "date": "2020-11-25",
+        "events": 64469,
+        "cart_events": 297,
+        "checkout_events": 387,
+        "purchase_events": 108
+      },
+      {
+        "date": "2020-11-26",
+        "events": 54681,
+        "cart_events": 1047,
+        "checkout_events": 321,
+        "purchase_events": 57
+      },
+      {
+        "date": "2020-11-27",
+        "events": 54254,
+        "cart_events": 1229,
+        "checkout_events": 300,
+        "purchase_events": 97
+      },
+      {
+        "date": "2020-11-28",
+        "events": 44643,
+        "cart_events": 1076,
+        "checkout_events": 245,
+        "purchase_events": 78
+      },
+      {
+        "date": "2020-11-29",
+        "events": 42169,
+        "cart_events": 811,
+        "checkout_events": 246,
+        "purchase_events": 51
+      },
+      {
+        "date": "2020-11-30",
+        "events": 70614,
+        "cart_events": 1767,
+        "checkout_events": 950,
+        "purchase_events": 141
+      },
+      {
+        "date": "2020-12-01",
+        "events": 71804,
+        "cart_events": 1653,
+        "checkout_events": 732,
+        "purchase_events": 107
+      },
+      {
+        "date": "2020-12-02",
+        "events": 66832,
+        "cart_events": 1464,
+        "checkout_events": 768,
+        "purchase_events": 82
+      },
+      {
+        "date": "2020-12-03",
+        "events": 71689,
+        "cart_events": 1286,
+        "checkout_events": 775,
+        "purchase_events": 90
+      },
+      {
+        "date": "2020-12-04",
+        "events": 69393,
+        "cart_events": 1561,
+        "checkout_events": 733,
+        "purchase_events": 96
+      },
+      {
+        "date": "2020-12-05",
+        "events": 49528,
+        "cart_events": 1063,
+        "checkout_events": 591,
+        "purchase_events": 87
+      },
+      {
+        "date": "2020-12-06",
+        "events": 42828,
+        "cart_events": 791,
+        "checkout_events": 434,
+        "purchase_events": 42
+      },
+      {
+        "date": "2020-12-07",
+        "events": 71632,
+        "cart_events": 1127,
+        "checkout_events": 716,
+        "purchase_events": 110
+      },
+      {
+        "date": "2020-12-08",
+        "events": 92199,
+        "cart_events": 1775,
+        "checkout_events": 990,
+        "purchase_events": 122
+      },
+      {
+        "date": "2020-12-09",
+        "events": 82315,
+        "cart_events": 1787,
+        "checkout_events": 1016,
+        "purchase_events": 150
+      },
+      {
+        "date": "2020-12-10",
+        "events": 80855,
+        "cart_events": 1739,
+        "checkout_events": 983,
+        "purchase_events": 143
+      },
+      {
+        "date": "2020-12-11",
+        "events": 75780,
+        "cart_events": 2135,
+        "checkout_events": 933,
+        "purchase_events": 160
+      },
+      {
+        "date": "2020-12-12",
+        "events": 56146,
+        "cart_events": 1381,
+        "checkout_events": 647,
+        "purchase_events": 106
+      },
+      {
+        "date": "2020-12-13",
+        "events": 46886,
+        "cart_events": 940,
+        "checkout_events": 423,
+        "purchase_events": 74
+      },
+      {
+        "date": "2020-12-14",
+        "events": 66082,
+        "cart_events": 1528,
+        "checkout_events": 725,
+        "purchase_events": 99
+      },
+      {
+        "date": "2020-12-15",
+        "events": 72774,
+        "cart_events": 1943,
+        "checkout_events": 825,
+        "purchase_events": 139
+      },
+      {
+        "date": "2020-12-16",
+        "events": 67497,
+        "cart_events": 1710,
+        "checkout_events": 833,
+        "purchase_events": 143
+      },
+      {
+        "date": "2020-12-17",
+        "events": 63887,
+        "cart_events": 1648,
+        "checkout_events": 745,
+        "purchase_events": 126
+      },
+      {
+        "date": "2020-12-18",
+        "events": 56742,
+        "cart_events": 1629,
+        "checkout_events": 938,
+        "purchase_events": 107
+      },
+      {
+        "date": "2020-12-19",
+        "events": 37342,
+        "cart_events": 776,
+        "checkout_events": 526,
+        "purchase_events": 52
+      },
+      {
+        "date": "2020-12-20",
+        "events": 30071,
+        "cart_events": 535,
+        "checkout_events": 375,
+        "purchase_events": 20
+      },
+      {
+        "date": "2020-12-21",
+        "events": 42623,
+        "cart_events": 841,
+        "checkout_events": 534,
+        "purchase_events": 53
+      },
+      {
+        "date": "2020-12-22",
+        "events": 44519,
+        "cart_events": 1103,
+        "checkout_events": 546,
+        "purchase_events": 60
+      },
+      {
+        "date": "2020-12-23",
+        "events": 40040,
+        "cart_events": 1116,
+        "checkout_events": 589,
+        "purchase_events": 67
+      },
+      {
+        "date": "2020-12-24",
+        "events": 26139,
+        "cart_events": 483,
+        "checkout_events": 188,
+        "purchase_events": 23
+      },
+      {
+        "date": "2020-12-25",
+        "events": 21355,
+        "cart_events": 462,
+        "checkout_events": 202,
+        "purchase_events": 17
+      },
+      {
+        "date": "2020-12-26",
+        "events": 22121,
+        "cart_events": 338,
+        "checkout_events": 143,
+        "purchase_events": 17
+      },
+      {
+        "date": "2020-12-27",
+        "events": 22496,
+        "cart_events": 500,
+        "checkout_events": 211,
+        "purchase_events": 20
+      },
+      {
+        "date": "2020-12-28",
+        "events": 32576,
+        "cart_events": 633,
+        "checkout_events": 302,
+        "purchase_events": 36
+      },
+      {
+        "date": "2020-12-29",
+        "events": 33975,
+        "cart_events": 556,
+        "checkout_events": 239,
+        "purchase_events": 24
+      },
+      {
+        "date": "2020-12-30",
+        "events": 30062,
+        "cart_events": 400,
+        "checkout_events": 263,
+        "purchase_events": 37
+      },
+      {
+        "date": "2020-12-31",
+        "events": 24537,
+        "cart_events": 444,
+        "checkout_events": 252,
+        "purchase_events": 25
+      },
+      {
+        "date": "2021-01-01",
+        "events": 22096,
+        "cart_events": 295,
+        "checkout_events": 162,
+        "purchase_events": 14
+      },
+      {
+        "date": "2021-01-02",
+        "events": 23599,
+        "cart_events": 304,
+        "checkout_events": 140,
+        "purchase_events": 14
+      },
+      {
+        "date": "2021-01-03",
+        "events": 24743,
+        "cart_events": 229,
+        "checkout_events": 151,
+        "purchase_events": 14
+      },
+      {
+        "date": "2021-01-04",
+        "events": 31395,
+        "cart_events": 396,
+        "checkout_events": 183,
+        "purchase_events": 16
+      },
+      {
+        "date": "2021-01-05",
+        "events": 42827,
+        "cart_events": 538,
+        "checkout_events": 260,
+        "purchase_events": 29
+      },
+      {
+        "date": "2021-01-06",
+        "events": 56076,
+        "cart_events": 656,
+        "checkout_events": 348,
+        "purchase_events": 31
+      },
+      {
+        "date": "2021-01-07",
+        "events": 44473,
+        "cart_events": 594,
+        "checkout_events": 373,
+        "purchase_events": 26
+      },
+      {
+        "date": "2021-01-08",
+        "events": 41201,
+        "cart_events": 498,
+        "checkout_events": 308,
+        "purchase_events": 34
+      },
+      {
+        "date": "2021-01-09",
+        "events": 31630,
+        "cart_events": 462,
+        "checkout_events": 173,
+        "purchase_events": 20
+      },
+      {
+        "date": "2021-01-10",
+        "events": 27429,
+        "cart_events": 310,
+        "checkout_events": 173,
+        "purchase_events": 14
+      },
+      {
+        "date": "2021-01-11",
+        "events": 38144,
+        "cart_events": 537,
+        "checkout_events": 280,
+        "purchase_events": 28
+      },
+      {
+        "date": "2021-01-12",
+        "events": 48498,
+        "cart_events": 745,
+        "checkout_events": 428,
+        "purchase_events": 48
+      },
+      {
+        "date": "2021-01-13",
+        "events": 45541,
+        "cart_events": 665,
+        "checkout_events": 398,
+        "purchase_events": 36
+      },
+      {
+        "date": "2021-01-14",
+        "events": 45685,
+        "cart_events": 684,
+        "checkout_events": 469,
+        "purchase_events": 54
+      },
+      {
+        "date": "2021-01-15",
+        "events": 40405,
+        "cart_events": 572,
+        "checkout_events": 383,
+        "purchase_events": 47
+      },
+      {
+        "date": "2021-01-16",
+        "events": 30261,
+        "cart_events": 357,
+        "checkout_events": 281,
+        "purchase_events": 27
+      },
+      {
+        "date": "2021-01-17",
+        "events": 27064,
+        "cart_events": 301,
+        "checkout_events": 193,
+        "purchase_events": 14
+      },
+      {
+        "date": "2021-01-18",
+        "events": 32358,
+        "cart_events": 388,
+        "checkout_events": 221,
+        "purchase_events": 19
+      },
+      {
+        "date": "2021-01-19",
+        "events": 50474,
+        "cart_events": 713,
+        "checkout_events": 469,
+        "purchase_events": 49
+      },
+      {
+        "date": "2021-01-20",
+        "events": 64109,
+        "cart_events": 925,
+        "checkout_events": 804,
+        "purchase_events": 96
+      },
+      {
+        "date": "2021-01-21",
+        "events": 52686,
+        "cart_events": 642,
+        "checkout_events": 519,
+        "purchase_events": 52
+      },
+      {
+        "date": "2021-01-22",
+        "events": 49922,
+        "cart_events": 677,
+        "checkout_events": 906,
+        "purchase_events": 100
+      },
+      {
+        "date": "2021-01-23",
+        "events": 34322,
+        "cart_events": 372,
+        "checkout_events": 375,
+        "purchase_events": 43
+      },
+      {
+        "date": "2021-01-24",
+        "events": 31702,
+        "cart_events": 473,
+        "checkout_events": 397,
+        "purchase_events": 36
+      },
+      {
+        "date": "2021-01-25",
+        "events": 41718,
+        "cart_events": 480,
+        "checkout_events": 462,
+        "purchase_events": 61
+      },
+      {
+        "date": "2021-01-26",
+        "events": 42232,
+        "cart_events": 506,
+        "checkout_events": 413,
+        "purchase_events": 55
+      },
+      {
+        "date": "2021-01-27",
+        "events": 48665,
+        "cart_events": 575,
+        "checkout_events": 524,
+        "purchase_events": 54
+      },
+      {
+        "date": "2021-01-28",
+        "events": 43131,
+        "cart_events": 478,
+        "checkout_events": 325,
+        "purchase_events": 69
+      },
+      {
+        "date": "2021-01-29",
+        "events": 40877,
+        "cart_events": 486,
+        "checkout_events": 421,
+        "purchase_events": 54
+      },
+      {
+        "date": "2021-01-30",
+        "events": 30395,
+        "cart_events": 369,
+        "checkout_events": 261,
+        "purchase_events": 31
+      },
+      {
+        "date": "2021-01-31",
+        "events": 26489,
+        "cart_events": 295,
+        "checkout_events": 234,
+        "purchase_events": 19
+      }
+    ],
+    "zero_cart_dates": [
+      "20201102",
+      "20201103",
+      "20201104",
+      "20201105",
+      "20201106",
+      "20201107",
+      "20201108",
+      "20201109",
+      "20201110",
+      "20201111",
+      "20201112",
+      "20201113",
+      "20201114",
+      "20201115",
+      "20201121",
+      "20201122",
+      "20201123",
+      "20201124"
+    ],
+    "primary_period": [
+      "2020-12-01",
+      "2020-12-31"
+    ]
+  },
+  "journey_and_devices": {
+    "journey_counts": [
+      27289,
+      7874,
+      2819,
+      1437
+    ],
+    "device_order": [
+      "desktop",
+      "mobile"
+    ],
+    "device_comparisons": {
+      "view_to_cart": {
+        "all_counts": [
+          {
+            "successes": 4508,
+            "denominator": 15960
+          },
+          {
+            "successes": 3202,
+            "denominator": 10773
+          }
+        ],
+        "common_counts": [
+          {
+            "successes": 4508,
+            "denominator": 15960
+          },
+          {
+            "successes": 3202,
+            "denominator": 10773
+          }
+        ],
+        "common_dates": [
+          "2020-12-01",
+          "2020-12-02",
+          "2020-12-03",
+          "2020-12-04",
+          "2020-12-05",
+          "2020-12-06",
+          "2020-12-07",
+          "2020-12-08",
+          "2020-12-09",
+          "2020-12-10",
+          "2020-12-11",
+          "2020-12-12",
+          "2020-12-13",
+          "2020-12-14",
+          "2020-12-15",
+          "2020-12-16",
+          "2020-12-17",
+          "2020-12-18",
+          "2020-12-19",
+          "2020-12-20",
+          "2020-12-21",
+          "2020-12-22",
+          "2020-12-23",
+          "2020-12-24",
+          "2020-12-25",
+          "2020-12-26",
+          "2020-12-27",
+          "2020-12-28",
+          "2020-12-29",
+          "2020-12-30",
+          "2020-12-31"
+        ],
+        "crude_rates": [
+          0.2824561403508772,
+          0.2972245428385779
+        ],
+        "standardized_rates": [
+          0.28226630802836955,
+          0.2976179510298165
+        ],
+        "standardized_gap_pp": 1.5351643001446924,
+        "crude_gap_pp": 1.4768402487700727,
+        "leave_one_day_out_gap_pp": [
+          1.2945245775816405,
+          1.8261045472537707
+        ],
+        "admissible_omissions": 31
+      },
+      "cart_to_checkout": {
+        "all_counts": [
+          {
+            "successes": 1599,
+            "denominator": 4508
+          },
+          {
+            "successes": 1158,
+            "denominator": 3202
+          }
+        ],
+        "common_counts": [
+          {
+            "successes": 1599,
+            "denominator": 4508
+          },
+          {
+            "successes": 1158,
+            "denominator": 3202
+          }
+        ],
+        "common_dates": [
+          "2020-12-01",
+          "2020-12-02",
+          "2020-12-03",
+          "2020-12-04",
+          "2020-12-05",
+          "2020-12-06",
+          "2020-12-07",
+          "2020-12-08",
+          "2020-12-09",
+          "2020-12-10",
+          "2020-12-11",
+          "2020-12-12",
+          "2020-12-13",
+          "2020-12-14",
+          "2020-12-15",
+          "2020-12-16",
+          "2020-12-17",
+          "2020-12-18",
+          "2020-12-19",
+          "2020-12-20",
+          "2020-12-21",
+          "2020-12-22",
+          "2020-12-23",
+          "2020-12-24",
+          "2020-12-25",
+          "2020-12-26",
+          "2020-12-27",
+          "2020-12-28",
+          "2020-12-29",
+          "2020-12-30",
+          "2020-12-31"
+        ],
+        "crude_rates": [
+          0.35470275066548357,
+          0.36164896939412866
+        ],
+        "standardized_rates": [
+          0.35429612452475134,
+          0.3625319815146701
+        ],
+        "standardized_gap_pp": 0.8235856989918744,
+        "crude_gap_pp": 0.6946218728645093,
+        "leave_one_day_out_gap_pp": [
+          0.4953512270859106,
+          1.421443578570053
+        ],
+        "admissible_omissions": 31
+      },
+      "checkout_to_purchase": {
+        "all_counts": [
+          {
+            "successes": 824,
+            "denominator": 1599
+          },
+          {
+            "successes": 583,
+            "denominator": 1158
+          }
+        ],
+        "common_counts": [
+          {
+            "successes": 824,
+            "denominator": 1599
+          },
+          {
+            "successes": 583,
+            "denominator": 1158
+          }
+        ],
+        "common_dates": [
+          "2020-12-01",
+          "2020-12-02",
+          "2020-12-03",
+          "2020-12-04",
+          "2020-12-05",
+          "2020-12-06",
+          "2020-12-07",
+          "2020-12-08",
+          "2020-12-09",
+          "2020-12-10",
+          "2020-12-11",
+          "2020-12-12",
+          "2020-12-13",
+          "2020-12-14",
+          "2020-12-15",
+          "2020-12-16",
+          "2020-12-17",
+          "2020-12-18",
+          "2020-12-19",
+          "2020-12-20",
+          "2020-12-21",
+          "2020-12-22",
+          "2020-12-23",
+          "2020-12-24",
+          "2020-12-25",
+          "2020-12-26",
+          "2020-12-27",
+          "2020-12-28",
+          "2020-12-29",
+          "2020-12-30",
+          "2020-12-31"
+        ],
+        "crude_rates": [
+          0.515322076297686,
+          0.5034542314335061
+        ],
+        "standardized_rates": [
+          0.5160717296364193,
+          0.5047268762460881
+        ],
+        "standardized_gap_pp": -1.13448533903312,
+        "crude_gap_pp": -1.186784486417991,
+        "leave_one_day_out_gap_pp": [
+          -1.6856051285878637,
+          -0.008686529257939668
+        ],
+        "admissible_omissions": 31
+      },
+      "view_to_purchase": {
+        "all_counts": [
+          {
+            "successes": 824,
+            "denominator": 15960
+          },
+          {
+            "successes": 583,
+            "denominator": 10773
+          }
+        ],
+        "common_counts": [
+          {
+            "successes": 824,
+            "denominator": 15960
+          },
+          {
+            "successes": 583,
+            "denominator": 10773
+          }
+        ],
+        "common_dates": [
+          "2020-12-01",
+          "2020-12-02",
+          "2020-12-03",
+          "2020-12-04",
+          "2020-12-05",
+          "2020-12-06",
+          "2020-12-07",
+          "2020-12-08",
+          "2020-12-09",
+          "2020-12-10",
+          "2020-12-11",
+          "2020-12-12",
+          "2020-12-13",
+          "2020-12-14",
+          "2020-12-15",
+          "2020-12-16",
+          "2020-12-17",
+          "2020-12-18",
+          "2020-12-19",
+          "2020-12-20",
+          "2020-12-21",
+          "2020-12-22",
+          "2020-12-23",
+          "2020-12-24",
+          "2020-12-25",
+          "2020-12-26",
+          "2020-12-27",
+          "2020-12-28",
+          "2020-12-29",
+          "2020-12-30",
+          "2020-12-31"
+        ],
+        "crude_rates": [
+          0.05162907268170426,
+          0.054116773415019026
+        ],
+        "standardized_rates": [
+          0.05152882690969641,
+          0.054296174523163106
+        ],
+        "standardized_gap_pp": 0.27673476134666974,
+        "crude_gap_pp": 0.24877007333147655,
+        "leave_one_day_out_gap_pp": [
+          0.1645907903174905,
+          0.3741326891966837
+        ],
+        "admissible_omissions": 31
+      }
+    },
+    "period": "December 2020",
+    "contract_version": 1
+  },
+  "scenarios": {
+    "grain": "Hypothetical visit equivalents; not sales or a prediction interval",
+    "reference_entries": 27289,
+    "downstream_multipliers": [
+      "0",
+      "0.5",
+      "1"
+    ],
+    "rows": [
+      {
+        "name": "downside",
+        "absolute_cart_rate_change": "-0.01",
+        "additional_carts": "-272.890000",
+        "additional_carts_display": "-272.89",
+        "completion_values": [
+          "0.000000",
+          "-24.901126",
+          "-49.802252"
+        ],
+        "completion_display": [
+          "0.00",
+          "-24.90",
+          "-49.80"
+        ]
+      },
+      {
+        "name": "no_change",
+        "absolute_cart_rate_change": "0",
+        "additional_carts": "0.000000",
+        "additional_carts_display": "0.00",
+        "completion_values": [
+          "0.000000",
+          "0.000000",
+          "0.000000"
+        ],
+        "completion_display": [
+          "0.00",
+          "0.00",
+          "0.00"
+        ]
+      },
+      {
+        "name": "low",
+        "absolute_cart_rate_change": "0.005",
+        "additional_carts": "136.445000",
+        "additional_carts_display": "136.45",
+        "completion_values": [
+          "0.000000",
+          "12.450563",
+          "24.901126"
+        ],
+        "completion_display": [
+          "0.00",
+          "12.45",
+          "24.90"
+        ]
+      },
+      {
+        "name": "base",
+        "absolute_cart_rate_change": "0.01",
+        "additional_carts": "272.890000",
+        "additional_carts_display": "272.89",
+        "completion_values": [
+          "0.000000",
+          "24.901126",
+          "49.802252"
+        ],
+        "completion_display": [
+          "0.00",
+          "24.90",
+          "49.80"
+        ]
+      },
+      {
+        "name": "high",
+        "absolute_cart_rate_change": "0.02",
+        "additional_carts": "545.780000",
+        "additional_carts_display": "545.78",
+        "completion_values": [
+          "0.000000",
+          "49.802252",
+          "99.604503"
+        ],
+        "completion_display": [
+          "0.00",
+          "49.80",
+          "99.60"
+        ]
+      }
+    ]
+  }
+}

@@ -1,6 +1,8 @@
 # E-commerce Funnel & Revenue Analytics
 
-**Journey analysis, improvement scenarios and experiment proposal complete; decision report next.**
+**Commercial report and decision memo available. Final independent reproduction and case-study release remain.**
+
+[Read the illustrated report](reports/commercial_report.md) · [Read the decision memo](reports/decision_memo.md)
 
 Where should a product team investigate the shopping journey first?
 
@@ -18,7 +20,7 @@ Before drawing these findings, I checked missing steps, repeated purchase record
 
 I then explored what an improvement might mean. In a cohort this size, an assumed one-percentage-point increase in cart progression means about 273 additional visits reaching the cart. Whether those visits lead to purchases still needs testing. The [scenario assessment](reports/opportunity_assessment.md) makes the assumptions clear, and the [experiment proposal](docs/experiment_proposal.md) sets out one candidate page change, fair visitor assignment and the checks needed before acting. No live test, sales uplift or commercial return has been measured.
 
-BigQuery SQL provides the data foundation and checks. Python with Matplotlib and Seaborn produces the charts directly from reviewed totals. Detailed methods sit in the supporting docs. The next stage will bring the evidence into an illustrated report and a short decision memo.
+BigQuery SQL provides the data foundation and checks. Python with Matplotlib and Seaborn produces the charts directly from reviewed totals. Detailed methods sit in the supporting docs. The illustrated report brings the evidence and four reviewed figures together; the decision memo sets out the recommended investigation and what would justify acting.
 
 ## Planned workflow
 
@@ -32,13 +34,16 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 2. [Build reproducible event, session and purchase SQL marts](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/2) — complete
 3. [Diagnose conversion funnels and segment differences](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/3) — complete
 4. [Prioritise revenue opportunities and propose an experiment](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/4) — complete
-5. [Build Python charts and a commercial decision memo](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/5) — planned
+5. [Build Python charts and a commercial decision memo](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/5) — complete
 6. [Reproduce, review and publish the completed case study](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/6) — planned
 
 [View the six GitHub milestones](https://github.com/Jeks042/ecommerce-funnel-revenue/milestones). Each has an issue recording its work, acceptance checks and dependencies.
 
 ## Start here
 
+- [Illustrated commercial report](reports/commercial_report.md)
+- [Decision memo](reports/decision_memo.md)
+- [Report and figure reproduction](docs/report_reproduction.md)
 - [Business brief](docs/business_brief.md)
 - [Source access and handling](docs/data_access.md)
 - [Agreed measurement definitions](docs/metric_contract.md)
@@ -70,7 +75,7 @@ The source is Google's historical, obfuscated e-commerce sample for November 202
 | src/ | Python analysis and chart-generation code |
 | reports/figures/ | Reviewed PNG and SVG charts generated from approved aggregates |
 
-Source checks, analytical tables, recorded-journey findings, conditional scenarios and an experiment proposal are available. The final illustrated report and public case-study release follow their milestone checks.
+The illustrated report, decision memo, four reproducible Python figures, analytical tables and supporting evidence are available. Final independent reproduction and the public portfolio release remain milestone 6.
 
 ## Evidence boundaries
 

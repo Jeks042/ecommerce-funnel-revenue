@@ -2,17 +2,16 @@
 
 The output is an illustrated commercial report supported by reproducible Python analysis. BigQuery SQL defines the approved populations and measures. Python loads reviewed aggregates; Matplotlib controls figure layout and annotation, with Seaborn used for suitable statistical comparisons.
 
-## Planned figures
+## Reviewed report figures
 
 | Figure | Decision it supports | Evidence required |
 |---|---|---|
-| Daily recording coverage | Is a gap worth a tracking investigation before product action? | Event counts by date and type, with recording changes distinguished from shopper behaviour. |
-| Ordered shopping progression | At which recorded step is progression weakest? | Nested session populations, approved ordering and explicit entry population. |
-| Group comparisons | Which device or supported acquisition-context difference warrants investigation? | Counts, common definitions, date-mix checks, uncertainty and minimum coverage. |
-| Definition sensitivity | Does the priority change when defensible counting rules change? | Reconciled strict/tied-step, boundary and exclusion variants. |
-| Commercial scenarios | What assumptions would justify testing an opportunity? | Accepted eligible volumes, approved monetary inputs where available and clearly marked assumptions. |
+| recording_coverage | Why restrict the primary comparison to December? | 92 days of source-event counts, 18 observed zero-cart dates and the selected month. No gap filling or funnel-rate interpretation. |
+| recorded_journey | Where is recorded progression weakest? | Nested December visit populations, timestamp ordering and explicit preceding-step denominators. |
+| device_progression | Does the evidence support a mobile-only response? | Observed counts, common-date weighting and date-sensitivity ranges for the two largest entry groups. Tablet counts remain visible without ranked rates. |
+| cart_scenarios | How much do hypothetical outcomes depend on assumptions? | Five assumed cart-rate changes × three marginal downstream assumptions. Hypothetical visit equivalents, including zero/downside; no revenue or probability bounds. |
 
-Milestone 3 now delivers the ordered progression and device-comparison figures in `reports/figures/`, with PNG/SVG assets, numeric chart data, source/code hashes and dependency versions. The [journey findings](../reports/milestone_3_findings.md) and [reproduction method](funnel_analysis.md) explain them. Other figures remain planned. A revenue chart remains unavailable while financial reconciliation does not support it.
+All four figures are available as PNG/SVG assets in `reports/figures/`. The [commercial report](../reports/commercial_report.md) explains their implications. Acquisition context and definition sensitivity stay in concise prose and the supporting findings because additional figures would repeat the decision or invite unsupported marketing interpretation. A revenue chart remains unavailable. [Report reproduction](report_reproduction.md) records input grains, code, dependency pins and checks.
 
 ## Publication standard
 

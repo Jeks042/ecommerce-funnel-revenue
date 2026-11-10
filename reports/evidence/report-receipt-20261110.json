@@ -1,0 +1,81 @@
+{
+  "stage": 5,
+  "date": "2026-11-10",
+  "source_commit": "4489eef5501fe0652edadd6952b7ab587400c3bf",
+  "historical_contract_version": 1,
+  "prospective_design_version": 1,
+  "python_version": "3.12.14",
+  "dependencies": {
+    "matplotlib": "3.11.2",
+    "seaborn": "0.13.2"
+  },
+  "input_sha256": {
+    "reports/evidence/tracking-timing-20261106.json": "ab8885923be6dbc5fdf794ea3e01a120024a595b4b8eb19ee4ec28c7dd7178c9",
+    "reports/evidence/tracking-timing-receipt-20261106.json": "cd26814d66af42ee38898f047587b906460c1ea5e86fdf6cdac1e2deb059e999",
+    "reports/evidence/tracking-review-summary-20261106.json": "e845f5e1e371d1769ff5f68e7ca9ea4e3ba7b07e5e155ab5a6ecfe2e8742372e",
+    "sql/06_tracking_timing_sensitivity.sql": "1b6a274cc84c40ca717355ab0a55c4b3425b28f18056043fc73ea376d3b4cc9f",
+    "reports/evidence/funnel-analysis-20261110.json": "78b75a14c0e00e68a03b3a5aa2d2630db1c8f7ee124eaf0a7ca99fcd5e0a37f2",
+    "reports/evidence/funnel-figures-20261110.json": "fbfe286b17628ce3cdc25086d33aeebeee76a8b7879e94bb86f35d00123184ec",
+    "reports/evidence/funnel-receipt-20261110.json": "c07a0c4b43e38e119862b662aca827c638c3aace714bb7d82e4c361418e4187c",
+    "reports/evidence/opportunity-analysis-20261110.json": "0ffaf6224e208547886a80863c4e91547dc41edc0e3e2575079a558f0679aa4e",
+    "reports/evidence/scenario-assumptions-v1.json": "58bdc017c0d93f57b776ad0cda678740b46bd6268442516f1b49cc0611c49631",
+    "reports/evidence/opportunity-receipt-20261110.json": "6306a02411950405afdbcae2576bff37c9cb3773f9437ffff96063b30da11db2"
+  },
+  "code_sha256": {
+    "src/plotting/report_data.py": "085d07e68148511e1beb60b7eb60fffd3fe14f3067d6629224b207886f642395",
+    "src/plotting/build_report.py": "49fae6297bee6ef47378dd664f770f73a6a518f66f7a6cfdee106bb69dd10bb2",
+    "tests/check_report_evidence.py": "6da2ba209ecc9eab2181e3e245652808782b668a67fd17b4cd933ee69c98ce83",
+    "tests/check_report_render.py": "0556569aee8bfa60ea8fa885cb4097927f99f2eace389d344fbdfb55a1802b36",
+    "tests/test_report_evidence.py": "49308185ebb9281a152fea9940a4d0c8d881c1b6de87318917d91515b6900102",
+    ".github/workflows/report-validation.yml": "589148218ac292c88c6720b62f29ee21e03d06e00b0789271dcd658841292a8d",
+    "requirements-analysis.txt": "090397e7f61d8b4d09657bb34d108ce96f63d94afbf81f90a4ff6623b4564c26"
+  },
+  "document_sha256": {
+    "reports/commercial_report.md": "2e1dba313d2050e23801c86867dfb60de9aa88e65db47171fc05df85f92e24f5",
+    "reports/decision_memo.md": "44453ccc81a6e4719cc4e96e2222de1ea756f6318d013529c2a5b097c0f54f97",
+    "reports/milestone_5_findings.md": "1e0ac64796da3a5810d49c89d900cb5e4a56d96b9d1455b9dcb9d81c7d218590",
+    "docs/report_reproduction.md": "6f293c6ee1a4ad281e4c4228ad9ec6b34c3e5fecd0b364889e217e3d22af2f79",
+    "docs/chart_specification.md": "bbbd554f9772da9e1b2cb949b862fd1260285ff4ee211fc166de4c528162d1c4"
+  },
+  "asset_sha256": {
+    "reports/figures/recording_coverage.png": "41b663e0e47a296ecee1df418f60b18269769f2aef5b101f5b9e2f851d346693",
+    "reports/figures/recording_coverage.svg": "091d2f480c209aefb32d42c5f5a543ea5362bafe6927d4acb083cda12e094314",
+    "reports/figures/recorded_journey.png": "278a9ea6eb305eeec0806177d376bbb3b0be9fd8f1fc9d8da5b7a4b8af075381",
+    "reports/figures/recorded_journey.svg": "71b785f11765446811cfec2ff78bb3b2bb5d9925c59539c36fb250f4bf594e9d",
+    "reports/figures/device_progression.png": "67be143df0c0ba81310091e16f5144813778352d90b3d4f6a65ae32bae496b0a",
+    "reports/figures/device_progression.svg": "47fe315df1a72a89d190979183abb6b7fc4e0285d1811729dc6841b0c6316c07",
+    "reports/figures/cart_scenarios.png": "5580b535eca25dcad656b45b8472c80a3edf56df18cea7e6b64a28045a4078e3",
+    "reports/figures/cart_scenarios.svg": "37a83b4d6299add77292baf704c06d073baf4318525cbed3c4bcd75fc03e016f"
+  },
+  "output_sha256": {
+    "reports/evidence/report-plot-data-20261110.json": "9dafac96d37ae630123f37b790c17a396592044cb99c751a6a18c373e58098f2"
+  },
+  "local_regeneration": {
+    "figures": 4,
+    "png_svg_files": 8,
+    "numeric_data_reconciled": true,
+    "original_four_assets_byte_identical": true,
+    "cross_platform_byte_equality_required": false
+  },
+  "visual_review": "All four final PNGs inspected at reading size. Labels and denominators legible; no overlaps or clipping; scenario figure explicitly hypothetical.",
+  "validation": {
+    "regression_tests": 57,
+    "source_dates": 92,
+    "source_device_date_cells": 276,
+    "scenario_cells": 15,
+    "native_coverage_sql_and_output_hashes_match": true,
+    "report_links_resolve": true
+  },
+  "workflows": {
+    "analytical_workflow": "Unchanged accepted credential-free validation; discovers report tests",
+    "report_workflow": "Regenerates four figures with pinned dependencies; validates numeric data and eight files; retains actual outputs and manifest for 30 days",
+    "repository_permissions": "contents: read",
+    "automatic_commits": false,
+    "warehouse_credentials": false
+  },
+  "new_warehouse_query": false,
+  "new_inference": false,
+  "live_experiment_started": false,
+  "portfolio_release_complete": false,
+  "scope": "Commercial report and decision memo available. Final independent reproduction and public case-study release remain milestone 6."
+}

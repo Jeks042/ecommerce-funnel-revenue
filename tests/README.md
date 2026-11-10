@@ -45,3 +45,9 @@ Run `python tests/run_project_validation.py` for the same credential-free valida
 For milestone 4, `test_opportunity.py` covers absolute-versus-relative changes, no downstream gain, downside cases, impossible/nonnested populations, invalid inputs, sample-size sensitivity, two-sided symmetry and independent statsmodels reference values. The scenario generator uses only Python 3.12 standard-library arithmetic. Statistical-library checks were run separately with statsmodels 0.15.0 and SciPy 1.18.1; CI validates against the saved reference rather than claiming to rerun that library.
 
 Regenerate scenarios with `python src/assess_opportunity.py`. Assumptions are versioned in `reports/evidence/scenario-assumptions-v1.json`. A changed assumption requires regenerated outputs, review and an updated planning receipt; it must not silently alter the accepted historical evidence. No trial outcomes or live experiment are present.
+
+## Commercial report and figure reproduction
+
+The existing test-discovery command now also runs `test_report_evidence.py`: complete 92-date/device coverage, missing/null counts, duplicate cells, all 15 scenario cases, decimal display labels and report/source/asset/document reconciliation. The historical and opportunity runners remain unchanged so their execution-receipt hashes retain their meaning.
+
+`python tests/check_report_evidence.py` checks the report and plotting data without chart dependencies. Install `requirements-analysis.txt`, run `python src/plotting/build_report.py --output private/report-build`, then `python tests/check_report_render.py private/report-build` to regenerate and validate eight PNG/SVG files. The separate report workflow runs those commands and retains the regenerated figures and build manifest for 30 days, without credentials or commits. See [report reproduction](../docs/report_reproduction.md).
