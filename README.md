@@ -1,8 +1,6 @@
 # E-commerce Funnel & Revenue Analytics
 
-**Commercial report and decision memo available. Final independent reproduction and case-study release remain.**
-
-[Read the illustrated report](reports/commercial_report.md) · [Read the decision memo](reports/decision_memo.md)
+[Read the case study](https://jeks042.github.io/ecommerce-funnel-revenue.html) · [Illustrated report](reports/commercial_report.md) · [Decision memo](reports/decision_memo.md)
 
 Where should a product team investigate the shopping journey first?
 
@@ -10,81 +8,38 @@ I examined how visits progressed from viewing a product to adding it to a cart, 
 
 The largest recorded gap is before the cart: 7,874 of 27,289 product-view visits reached that next step. Only 1,437 completed the full observed sequence. That gives the product team a focused research question, but it does not explain why people stopped or establish how many sales could be recovered.
 
+![Recorded shopping progression: 27,289 product views, 7,874 later carts, 2,819 later checkouts and 1,437 later qualified purchases](reports/figures/recorded_journey.png)
+
 Mobile does not show a broad disadvantage. Its recorded progression from view to purchase is 5.41%, compared with 5.16% on desktop. Giving both groups the same daily mix leaves a small difference of 0.28 percentage points. The final checkout step points in the other direction, so a mobile-only redesign would be premature.
 
-![Recorded shopping progression](reports/figures/recorded_journey.png)
+## What I checked before drawing a conclusion
 
-[Read the journey findings](reports/milestone_3_findings.md) for the device comparison, alternative counting rules and the questions to carry into experiment design.
+I reviewed missing steps, repeated purchase records and uncertain identifiers, then kept events, visits, purchases and basket items at separate levels to prevent double counting. Eighteen November dates had no cart records despite checkout and purchase activity. December became the primary comparison period before examining device performance; the full November-to-January source still supports purchase qualification and coverage checks.
 
-Before drawing these findings, I checked missing steps, repeated purchase records and uncertain identifiers, then built separate analytical tables for events, visits, purchases and basket items. Eighteen November dates had no cart records despite checkout and purchase activity, so I kept those dates out of the primary comparison. Some monetary records also disagree; total revenue and average order value remain unavailable.
+Unresolved purchases remain visible. Some monetary records disagree, so total revenue and average order value remain unavailable. This is historical analysis of obfuscated sample data, not a description of current shop performance.
 
-I then explored what an improvement might mean. In a cohort this size, an assumed one-percentage-point increase in cart progression means about 273 additional visits reaching the cart. Whether those visits lead to purchases still needs testing. The [scenario assessment](reports/opportunity_assessment.md) makes the assumptions clear, and the [experiment proposal](docs/experiment_proposal.md) sets out one candidate page change, fair visitor assignment and the checks needed before acting. No live test, sales uplift or commercial return has been measured.
+## The recommended next step
 
-BigQuery SQL provides the data foundation and checks. Python with Matplotlib and Seaborn produces the charts directly from reviewed totals. Detailed methods sit in the supporting docs. The illustrated report brings the evidence and four reviewed figures together; the decision memo sets out the recommended investigation and what would justify acting.
+Investigate product view to cart across devices. First verify recording and observe shopper tasks, then decide whether to test a clearer cart action. The [experiment proposal](docs/experiment_proposal.md) defines visitor assignment, seven-day outcomes and the safeguards needed before acting. It still needs a live visitor baseline, a useful improvement target and a reviewed variant.
 
-## Planned workflow
+I also explored explicit improvement assumptions. In a cohort this size, an assumed one-percentage-point cart increase means about 273 additional visits reaching the cart. Their subsequent purchasing still needs testing. The [scenario assessment](reports/opportunity_assessment.md) includes no-change and downside cases and keeps its assumptions visible. No live experiment, sales uplift or financial return has been measured.
 
-Source audit and metric contract → event/session/purchase SQL marts → ordered funnel analysis → opportunity scenarios and experiment proposal → Python charts and decision memo → independent reproduction.
+## How the work was delivered
 
-The source is Google's historical, obfuscated e-commerce sample for November 2020–January 2021. The full period supports source checks; December is the agreed scope for the primary journey analysis. It does not represent current trading performance.
+BigQuery SQL provides the analytical tables and checks. Python with Matplotlib and Seaborn produces four figures directly from reviewed totals, covering the journey, device comparison, recording coverage and hypothetical scenarios. The [illustrated report](reports/commercial_report.md) brings the evidence together; the [decision memo](reports/decision_memo.md) states what would justify acting.
 
-## Milestones
+A separate clean checkout reproduced the analysis and all eight figure files. Fresh read-only warehouse calculations reconciled all eight models and the funnel findings. The [release review](reports/milestone_6_findings.md) records the results and two small differences in approximate duration diagnostics. The full [reproduction workflow](docs/reproduction_workflow.md) explains how to repeat the work. GitHub checks validate evidence and regenerate figures without warehouse credentials or bot commits.
 
-1. [Validate GA4 access, source quality and metric definitions](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/1) — complete
-2. [Build reproducible event, session and purchase SQL marts](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/2) — complete
-3. [Diagnose conversion funnels and segment differences](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/3) — complete
-4. [Prioritise revenue opportunities and propose an experiment](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/4) — complete
-5. [Build Python charts and a commercial decision memo](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/5) — complete
-6. [Reproduce, review and publish the completed case study](https://github.com/Jeks042/ecommerce-funnel-revenue/issues/6) — planned
+## Supporting evidence
 
-[View the six GitHub milestones](https://github.com/Jeks042/ecommerce-funnel-revenue/milestones). Each has an issue recording its work, acceptance checks and dependencies.
+- [Measurement definitions and source limits](docs/metric_contract.md)
+- [Analytical tables and SQL workflow](docs/sql_workflow.md)
+- [Journey findings and comparison methods](reports/milestone_3_findings.md)
+- [Scenarios and experiment planning](reports/milestone_4_findings.md)
+- [Source attribution and publication scope](docs/source_publication.md)
+- [Reproduction and release evidence](docs/reproduction_workflow.md)
+- [Completed milestones and decisions](reports/progress.md)
 
-## Start here
-
-- [Illustrated commercial report](reports/commercial_report.md)
-- [Decision memo](reports/decision_memo.md)
-- [Report and figure reproduction](docs/report_reproduction.md)
-- [Business brief](docs/business_brief.md)
-- [Source access and handling](docs/data_access.md)
-- [Agreed measurement definitions](docs/metric_contract.md)
-- [Measurement findings and scope decision](reports/milestone_1_findings.md)
-- [Analytical foundation and reconciliation](reports/milestone_2_findings.md)
-- [Recorded journey findings](reports/milestone_3_findings.md)
-- [Funnel methods and Python reproduction](docs/funnel_analysis.md)
-- [Improvement scenarios and investigation priorities](reports/opportunity_assessment.md)
-- [Controlled experiment proposal](docs/experiment_proposal.md)
-- [Scenario and experiment findings](reports/milestone_4_findings.md)
-- [SQL workflow and reproduction](docs/sql_workflow.md)
-- [Delivery workflow and acceptance gates](docs/workflow.md)
-- [Current progress and next session](reports/progress.md)
-- [Source audit and current decisions](reports/source_audit.md)
-- [Purchase-reconciliation findings](reports/purchase_reconciliation.md)
-- [Purchase-detail findings and counting sensitivity](reports/purchase_detail_findings.md)
-- [Tracking coverage, timing and population findings](reports/tracking_timing_findings.md)
-- [Python chart and report plan](docs/chart_specification.md)
-- [Decision log](docs/decision_log.md)
-
-## Planned outputs
-
-| Location | Purpose |
-|---|---|
-| docs/ | Scope, measurement definitions, workflow and decisions |
-| sql/ | BigQuery profiling, staging, marts and analytical queries |
-| tests/ | Synthetic edge cases and reconciliation checks |
-| reports/ | Validated aggregate findings and decision records |
-| src/ | Python analysis and chart-generation code |
-| reports/figures/ | Reviewed PNG and SVG charts generated from approved aggregates |
-
-The illustrated report, decision memo, four reproducible Python figures, analytical tables and supporting evidence are available. Final independent reproduction and the public portfolio release remain milestone 6.
-
-## Evidence boundaries
-
-This is a historical observational study. Funnel differences do not establish why shoppers leave or what intervention will increase revenue. Scenario values will be labelled assumptions. Obfuscation, missing identifiers, short coverage and instrumentation gaps constrain interpretation.
-
-Publish reviewed aggregate evidence only. Keep raw events, customer/session identifiers, credentials and unrelated personal planning outside this repository.
-
-## Author
+All six delivery stages are documented in the [GitHub milestones](https://github.com/Jeks042/ecommerce-funnel-revenue/milestones). Public artifacts contain original analysis and reviewed aggregates; source rows, identifiers, credentials and personal planning remain outside Git.
 
 Chukwujekwu Joseph Ezema · [Portfolio](https://jeks042.github.io/) · [GitHub](https://github.com/Jeks042)
-
-Completed companion studies: [A/B Testing & Incremental Revenue](https://github.com/Jeks042/ab-testing-incremental-revenue) · [Subscription Churn & Retention](https://github.com/Jeks042/subscription-churn-retention).

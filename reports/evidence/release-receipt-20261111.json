@@ -1,0 +1,362 @@
+{
+  "release_date": "2026-11-11",
+  "contract_version": 1,
+  "method": "Fresh read-only SELECTs against declared inputs; staging rereads the fixed public source, then each retained model is recomputed. No duplicate physical build. Separate clean checkout reproduces Python outputs and figures.",
+  "source_start": "20201101",
+  "source_end": "20210131",
+  "analysis_month": "202012",
+  "cost_control": "Existing US Sandbox; each displayed validator estimate reviewed below 3 GiB before Run. No paid billing change or claimed enforced maximum-bytes cap. Displayed billed bytes consume free quota; no cash cost is inferred.",
+  "destination_reference_sha256": "5332ba66fd78ddad48e295f0d3da619d26178800692e2051bc4000bcd61fb224",
+  "models": [
+    {
+      "model": "stg_events",
+      "row_count": 4295584,
+      "content_checksum": "144845759381116633910"
+    },
+    {
+      "model": "transaction_policy",
+      "row_count": 4451,
+      "content_checksum": "-296480074647037111430"
+    },
+    {
+      "model": "fact_transactions",
+      "row_count": 4172,
+      "content_checksum": "-285598432972762557626"
+    },
+    {
+      "model": "fact_transaction_items",
+      "row_count": 12383,
+      "content_checksum": "-405738691258637131415"
+    },
+    {
+      "model": "fact_visits",
+      "row_count": 360129,
+      "content_checksum": "-2772832771307244532739"
+    },
+    {
+      "model": "audit_event_keys",
+      "row_count": 276,
+      "content_checksum": "-76713567299128983135"
+    },
+    {
+      "model": "audit_visit_exclusions",
+      "row_count": 17,
+      "content_checksum": "-8191439199691435847"
+    },
+    {
+      "model": "audit_purchase_coverage",
+      "row_count": 245,
+      "content_checksum": "-33542813867441763744"
+    }
+  ],
+  "comparisons": [
+    {
+      "key": "09_mart_validation",
+      "accepted_file": "reports/evidence/marts-20261106.json",
+      "accepted_file_sha256": "a952e5b9a52bd0e976df4682bc531d9d30266520c353443eccff502ed8ab1042",
+      "accepted_canonical_sha256": "4f5c01522a9f89180fdb8cf109826047983069c0507b70c908b841b530cc88dc",
+      "fresh_canonical_sha256": "4f5c01522a9f89180fdb8cf109826047983069c0507b70c908b841b530cc88dc",
+      "exact_json_match": true,
+      "all_exact_fields_match": true,
+      "reviewed_approximate_diagnostics": [],
+      "fresh_input_fingerprint_order": [],
+      "normalization": "None"
+    },
+    {
+      "key": "10_inventory",
+      "accepted_file": "reports/evidence/marts-inventory-20261106.json",
+      "accepted_file_sha256": "f79a0b23d4e259fd58e1234d04739aef72f4621307d0f136705f310b55ae148d",
+      "accepted_canonical_sha256": "dedc10c7cb47eec77d4fb22c1bedaf582d4ba23dced3c12437d9c62f3c515dba",
+      "fresh_canonical_sha256": "dedc10c7cb47eec77d4fb22c1bedaf582d4ba23dced3c12437d9c62f3c515dba",
+      "exact_json_match": true,
+      "all_exact_fields_match": true,
+      "reviewed_approximate_diagnostics": [],
+      "fresh_input_fingerprint_order": [],
+      "normalization": "None"
+    },
+    {
+      "key": "11_source_coverage",
+      "accepted_file": "reports/evidence/tracking-timing-20261106.json",
+      "accepted_file_sha256": "ab8885923be6dbc5fdf794ea3e01a120024a595b4b8eb19ee4ec28c7dd7178c9",
+      "accepted_canonical_sha256": "ffb16ac5a40a214f158492099b968f677a3aba7680ede41087c0cd1eccc448dc",
+      "fresh_canonical_sha256": "03577a83df40aedb563b6bb852e984c636c35cada1de1d0a2617e7351f5ac3da",
+      "exact_json_match": false,
+      "all_exact_fields_match": true,
+      "reviewed_approximate_diagnostics": [
+        {
+          "path": "session_checks/median_observed_span_seconds",
+          "accepted": 13.990649,
+          "fresh": 13.983463,
+          "reason": "APPROX_QUANTILES descriptive diagnostic; no eligibility, counting, ranking or decision threshold uses this value."
+        },
+        {
+          "path": "session_checks/p95_observed_span_seconds",
+          "accepted": 1191.705366,
+          "fresh": 1187.774929,
+          "reason": "APPROX_QUANTILES descriptive diagnostic; no eligibility, counting, ranking or decision threshold uses this value."
+        }
+      ],
+      "fresh_input_fingerprint_order": [],
+      "normalization": "None"
+    },
+    {
+      "key": "12_funnel_profile",
+      "accepted_file": "reports/evidence/funnel-20261110.json",
+      "accepted_file_sha256": "05438c1e47ba8ba005fa7b7b97ae1983df73364ac25f41f27410a23c426bba20",
+      "accepted_canonical_sha256": "c64d196fda588378783142b4e5792fb96a719526e5b7a21b26ac6ae5fec30116",
+      "fresh_canonical_sha256": "d7e8b08c73b0ab37376ed04d4e0e865567fd646372ef9ae2a22875e29504009f",
+      "exact_json_match": false,
+      "all_exact_fields_match": true,
+      "reviewed_approximate_diagnostics": [],
+      "fresh_input_fingerprint_order": [
+        "fact_transactions",
+        "stg_events",
+        "fact_visits"
+      ],
+      "normalization": "Only model-key ordering of input_fingerprints; exact row values retained."
+    },
+    {
+      "key": "13_reverse_funnel",
+      "accepted_file": "reports/evidence/funnel-reverse-20261110.json",
+      "accepted_file_sha256": "a73ebfb9d302f84a09916f9ea9b4e2ffb818638178a3686c9dbb629f232179a8",
+      "accepted_canonical_sha256": "31ffdc13171b5c98325c2a768aa276d45526044bf5b472d62dbbf86397fd881c",
+      "fresh_canonical_sha256": "31ffdc13171b5c98325c2a768aa276d45526044bf5b472d62dbbf86397fd881c",
+      "exact_json_match": true,
+      "all_exact_fields_match": true,
+      "reviewed_approximate_diagnostics": [],
+      "fresh_input_fingerprint_order": [],
+      "normalization": "None"
+    }
+  ],
+  "checks": {
+    "mart_source_checks": 995,
+    "funnel_source_and_reverse_checks": 4682,
+    "model_count": 8,
+    "fresh_native_jobs": 13,
+    "direct_source_rereads": 2
+  },
+  "runs": [
+    {
+      "key": "01_stg_events",
+      "rendered_sql_sha256": "b38553045f4550343ac78c2f6ca404fbd6158ab49bcfddbe57fc4e6246f13d3d",
+      "job_reference_sha256": "f0489d757373bccce8e25b2143285a1ea14242bf537edab845ebe3e038278ce9",
+      "started_utc": "2026-11-11T00:03:16Z",
+      "ended_utc": "2026-11-11T00:03:21Z",
+      "duration_display": "5 sec 87 ms",
+      "validator_estimate_display": "2.57 GB",
+      "processed_display": "2.57 GB",
+      "billed_display": "2.58 GB",
+      "location": "US",
+      "result_canonical_sha256": "32d4337a7b965aeeb5d79567ff482f60576b41d06f7b12dd055ae76051c3fd38",
+      "status": "SUCCESS"
+    },
+    {
+      "key": "02_transaction_policy",
+      "rendered_sql_sha256": "7f95b58e799b04591702d62b3ab5c8fcc546d46415e331496a9266f18230d496",
+      "job_reference_sha256": "7691c119582d3ccdf10832365ed51f3a4f659d285e355971071d28c07449d29b",
+      "started_utc": "2026-11-11T00:04:16Z",
+      "ended_utc": "2026-11-11T00:04:16Z",
+      "duration_display": "741 ms",
+      "validator_estimate_display": "1.18 GB",
+      "processed_display": "1.18 GB",
+      "billed_display": "1.18 GB",
+      "location": "US",
+      "result_canonical_sha256": "5af047840eb76b89d4b61552ddf0998a76d1e1183fbb05c8e60b1be630d3a773",
+      "status": "SUCCESS"
+    },
+    {
+      "key": "03_fact_transactions",
+      "rendered_sql_sha256": "1c782b914b44b772eabc3179b0058b510a1520315d7e164fa781d711cceb444e",
+      "job_reference_sha256": "5bd571051098c753f7c15e4beb5cd008e5a1edea2c5a19a6537b3e534c323d00",
+      "started_utc": "2026-11-11T00:05:17Z",
+      "ended_utc": "2026-11-11T00:05:18Z",
+      "duration_display": "738 ms",
+      "validator_estimate_display": "1.19 GB",
+      "processed_display": "1.19 GB",
+      "billed_display": "1.19 GB",
+      "location": "US",
+      "result_canonical_sha256": "4c09aae1f301e490f0a623d714feec34cc1bf201717bce78e6a684874315ea9e",
+      "status": "SUCCESS"
+    },
+    {
+      "key": "04_fact_transaction_items",
+      "rendered_sql_sha256": "0c8f71cbd119f52076d7bfba1319c874e530c4551691b872caf124f2a6a8a216",
+      "job_reference_sha256": "d6a1f6c250d84bb4f3f02e1a8990a55dd9bc7dcd926b4cc62e74951949cd0ad3",
+      "started_utc": "2026-11-11T00:08:01Z",
+      "ended_utc": "2026-11-11T00:08:01Z",
+      "duration_display": "384 ms",
+      "validator_estimate_display": "3.44 MB",
+      "processed_display": "3.44 MB",
+      "billed_display": "10 MB",
+      "location": "US",
+      "result_canonical_sha256": "5c307fbc85885eb44ba7a1836846324d433fb2923d62787ba8d92dce180042e8",
+      "status": "SUCCESS"
+    },
+    {
+      "key": "05_fact_visits",
+      "rendered_sql_sha256": "36197a6fc3068631c46041989c61a1d8e9d9364c2b2642b88af2c5e72cb84304",
+      "job_reference_sha256": "c483a043ed4e4611bf44c37403c6a1f177e378c8b1c46746d3f03eac2f78c4fe",
+      "started_utc": "2026-11-11T00:08:33Z",
+      "ended_utc": "2026-11-11T00:08:40Z",
+      "duration_display": "7 sec 314 ms",
+      "validator_estimate_display": "414.1 MB",
+      "processed_display": "414.1 MB",
+      "billed_display": "415 MB",
+      "location": "US",
+      "result_canonical_sha256": "01d9cacb0b8fcd56007c79f509a228acbe68d19c7c7501cbd799675546b06222",
+      "status": "SUCCESS"
+    },
+    {
+      "key": "06_audit_event_keys",
+      "rendered_sql_sha256": "72b3be2d1257d90bcb0541337863411d04648cbf77796ddcd3113d8f521c6459",
+      "job_reference_sha256": "7bc2df65250fdd43a940d3e4fe1ea4b3578a234297f1c2ab0491ba9661ee55fa",
+      "started_utc": "2026-11-11T00:09:32Z",
+      "ended_utc": "2026-11-11T00:09:32Z",
+      "duration_display": "240 ms",
+      "validator_estimate_display": "158.16 MB",
+      "processed_display": "158.16 MB",
+      "billed_display": "159 MB",
+      "location": "US",
+      "result_canonical_sha256": "042a3a32e719f19b4af942518e845b95550f3a8d4c5b07d07d3c2f19e3c1ba70",
+      "status": "SUCCESS"
+    },
+    {
+      "key": "07_audit_visit_exclusions",
+      "rendered_sql_sha256": "efd32b41be88f7996cb1a65da03accd8f0d77e6864136027aea6b798f0c6d857",
+      "job_reference_sha256": "d2c8f80fffbff5bb84fc8505e31249a73d5c0b855cb15009c0d3d25d7d502ced",
+      "started_utc": "2026-11-11T00:10:27Z",
+      "ended_utc": "2026-11-11T00:10:27Z",
+      "duration_display": "356 ms",
+      "validator_estimate_display": "18.16 MB",
+      "processed_display": "18.16 MB",
+      "billed_display": "19 MB",
+      "location": "US",
+      "result_canonical_sha256": "ba474f5de08e6a1b3cccee00a57cc178e2ca1605769d6c8014d79f32b00b7174",
+      "status": "SUCCESS"
+    },
+    {
+      "key": "08_audit_purchase_coverage",
+      "rendered_sql_sha256": "1897af858b53157949c5e82b2fcc42c2ee428c61e4ec3f7627bd32a8e39dc8ae",
+      "job_reference_sha256": "53500809e8fbc60ef053ec07503792ca6866dd58ae5c62e34ff732d2f4e31a96",
+      "started_utc": "2026-11-11T00:14:14Z",
+      "ended_utc": "2026-11-11T00:14:14Z",
+      "duration_display": "871 ms",
+      "validator_estimate_display": "121.37 MB",
+      "processed_display": "121.37 MB",
+      "billed_display": "122 MB",
+      "location": "US",
+      "result_canonical_sha256": "37073640762e0c4700b7554db4880628db1ddff42c5b33e468b606f8858c16c7",
+      "status": "SUCCESS"
+    },
+    {
+      "key": "09_mart_validation",
+      "rendered_sql_sha256": "16ff8f06775453bcb32bd9d669dc421af5f05bfacc652e3964fd0682d9fc188c",
+      "job_reference_sha256": "37c664a2bf4363eadb3b0136fd2080f36c103158fa7acd6557de754cd06103b5",
+      "started_utc": "2026-11-11T00:14:40Z",
+      "ended_utc": "2026-11-11T00:14:43Z",
+      "duration_display": "3 sec 536 ms",
+      "validator_estimate_display": "1.61 GB",
+      "processed_display": "1.61 GB",
+      "billed_display": "1.61 GB",
+      "location": "US",
+      "result_canonical_sha256": "4f5c01522a9f89180fdb8cf109826047983069c0507b70c908b841b530cc88dc",
+      "status": "SUCCESS"
+    },
+    {
+      "key": "10_inventory",
+      "rendered_sql_sha256": "3c9a69d964e6dc02e302f8f14e3b9f5ed590a735c9e0d6b169a251162a97ed10",
+      "job_reference_sha256": "ada96659b44a4e2f1e39dc07d10bafe6f4f6d918f20c58c9127d9d3436050c60",
+      "started_utc": "2026-11-11T00:15:04Z",
+      "ended_utc": "2026-11-11T00:15:04Z",
+      "duration_display": "302 ms",
+      "validator_estimate_display": "30 MB",
+      "processed_display": "30 MB",
+      "billed_display": "30 MB",
+      "location": "US",
+      "result_canonical_sha256": "dedc10c7cb47eec77d4fb22c1bedaf582d4ba23dced3c12437d9c62f3c515dba",
+      "status": "SUCCESS"
+    },
+    {
+      "key": "11_source_coverage",
+      "rendered_sql_sha256": "1b6a274cc84c40ca717355ab0a55c4b3425b28f18056043fc73ea376d3b4cc9f",
+      "job_reference_sha256": "23a2c00700ef449378c81fb67a75fa425b766679df7b572a0c837a1bc0194664",
+      "started_utc": "2026-11-11T00:15:34Z",
+      "ended_utc": "2026-11-11T00:15:42Z",
+      "duration_display": "7 sec 860 ms",
+      "validator_estimate_display": "1.16 GB",
+      "processed_display": "1.16 GB",
+      "billed_display": "1.16 GB",
+      "location": "US",
+      "result_canonical_sha256": "03577a83df40aedb563b6bb852e984c636c35cada1de1d0a2617e7351f5ac3da",
+      "status": "SUCCESS"
+    },
+    {
+      "key": "12_funnel_profile",
+      "rendered_sql_sha256": "210e96d3ca7ef1236ac3146c3c5f559a6194f76fa38141a3c72bc31e47f0970b",
+      "job_reference_sha256": "904f33ec64ce8509798ec5a0971a2bda23179d0cd7af2e081474b2e3b65fe167",
+      "started_utc": "2026-11-11T00:17:52Z",
+      "ended_utc": "2026-11-11T00:17:56Z",
+      "duration_display": "3 sec 788 ms",
+      "validator_estimate_display": "1.61 GB",
+      "processed_display": "1.61 GB",
+      "billed_display": "1.61 GB",
+      "location": "US",
+      "result_canonical_sha256": "d7e8b08c73b0ab37376ed04d4e0e865567fd646372ef9ae2a22875e29504009f",
+      "status": "SUCCESS"
+    },
+    {
+      "key": "13_reverse_funnel",
+      "rendered_sql_sha256": "22255fa7e164ba97839340a837fe7e23c8863c792b2b20d2dc477a00b0187f6e",
+      "job_reference_sha256": "37ca44be53f42a5f16dd0595f0cea3941f6855657756fe597220b3aa4610ee21",
+      "started_utc": "2026-11-11T00:18:18Z",
+      "ended_utc": "2026-11-11T00:18:19Z",
+      "duration_display": "1 sec 404 ms",
+      "validator_estimate_display": "219.66 MB",
+      "processed_display": "219.66 MB",
+      "billed_display": "220 MB",
+      "location": "US",
+      "result_canonical_sha256": "31ffdc13171b5c98325c2a768aa276d45526044bf5b472d62dbbf86397fd881c",
+      "status": "SUCCESS"
+    }
+  ],
+  "excluded_cached_attempts": [
+    {
+      "key": "12_funnel_profile",
+      "rendered_sql_sha256": "7e18f68cb876ce66765acc6d7e78170b7e96661c5af6de8f4aaf4c8c9f933ab8",
+      "job_reference_sha256": "bcba1a2566eef963d66fbe6d128c050f8f1005a3a5d3467b78cbd0b0e86d8f04",
+      "started_utc": "2026-11-11T00:16:21Z",
+      "ended_utc": "2026-11-11T00:16:21Z",
+      "duration_display": "172 ms",
+      "validator_estimate_display": "1.61 GB",
+      "processed_display": "0 B (results cached)",
+      "billed_display": "0 B",
+      "location": "US",
+      "result_canonical_sha256": "c64d196fda588378783142b4e5792fb96a719526e5b7a21b26ac6ae5fec30116",
+      "disposition": "Cached result excluded from the fresh-run acceptance; rerun with distinct query text and observed nonzero processing."
+    }
+  ],
+  "clean_checkout": {
+    "date": "2026-11-11",
+    "checkout_commit": "1b5db0ea5eddf5ea6cb31658b9c0c8c06d18eb70",
+    "checkout_clean_after_reproduction": true,
+    "fresh_virtual_environment": true,
+    "python_version": "3.12.14",
+    "tests_passed": 57,
+    "summary_and_scenarios_regenerated_without_tracked_changes": true,
+    "rendered_figure_files": 8,
+    "all_eight_rendered_asset_bytes_match": true,
+    "chart_data_validated": true,
+    "observed_figures_independently_reviewed": false,
+    "software_dependencies": {
+      "matplotlib": "3.11.2",
+      "seaborn": "0.13.2"
+    },
+    "review_scope": "Separate checkout and new environment under the same analyst; no external human review claimed."
+  },
+  "code_sha256": {
+    "src/render_release_checks.py": "d287226420cce0811b89ca7460bb4154a8b4d425bdaf5ff07d858f2f4c6fb171",
+    "tests/check_release_evidence.py": "bdf6f5a274d794f73e81afc42e64fea1b14211d911884715725ec2f1ad9dc249",
+    "tests/test_release_evidence.py": "b5cf051d321dfe4a46d776aa189f5215f9942ea758079d5066d5d0002f29fdc7"
+  },
+  "publication_scope": "Original SQL, analysis, figures and reviewed aggregate evidence; no source rows, user/session/transaction identifiers, credentials or private career material."
+}
